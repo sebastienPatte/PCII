@@ -7,27 +7,39 @@ import javax.swing.JPanel;
 
 import model.Etat;
 
-@SuppressWarnings("serial")
+
+/**
+ * la classe Affichage est le JPanel dans lequel on va afficher l'ovale 
+ */
 public class Affichage extends JPanel {
 
-        /* Constantes */
+		private static final long serialVersionUID = 1L;
+		
+		/** largeur du JPanel*/
         public static final int LARG = 600;
+        /** hauteur du JPanel*/
         public static final int HAUT = 400;
+        /** hauteur de l'ovale*/
         public static final int ovalHeight = 70;
-        /* Attributs */
+        
+        /** attribut de type {@link Etat}*/
         public Etat etat;
 
         
-        /** Constructeur */
-        public Affichage(Etat mod) {
+        /** 
+         * Constructeur:
+         * @param etat de type {@link Etat}
+         * 
+         * */
+        public Affichage(Etat etat) {
                 this.setPreferredSize(new Dimension(LARG, HAUT));
-                this.etat = mod;
-        }
-        
-        public void jump() {
-        	this.etat.jump();
+                this.etat = etat;
         }
 
+        
+        /**
+         * nettoye l'affichage puis affiche l'ovale à l'endroit défini par l'{@link Etat}
+         * */
         @Override
         public void paint(Graphics g) {
         	//nettoie le JFrame puis affiche l'ovale au niveau de la hauteur définie par le Model etat

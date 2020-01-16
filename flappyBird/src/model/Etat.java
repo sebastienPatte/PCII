@@ -2,19 +2,36 @@ package model;
 
 import view.Affichage;
 
+/**
+ * Stocke l'état de ce qu'on doit afficher
+ * */
 public class Etat {
+		/** 
+		 * hauteur en pixels du saut
+		 * */
+		private static int saut = 20;
+	
+		/** 
+		 * hauteur en pixels à laquelle se trouve l'ovale
+		 * */
 		private int hauteur;
-		private int saut;
 		
+		
+		/** 
+		 * Constructeur
+		 */
 		public Etat() {
 			this.hauteur = 10;
-			this.saut = 20;
+			
 		}
 		
-		/* on augmente la hauteur */
+		/** 
+		 * on augmente la hauteur de l'ovale de la valeur définie par {@link saut}
+		 * si on ne dépasse pas le cadre du JPanel
+		 * */
 		 public void jump() {
-	        if(this.hauteur+this.saut+Affichage.ovalHeight < Affichage.HAUT) {
-	        	this.hauteur += this.saut;
+	        if(this.hauteur+Etat.saut+Affichage.ovalHeight < Affichage.HAUT) {
+	        	this.hauteur += Etat.saut;
 	        }
 	     }
 		 

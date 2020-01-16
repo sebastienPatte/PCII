@@ -5,8 +5,12 @@ import javax.swing.JFrame;
 import control.Control;
 import model.Etat;
 import view.Affichage;
-
+/**
+ * Créé des instances de Etat, Affichage et Control et les relie entre elles 
+ * Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel) 
+ */
 public class Main {
+	
 	public static void main(String[] args) {
 		/* Création des instances de Etat, Affichage et Control*/
 		Etat mod = new Etat();

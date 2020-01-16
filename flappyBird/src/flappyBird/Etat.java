@@ -1,10 +1,10 @@
 package flappyBird;
 
-public class Model {
+public class Etat {
 		private int hauteur;
 		private int saut;
 		
-		public Model() {
+		public Etat() {
 			this.hauteur = 10;
 			this.saut = 20;
 		}
@@ -20,3 +20,4 @@ public class Model {
 			 return this.hauteur;
 		 }
 }
+	

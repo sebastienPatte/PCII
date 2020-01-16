@@ -13,11 +13,11 @@ public class Affichage extends JPanel {
         public static final int HAUT = 400;
         public static final int ovalHeight = 70;
         /* Attributs */
-        public Model etat;
+        public Etat etat;
 
         
         /** Constructeur */
-        public Affichage(Model mod) {
+        public Affichage(Etat mod) {
                 this.setPreferredSize(new Dimension(LARG, HAUT));
                 this.etat = mod;
         }

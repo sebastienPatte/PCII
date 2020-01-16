@@ -6,9 +6,9 @@ import java.awt.event.MouseEvent;
 
 public class Control extends MouseAdapter{
 	private Affichage a;
-	private Model m;
+	private Etat m;
 	
-	public Control(Affichage a, Model m){
+	public Control(Affichage a, Etat m){
 		this.a = a;
 		this.m = m;
 	}

@@ -2,6 +2,10 @@ package flappyBird;
 
 import javax.swing.JFrame;
 
+import control.Control;
+import model.Etat;
+import view.Affichage;
+
 public class Main {
 	public static void main(String[] args) {
 		/* Création des instances de Etat, Affichage et Control*/

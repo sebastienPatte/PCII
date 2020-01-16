@@ -1,4 +1,6 @@
-package flappyBird;
+package model;
+
+import view.Affichage;
 
 public class Etat {
 		private int hauteur;

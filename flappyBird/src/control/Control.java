@@ -1,7 +1,10 @@
-package flappyBird;
+package control;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+
+import model.Etat;
+import view.Affichage;
 
 
 public class Control extends MouseAdapter{

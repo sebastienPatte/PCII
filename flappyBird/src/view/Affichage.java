@@ -1,9 +1,11 @@
-package flappyBird;
+package view;
 
 import java.awt.Dimension;
 
 import java.awt.Graphics;
 import javax.swing.JPanel;
+
+import model.Etat;
 
 @SuppressWarnings("serial")
 public class Affichage extends JPanel {

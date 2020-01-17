@@ -9,20 +9,26 @@ public class Etat {
 		/** 
 		 * hauteur en pixels du saut
 		 * */
-		private static int saut = 20;
+		private static int saut = 30;
+		
+		/** 
+		 * hauteur en pixels de la chute
+		 * */
+		private static int chute = 2;
 	
 		/** 
 		 * hauteur en pixels à laquelle se trouve l'ovale
 		 * */
 		private int hauteur;
 		
+		public Parcours parcours;
 		
 		/** 
 		 * Constructeur
 		 */
 		public Etat() {
-			this.hauteur = 10;
-			
+			this.hauteur = 100;
+			this.parcours = new Parcours();
 		}
 		
 		/** 
@@ -30,10 +36,16 @@ public class Etat {
 		 * si on ne dépasse pas le cadre du JPanel
 		 * */
 		 public void jump() {
-	        if(this.hauteur+Etat.saut+Affichage.ovalHeight < Affichage.HAUT) {
-	        	this.hauteur += Etat.saut;
-	        }
+			 if(this.hauteur-Etat.saut > 0) {
+		        	this.hauteur -= Etat.saut;
+		        }
 	     }
+		 
+		 public void moveDown() {
+			 if(this.hauteur+Etat.chute+Affichage.ovalHeight < Affichage.HAUT) {
+		        	this.hauteur += Etat.chute;
+		     }
+		 }
 		 
 		 public int getHauteur() {
 			 return this.hauteur;

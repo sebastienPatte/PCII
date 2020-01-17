@@ -1,0 +1,6 @@
+x <- LARGEUR
+points <- new ArrayList<Point>
+TanQue x >= 0
+	x <- x - rand(0,LARGEUR/2)
+	y <- rand(0,HAUTEUR)
+	ajoute(points, new Point(x,y))

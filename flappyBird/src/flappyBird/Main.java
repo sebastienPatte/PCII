@@ -3,6 +3,7 @@ package flappyBird;
 import javax.swing.JFrame;
 
 import control.Control;
+import control.Voler;
 import model.Etat;
 import view.Affichage;
 /**
@@ -19,6 +20,8 @@ public class Main {
 		/* On ajoute l'instance de Control en tant que MouseListener de celle de Affichage*/
 		aff.addMouseListener(ctrl);
 		
+		
+		
 		/* Création JFrame*/
 		JFrame fenetre = new JFrame("titre de la fenêtre");
 		/* ajout de l'Affichage(JPanel) à la fenêtre (JFrame)*/
@@ -28,6 +31,7 @@ public class Main {
 		fenetre.setVisible(true);
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		(new Thread(new Voler(mod,aff))).start();
 	}
 	
 }

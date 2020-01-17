@@ -3,6 +3,9 @@ package view;
 import java.awt.Dimension;
 
 import java.awt.Graphics;
+import java.awt.Point;
+import java.util.ArrayList;
+
 import javax.swing.JPanel;
 
 import model.Etat;
@@ -44,7 +47,15 @@ public class Affichage extends JPanel {
         public void paint(Graphics g) {
         	//nettoie le JFrame puis affiche l'ovale au niveau de la hauteur définie par le Model etat
         	g.clearRect(0, 0, LARG, HAUT);
-        	System.out.println(this.etat.getHauteur());
+        	
         	g.drawOval(10,this.etat.getHauteur(),100,ovalHeight);
+        	
+        	Point[] p = this.etat.parcours.getParcours();
+        	int i=1;
+        	while(i < p.length) {
+        		g.drawLine(p[i-1].x, p[i-1].y, p[i].x, p[i].y);
+        		i++;
+        	}
+        	
         }
 }

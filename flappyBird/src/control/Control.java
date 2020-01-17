@@ -33,7 +33,6 @@ public class Control extends MouseAdapter{
 	 */
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		System.out.println("click");
 		this.etat.jump();
 		this.affichage.repaint();
 	}

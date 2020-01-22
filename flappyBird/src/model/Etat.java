@@ -14,7 +14,7 @@ public class Etat {
 		/** 
 		 * hauteur en pixels de la chute
 		 * */
-		private static int chute = 1;
+		public static int chute = 1;
 	
 		/** 
 		 * hauteur en pixels à laquelle se trouve l'ovale

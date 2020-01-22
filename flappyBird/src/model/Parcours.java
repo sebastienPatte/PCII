@@ -4,30 +4,56 @@ import java.util.ArrayList;
 
 import java.util.concurrent.ThreadLocalRandom;
 
+import control.Voler;
 import view.Affichage;
 
 public class Parcours {
 	private ArrayList<Point> points;
 	private int position;
 	private int incrPoints;
+	private int yPrev;
 	/**
 	 * Constructeur
 	 */
 	public Parcours() {
 		this.points = new ArrayList<Point>();
 		this.incrPoints = 0;
+		this.yPrev = 0;
 		initPoints();
 	}
 	
 	private void initPoints() {
 		while(incrPoints < Affichage.LARG){
-			//On prend x entre i et i+50
+
 			this.addPoint();
 		}
 	}
 	
 	private void addPoint() {
-		this.points.add(new Point(randint(incrPoints,incrPoints+50), randint(0, Affichage.HAUT)));
+		
+		//On prend x entre i et i+50
+		int x = randint(incrPoints,incrPoints+50);
+		
+		//calcul vitesses
+		float Vchute = (float)(Etat.chute) / (float)(Voler.time);
+		float Vavance = (float)(Avancer.avancement) / (float)(Avancer.time);
+		
+		//calcul différence de hauteur max entre 2 points
+		int yDiff = (int) (this.yPrev + Vchute * (x-incrPoints) / Vavance);
+		
+		//calcul yMin et yMax
+		int yMin = this.yPrev - yDiff;
+		int yMax = this.yPrev + yDiff;
+		//vérification yMin et yMax dans la fenetre
+		if(yMin < 0) yMin = 0;
+		if(yMax > Affichage.HAUT) yMax = Affichage.HAUT;
+		//calcul du y du nouveau point
+		int y = randint(yMin, yMax);
+		this.points.add(new Point (x,y));
+		
+		//sauvegarde du y
+		this.yPrev = y;
+		//incrémentation de incrPoints pour l'abscisse du prochain point
 		incrPoints+=50;
 	}
 	

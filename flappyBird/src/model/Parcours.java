@@ -16,6 +16,10 @@ public class Parcours {
 	public Parcours() {
 		this.points = new ArrayList<Point>();
 		this.incrPoints = 0;
+		initPoints();
+	}
+	
+	private void initPoints() {
 		while(incrPoints < Affichage.LARG){
 			//On prend x entre i et i+50
 			this.addPoint();
@@ -43,7 +47,6 @@ public class Parcours {
 		if (lastPoint.x -position < Affichage.LARG) {
 			this.addPoint();
 		}
-		
 		
 		//on prend le 2 ème point
 		Point point1 = this.points.get(1); 

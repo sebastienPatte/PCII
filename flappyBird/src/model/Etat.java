@@ -33,12 +33,14 @@ public class Etat {
 		
 		/** 
 		 * on augmente la hauteur de l'ovale de la valeur définie par {@link saut}
-		 * si on ne dépasse pas le cadre du JPanel
+		 * si on ne dépasse pas le cadre du JPanel. sinon on met l'ovale tout en haut
 		 * */
 		 public void jump() {
 			 if(this.hauteur-Etat.saut > 0) {
-		        	this.hauteur -= Etat.saut;
-		        }
+		        this.hauteur -= Etat.saut;
+		     }else {
+		    	 this.hauteur = 0;
+		     }
 	     }
 		 
 		 public void moveDown() {

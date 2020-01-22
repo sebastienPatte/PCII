@@ -4,7 +4,7 @@ import view.Affichage;
 
 public class Avancer extends Thread{
 
-	public static int time = 500;
+	public static int time = 100;
 	public static int avancement = 1;
 	private Parcours parcours;
 	private Affichage affichage;

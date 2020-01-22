@@ -50,7 +50,7 @@ public class Affichage extends JPanel {
         	
         	g.drawOval(10,this.etat.getHauteur(),ovalWidth,ovalHeight);
         	
-        	Point[] p = this.etat.parcours.getParcours();
+        	Point[] p = this.etat.getParcours().getParcours();
         	int i=1;
         	while(i < p.length) {
         		g.drawLine(p[i-1].x, p[i-1].y, p[i].x, p[i].y);

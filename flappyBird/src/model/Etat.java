@@ -21,14 +21,14 @@ public class Etat {
 		 * */
 		private int hauteur;
 		
-		public Parcours parcours;
+		private Parcours parcours;
 		
 		/** 
 		 * Constructeur
 		 */
-		public Etat() {
+		public Etat(Parcours parcours) {
 			this.hauteur = 100;
-			this.parcours = new Parcours();
+			this.parcours = parcours;
 		}
 		
 		/** 
@@ -50,5 +50,11 @@ public class Etat {
 		 public int getHauteur() {
 			 return this.hauteur;
 		 }
+
+		public Parcours getParcours() {
+			return parcours;
+		}
+
+		
 }
 	

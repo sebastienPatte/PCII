@@ -32,14 +32,28 @@ public class Parcours {
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	
+	private void updateParcours() {
+		ArrayList<Point> res = new ArrayList<Point>();
+		
+		for (Point point : this.points) {
+			if(point.x >= this.position && point.x + this.position <= Affichage.LARG ) {
+				res.add(point);
+			}
+			
+		}
+		
+		this.points = res;
+		
+		
+	}
+	
 	public Point[] getParcours() {
+		updateParcours();
 		Point[] res = new Point[this.points.size()];
 		int i=0;
 		for (Point point : points) {
-			if(point.x - this.position <= Affichage.LARG ) {
-				res[i] = point;
-				i++;
-			}
+			res[i] = new Point(point.x-this.position, point.y);
+			i++;
 		}
 		return res;
 	}
@@ -48,8 +62,8 @@ public class Parcours {
 		return position;
 	}
 
-	public void setPosition(int position) {
-		this.position = position;
+	public void incrPos(int n) {
+		this.position += n;
 	}
 	
 }

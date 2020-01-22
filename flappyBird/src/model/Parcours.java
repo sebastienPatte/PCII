@@ -9,18 +9,22 @@ import view.Affichage;
 public class Parcours {
 	private ArrayList<Point> points;
 	private int position;
+	private int incrPoints;
 	/**
 	 * Constructeur
 	 */
 	public Parcours() {
 		this.points = new ArrayList<Point>();
-		for(int i=0; i < Affichage.LARG; i+=50) {
+		this.incrPoints = 0;
+		while(incrPoints < Affichage.LARG){
 			//On prend x entre i et i+50
-			int x = randint(i,i+50);
-			int y = randint(0, Affichage.HAUT);
-			Point p = new Point(x,y);
-			this.points.add(p);
+			this.addPoint();
 		}
+	}
+	
+	private void addPoint() {
+		this.points.add(new Point(randint(incrPoints,incrPoints+50), randint(0, Affichage.HAUT)));
+		incrPoints+=50;
 	}
 	
 	/** randint
@@ -33,19 +37,26 @@ public class Parcours {
 	}
 	
 	private void updateParcours() {
-		ArrayList<Point> res = new ArrayList<Point>();
-		
-		for (Point point : this.points) {
-			if(point.x >= this.position && point.x + this.position <= Affichage.LARG ) {
-				res.add(point);
-			}
-			
+		//on prend le dernier point
+		Point lastPoint = points.get(points.size()-1);
+		//si il entre dans la fenêtre on en ajoute un nouveau
+		if (lastPoint.x -position < Affichage.LARG) {
+			this.addPoint();
 		}
 		
-		this.points = res;
+		
+		//on prend le 2 ème point
+		Point point1 = this.points.get(1); 
+		
+		//si il sort de la fenetre on retire le 1er point
+		if(point1.x < this.position) {
+			points.remove(0);
+		}
 		
 		
 	}
+	
+	
 	
 	public Point[] getParcours() {
 		updateParcours();

@@ -21,7 +21,9 @@ public class Affichage extends JPanel {
         /** hauteur du JPanel*/
         public static final int HAUT = 400;
         /** hauteur de l'ovale*/
-        public static final int ovalHeight = 70;
+        public static final int ovalHeight = 100;
+        /** largeur de l'ovale*/
+        public static final int ovalWidth = 30;
         
         /** attribut de type {@link Etat}*/
         public Etat etat;
@@ -46,7 +48,7 @@ public class Affichage extends JPanel {
         	//nettoie le JFrame puis affiche l'ovale au niveau de la hauteur définie par le Model etat
         	g.clearRect(0, 0, LARG, HAUT);
         	
-        	g.drawOval(10,this.etat.getHauteur(),100,ovalHeight);
+        	g.drawOval(10,this.etat.getHauteur(),ovalWidth,ovalHeight);
         	
         	Point[] p = this.etat.parcours.getParcours();
         	int i=1;

@@ -6,7 +6,7 @@ import view.Affichage;
  * Thread qui fait tomber l'ovale de 2 pixels toutes les 20 millisecondes
  */
 public class Voler extends Thread{
-	public static int time = 20;
+	public static int time = 15;
 	private Etat etat;
 	private Affichage affichage;
 	

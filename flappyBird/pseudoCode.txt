@@ -1,6 +1,9 @@
-x <- LARGEUR
-points <- new ArrayList<Point>
-TanQue x >= 0
-	x <- x - rand(0,LARGEUR/2)
-	y <- rand(0,HAUTEUR)
-	ajoute(points, new Point(x,y))
+LARG <- largeur JPanel
+HAUT <- hauteur JPanel
+points <- liste de points  
+
+Pour i allant de 0 à LARG:
+	x <- randint(i, i+50)
+	y <- randint(0, HAUT)
+	ajoute(points, point(x,y))	
+

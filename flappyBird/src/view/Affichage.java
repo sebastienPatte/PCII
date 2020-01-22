@@ -1,7 +1,7 @@
 package view;
 
 import java.awt.Dimension;
-
+import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Point;
 import javax.swing.JPanel;
@@ -45,17 +45,27 @@ public class Affichage extends JPanel {
          * */
         @Override
         public void paint(Graphics g) {
-        	//nettoie le JFrame puis affiche l'ovale au niveau de la hauteur définie par le Model etat
+        	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
         	
+        	//affiche l'ovale au niveau de la hauteur définie par le Model etat
         	g.drawOval(10,this.etat.getHauteur(),ovalWidth,ovalHeight);
         	
+        	//TODO : sous-mécthodes pour affichage de l'ovale et de la ligne brisée
+        	
         	Point[] p = this.etat.getParcours().getParcours();
+        	
         	int i=1;
         	while(i < p.length) {
         		g.drawLine(p[i-1].x, p[i-1].y, p[i].x, p[i].y);
         		i++;
         	}
         	
+        	//affichage score 
+        	int score = this.etat.getParcours().getPosition();
+        	String strScore ="Score : "+score;
+        	FontMetrics fm = getFontMetrics(getFont());
+        	int printedLength = fm.stringWidth(strScore) +10; // on ajoute 10 pour pas etre collé au bord
+        	g.drawString(strScore, LARG-printedLength, 20);
         }
 }

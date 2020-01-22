@@ -8,6 +8,8 @@ import control.Voler;
 import view.Affichage;
 
 public class Parcours {
+	public static int marge = 40;
+	
 	private ArrayList<Point> points;
 	private int position;
 	private int incrPoints;
@@ -39,14 +41,15 @@ public class Parcours {
 		float Vavance = (float)(Avancer.avancement) / (float)(Avancer.time);
 		
 		//calcul différence de hauteur max entre 2 points
-		int yDiff = (int) (this.yPrev + Vchute * (x-incrPoints) / Vavance);
+		int yDiff = (int) (Vchute * (x-incrPoints) / Vavance);
 		
 		//calcul yMin et yMax
 		int yMin = this.yPrev - yDiff;
 		int yMax = this.yPrev + yDiff;
 		//vérification yMin et yMax dans la fenetre
-		if(yMin < 0) yMin = 0;
-		if(yMax > Affichage.HAUT) yMax = Affichage.HAUT;
+		if(yMin < marge) yMin = marge;
+		if(yMax < marge) yMax = marge;
+		if(yMax > Affichage.HAUT-marge) yMax = Affichage.HAUT-marge ;
 		//calcul du y du nouveau point
 		int y = randint(yMin, yMax);
 		this.points.add(new Point (x,y));

@@ -43,16 +43,19 @@ public class Etat {
 		     }
 	     }
 		 
+		 /**fait baisser la {@link #hauteur} de l'Ovale de {@link #chute} pixels*/
 		 public void moveDown() {
 			 if(this.hauteur+Etat.chute+Affichage.ovalHeight < Affichage.HAUT) {
 		        	this.hauteur += Etat.chute;
 		     }
 		 }
 		 
+		 /**Renvoie la {@link #hauteur} de l'Ovale*/
 		 public int getHauteur() {
 			 return this.hauteur;
 		 }
-
+		
+		/**Renvoie une instance de la classe {@link Parcours}*/
 		public Parcours getParcours() {
 			return parcours;
 		}

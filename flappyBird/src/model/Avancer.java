@@ -25,9 +25,10 @@ public class Avancer extends Thread{
 		this.affichage = affichage;
 	}
 	
-	@Override
-	/**Méthode 'run' du thread Avancer qui lance l'avancement de la {@link Parcours#position position}
+	
+	/**Méthode 'run' du {@link Thread} {@link Avancer} qui lance l'avancement de la {@link Parcours#position position}
 	 * toutes les {@link #time} millisecondes.*/
+	@Override
 	public void run() {
 		while(true) {
 			try { Thread.sleep(time); this.parcours.incrPos(avancement); System.out.println(this.parcours.getPosition()); this.affichage.repaint();}

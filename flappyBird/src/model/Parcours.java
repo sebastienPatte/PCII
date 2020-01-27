@@ -7,17 +7,20 @@ import java.util.concurrent.ThreadLocalRandom;
 import control.Voler;
 import view.Affichage;
 
+/**Génère les points de la ligne brisée au fur et à mesure de l'avancement de la {@link #position} 
+ * de l'Ovale*/
 public class Parcours {
 	public static int marge = 40;
 	
+	/**Liste des points de la ligne brisée*/
 	private ArrayList<Point> points;
+	
 	/** Position de l'ovale sur le Parcours (distance parcourue sans perdre) correspondant au Score du joueur*/
 	private int position;
 	private int incrPoints;
 	private int yPrev;
-	/**
-	 * Constructeur
-	 */
+	
+	/**Constructeur*/
 	public Parcours() {
 		this.points = new ArrayList<Point>();
 		this.incrPoints = 0;
@@ -25,15 +28,15 @@ public class Parcours {
 		initPoints();
 	}
 	
+	/**Initialise la liste {@link #points}*/
 	private void initPoints() {
 		while(incrPoints < Affichage.LARG){
-
 			this.addPoint();
 		}
 	}
-	
+
+	/**Génère un nouveau point et l'ajoute à la liste {@link #points}*/
 	private void addPoint() {
-		
 		//On prend x entre i et i+50
 		int x = randint(incrPoints,incrPoints+50);
 		
@@ -61,7 +64,7 @@ public class Parcours {
 		incrPoints+=50;
 	}
 	
-	/** randint
+	/** Génère un chiffre aléatoire entre min et max
 	 * @param int min
 	 * @param int max
 	 * @return random int between min and max
@@ -70,6 +73,7 @@ public class Parcours {
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	
+	/**Supprime les points qui ne sont plus dans la vue et ajoute des nouveaux points si nécessaire*/
 	private void updateParcours() {
 		//on prend le dernier point
 		Point lastPoint = points.get(points.size()-1);
@@ -79,18 +83,19 @@ public class Parcours {
 		}
 		
 		//on prend le 2 ème point
-		Point point1 = this.points.get(1); 
-		
+		Point point1 = this.points.get(1);
 		//si il sort de la fenetre on retire le 1er point
 		if(point1.x < this.position) {
 			points.remove(0);
 		}
-		
-		
+	
 	}
 	
 	
-	
+	/**
+	 * renvoie les points à afficher
+	 * @return Point[]
+	 * */
 	public Point[] getParcours() {
 		updateParcours();
 		Point[] res = new Point[this.points.size()];
@@ -101,11 +106,18 @@ public class Parcours {
 		}
 		return res;
 	}
-
+	
+	/**
+	 * renvoie la position de l'Ovale
+	 * @return {@link #position}
+	 * */
 	public int getPosition() {
 		return position;
 	}
 
+	/**
+	 * augmente la {@link #position} de l'Ovale de n
+	 * */
 	public void incrPos(int n) {
 		this.position += n;
 	}

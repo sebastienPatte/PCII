@@ -11,6 +11,7 @@ public class Parcours {
 	public static int marge = 40;
 	
 	private ArrayList<Point> points;
+	/** Position de l'ovale sur le Parcours (distance parcourue sans perdre) correspondant au Score du joueur*/
 	private int position;
 	private int incrPoints;
 	private int yPrev;

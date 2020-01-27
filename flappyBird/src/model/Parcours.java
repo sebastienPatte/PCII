@@ -22,8 +22,9 @@ public class Parcours {
 	
 	/**Constructeur*/
 	public Parcours() {
+		this.position = 0;
 		this.points = new ArrayList<Point>();
-		this.incrPoints = 0;
+		this.incrPoints = 50;
 		this.yPrev = 0;
 		initPoints();
 	}
@@ -78,14 +79,14 @@ public class Parcours {
 		//on prend le dernier point
 		Point lastPoint = points.get(points.size()-1);
 		//si il entre dans la fenêtre on en ajoute un nouveau
-		if (lastPoint.x -position < Affichage.LARG) {
+		if (lastPoint.x - (this.position+Affichage.ovalDec) < Affichage.LARG) {
 			this.addPoint();
 		}
 		
 		//on prend le 2 ème point
 		Point point1 = this.points.get(1);
 		//si il sort de la fenetre on retire le 1er point
-		if(point1.x < this.position) {
+		if(point1.x < this.position+Affichage.ovalDec) {
 			points.remove(0);
 		}
 	

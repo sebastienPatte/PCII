@@ -1,5 +1,7 @@
 package model;
 
+import java.awt.Point;
+
 import view.Affichage;
 
 /**
@@ -49,6 +51,28 @@ public class Etat {
 		        	this.hauteur += Etat.chute;
 		     }
 		 }
+		 
+		 /**Revoie vrai si l'ovale est sortie de la ligne brisée*/
+		 public boolean testPerdu() {
+			 Point[] points = this.parcours.getParcours();
+			 Point A = points[0];
+			 Point B = points[1];
+			 if(A.x>this.parcours.getPosition()) {
+				 return false;
+			 }else {
+			 
+				float coeffDir = floatDiv(B.y - A.y ,(B.x - A.x));
+			 
+			 	float Ypos0 = ((-A.x+Affichage.ovalDec) * coeffDir) + A.y;
+
+			 	return this.hauteur >= Ypos0 || this.hauteur+Affichage.ovalHeight <= Ypos0;
+			 }
+		 }
+		 
+		 private float floatDiv(int x, int y) {
+			 return (float)(x) / (float)(y);
+		 }
+		 
 		 
 		 /**Renvoie la {@link #hauteur} de l'Ovale*/
 		 public int getHauteur() {

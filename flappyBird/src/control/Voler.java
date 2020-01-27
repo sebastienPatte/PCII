@@ -8,22 +8,28 @@ import view.Affichage;
 public class Voler extends Thread{
 	/**temps en millisecondes entre chaque chute de l'Ovale*/
 	public static int time = 15;
-	
+	private boolean running;
 	private Etat etat;
 	private Affichage affichage;
 	
 	/**Constructeur*/
 	public Voler(Etat etat, Affichage affichage) {
+		this.running = true;
 		this.etat = etat;
 		this.affichage = affichage;
 	}
+	
+	public void terminate() {
+		this.running = false;
+	}
+	
 	/**Méthode 'run' du {@link Thread} {@link Voler} qui lance la chute de l'Ovale
 	 * toutes les {@link #time} millisecondes en appelant la méthode {@link Etat#moveDown()}*/
 	@Override
 	public void run() {
-		while(true) {
+		while(this.running) {
 			try { Thread.sleep(Voler.time); this.etat.moveDown();this.affichage.repaint();}
-			catch (Exception e) { e.printStackTrace(); }
+			catch (Exception e) { e.printStackTrace(); this.terminate();}
 		}
 	}
 }

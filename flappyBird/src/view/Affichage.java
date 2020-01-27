@@ -6,6 +6,8 @@ import java.awt.Graphics;
 import java.awt.Point;
 import javax.swing.JPanel;
 
+import control.Voler;
+import model.Avancer;
 import model.Etat;
 
 
@@ -13,8 +15,11 @@ import model.Etat;
  * la classe Affichage est le JPanel dans lequel on va afficher l'ovale 
  */
 public class Affichage extends JPanel {
-
+		
 		private static final long serialVersionUID = 1L;
+		
+		private Voler Vol;
+		private Avancer Avance;
 		
 		/** largeur du JPanel*/
         public static final int LARG = 600;
@@ -25,8 +30,8 @@ public class Affichage extends JPanel {
         public static final int ovalHeight = 100;
         /** largeur de l'ovale*/
         public static final int ovalWidth = 30;
-        /** décalage de l'ovale par rapport au bord gauche de la fenêtre*/
-        public static final int ovalDec = 10;
+        /** décalage entre le centre de l'ovale et le bord gauche de la fenêtre*/
+        public static final int ovalDec = 10+ovalWidth/2;
         
         /** attribut de type {@link Etat}*/
         public Etat etat;
@@ -43,7 +48,7 @@ public class Affichage extends JPanel {
         }
         /** affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}*/
         private void afficheOvale(Graphics g) {
-        	g.drawOval(ovalDec,this.etat.getHauteur(),ovalWidth,ovalHeight);
+        	g.drawOval(ovalDec-ovalWidth/2,this.etat.getHauteur(),ovalWidth,ovalHeight);
         }
         
         /** affiche la ligne brisée à partir des points définis par la classe {@link Parcours}*/
@@ -66,6 +71,13 @@ public class Affichage extends JPanel {
         	g.drawString(strScore, LARG-printedLength, 20);
         }
         
+        public void setVol(Voler v) {
+        	this.Vol = v;
+        }
+        public void setAvance(Avancer a) {
+        	this.Avance = a;
+        }
+        
         /**
          * nettoye l'affichage puis affiche l'ovale à l'endroit défini par l'{@link Etat}
          * */
@@ -74,9 +86,17 @@ public class Affichage extends JPanel {
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
         	
+        	if(etat.testPerdu()) {
+        		this.Vol.terminate();
+        		this.Avance.terminate();
+        		g.drawString("GAME OVER", LARG/2, HAUT/2);
+        		g.drawString("Score:"+this.etat.getParcours().getPosition(), LARG/2, HAUT/2+20);
+        	}        		
+        	
         	this.afficheOvale(g);
         	this.afficheLigne(g);
         	this.afficheScore(g);
+        	
         	
         }
 }

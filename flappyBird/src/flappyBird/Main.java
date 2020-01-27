@@ -15,6 +15,8 @@ import view.Affichage;
 public class Main {
 	
 	public static void main(String[] args) {
+		
+		
 		/* Création des instances de Etat, Affichage et Control*/
 		Etat mod = new Etat(new Parcours());
 		Affichage aff = new Affichage(mod);
@@ -22,7 +24,16 @@ public class Main {
 		/* On ajoute l'instance de Control en tant que MouseListener de celle de Affichage*/
 		aff.addMouseListener(ctrl);
 		
+		// ajout du thread Voler
+		Voler Vol = new Voler(mod,aff);
+		(new Thread(Vol)).start();
+		//ajout du thread Avancer
+		Avancer Avance = new Avancer(mod.getParcours(),aff); 
+		(new Thread(Avance)).start();;
 		
+		//on passe les instances de Voler et Avancer à L'Affichage
+		aff.setVol(Vol);
+		aff.setAvance(Avance);
 		
 		/* Création JFrame*/
 		JFrame fenetre = new JFrame("titre de la fenêtre");
@@ -33,10 +44,7 @@ public class Main {
 		fenetre.setVisible(true);
 		fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// ajout du thread Voler
-		(new Thread(new Voler(mod,aff))).start();
-		//ajout du thread Avancer
-		(new Thread(new Avancer(mod.getParcours(),aff))).start();
+		
 	}
 	
 }

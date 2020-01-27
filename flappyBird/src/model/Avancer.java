@@ -3,7 +3,7 @@ package model;
 import view.Affichage;
 
 /**
- * Implémente un {@link Thread} pour faire avancer la {@link Parcours#position position}  
+ * {@link Thread} qui fait avancer la {@link Parcours#position position}  
  * de {@link #avancement} pixels toutes les de {@link #time} millisecondes.
  */
 public class Avancer extends Thread{

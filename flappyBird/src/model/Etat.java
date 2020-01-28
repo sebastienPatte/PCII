@@ -72,7 +72,8 @@ public class Etat {
 				 B = points[i+1];
 			 }
 			 
-			 if(A.x>this.parcours.getPosition()) {
+			 //pas de game over si on a pas encore atteint le début de la courbe
+			 if(A.x>this.parcours.getPosition()-Affichage.ovalDec) {
 				 return false;
 			 }else {
 			 

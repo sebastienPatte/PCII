@@ -87,16 +87,19 @@ public class Affichage extends JPanel {
         	g.clearRect(0, 0, LARG, HAUT);
         	
         	if(etat.testPerdu()) {
-        		this.Vol.terminate();
-        		this.Avance.terminate();
+        	// TEST
+        	//	this.Vol.terminate();
+        	//	this.Avance.terminate();
         		g.drawString("GAME OVER", LARG/2, HAUT/2);
         		g.drawString("Score:"+this.etat.getParcours().getPosition(), LARG/2, HAUT/2+20);
-        	}        		
+        	} 
+        	
         	
         	this.afficheOvale(g);
         	this.afficheLigne(g);
         	this.afficheScore(g);
-        	
+        	etat.testPerdu();
+        	g.drawOval(ovalDec, (int) etat.yPos0, 2, 2);
         	
         }
 }

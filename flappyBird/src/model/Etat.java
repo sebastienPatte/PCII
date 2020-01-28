@@ -8,6 +8,12 @@ import view.Affichage;
  * Stocke l'état de ce qu'on doit afficher
  * */
 public class Etat {
+		/**
+		 * FOR TEST
+		 */
+		public float yPos0;
+	
+	
 		/** 
 		 * hauteur en pixels du saut
 		 * */
@@ -55,8 +61,17 @@ public class Etat {
 		 /**Revoie vrai si l'ovale est sortie de la ligne brisée*/
 		 public boolean testPerdu() {
 			 Point[] points = this.parcours.getParcours();
-			 Point A = points[0];
-			 Point B = points[1];
+			 int i=0;
+			 Point A = points[i];
+			 Point B = points[i+1];
+			 System.out.println("A: "+A.x);
+			 System.out.println("B: "+B.x);
+			 while(B.x < Affichage.ovalDec) {
+				 i++;
+				 A = points[i];
+				 B = points[i+1];
+			 }
+			 
 			 if(A.x>this.parcours.getPosition()) {
 				 return false;
 			 }else {
@@ -64,7 +79,7 @@ public class Etat {
 				float coeffDir = floatDiv(B.y - A.y ,(B.x - A.x));
 			 
 			 	float Ypos0 = ((-A.x+Affichage.ovalDec) * coeffDir) + A.y;
-
+			 	this.yPos0 = Ypos0;
 			 	return this.hauteur >= Ypos0 || this.hauteur+Affichage.ovalHeight <= Ypos0;
 			 }
 		 }

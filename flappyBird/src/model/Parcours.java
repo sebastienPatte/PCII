@@ -86,7 +86,7 @@ public class Parcours {
 		//on prend le 2 ème point
 		Point point1 = this.points.get(1);
 		//si il sort de la fenetre on retire le 1er point
-		if(point1.x < this.position+Affichage.ovalDec) {
+		if(point1.x < this.position) {
 			points.remove(0);
 		}
 	

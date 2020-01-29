@@ -97,6 +97,12 @@ public class Etat {
 			 }
 		 }
 		 
+		 /**
+		  * renvoie la division flottante de deux entiers sous forme d'un flottant
+		  * @param  x
+		  * @param  y
+		  * @return float : division flottante de x et y
+		  **/
 		 private float floatDiv(int x, int y) {
 			 return (float)(x) / (float)(y);
 		 }

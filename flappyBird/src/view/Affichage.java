@@ -1,9 +1,11 @@
 package view;
 
+import java.awt.BasicStroke;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Point;
 import javax.swing.JPanel;
 import model.Etat;
@@ -36,12 +38,12 @@ public class Affichage extends JPanel {
         /** 
          * Constructeur:
          * @param etat de type {@link Etat}
-         * 
          * */
         public Affichage(Etat etat) {
                 this.setPreferredSize(new Dimension(LARG, HAUT));
                 this.etat = etat;
         }
+        
         /** affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}*/
         private void afficheOvale(Graphics g) {
         	g.drawOval(ovalDec-ovalWidth/2,this.etat.getHauteur(),ovalWidth,ovalHeight);
@@ -49,6 +51,7 @@ public class Affichage extends JPanel {
         
         /** affiche la ligne brisée à partir des points définis par la classe {@link Parcours}*/
         private void afficheLigne(Graphics g) {
+        	
         	Point[] p = this.etat.getParcours().getParcours();
         	
         	int i=1;
@@ -86,9 +89,11 @@ public class Affichage extends JPanel {
          * */
         @Override
         public void paint(Graphics g) {
+        	Graphics2D g2d = (Graphics2D) g;
+        	g2d.setStroke(new BasicStroke(3.0f));
+        	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
-        	
         	if(etat.testPerdu()) {
         		etat.stopThreads();
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);

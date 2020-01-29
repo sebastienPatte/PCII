@@ -22,7 +22,7 @@ public class Affichage extends JPanel {
 		/** largeur du JPanel*/
         public static final int LARG = 1000;
         /** hauteur du JPanel*/
-        public static final int HAUT = 500;
+        public static final int HAUT = 800;
         
         /** hauteur de l'ovale*/
         public static final int ovalHeight = 100;

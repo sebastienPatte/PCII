@@ -10,8 +10,9 @@ import view.Affichage;
  * de l'Ovale*/
 public class Parcours {
 	public static int marge = 40;
-	public static int maxDecPoints = 20;
-	public static int minDecPoints = 50;
+	public static int maxDecPoints = 70;
+	public static int minDecPoints = 30;
+	public static int decFirstPoint = 400;
 	/**Liste des points de la ligne brisée*/
 	private ArrayList<Point> points;
 	
@@ -19,7 +20,7 @@ public class Parcours {
 	private int position;
 	private int xPrev;
 	private int yPrev;
-
+	private boolean firstPoint;
 	
 	/**Constructeur*/
 	public Parcours() {
@@ -27,6 +28,7 @@ public class Parcours {
 		this.points = new ArrayList<Point>();
 		this.yPrev = 0;
 		this.xPrev = 0;
+		this.firstPoint = true;
 		initPoints();
 	}
 	
@@ -39,8 +41,14 @@ public class Parcours {
 
 	/**Génère un nouveau point et l'ajoute à la liste {@link #points}*/
 	private void addPoint() {
-		//On prend x entre minDecPoints et maxDecPoints
-		int x = randint(xPrev+minDecPoints,xPrev+maxDecPoints);
+		int x =0;
+		if(this.firstPoint) {
+			x = decFirstPoint;
+			this.firstPoint=false;
+		}else {
+			//On prend x entre minDecPoints et maxDecPoints
+			x = randint(xPrev+minDecPoints,xPrev+maxDecPoints);
+		}
 		
 		//calcul vitesses
 		float Vchute = (float)(Voler.chute) / (float)(Voler.time);
@@ -72,6 +80,7 @@ public class Parcours {
 	 * @return random int between min and max
 	 */
 	private int randint(int min, int max) {
+		System.out.println(min+" "+max);
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	

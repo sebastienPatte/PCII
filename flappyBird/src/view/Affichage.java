@@ -20,9 +20,9 @@ public class Affichage extends JPanel {
 
 		
 		/** largeur du JPanel*/
-        public static final int LARG = 600;
+        public static final int LARG = 1000;
         /** hauteur du JPanel*/
-        public static final int HAUT = 400;
+        public static final int HAUT = 500;
         
         /** hauteur de l'ovale*/
         public static final int ovalHeight = 100;

@@ -14,7 +14,7 @@ public class Voler extends Thread{
 	public static int chute = 5;
 	private boolean running;
 	private Etat etat;
-	private Affichage affichage;
+
 	
 	/**
 	 * Constructeur
@@ -24,7 +24,7 @@ public class Voler extends Thread{
 	public Voler(Etat etat, Affichage affichage) {
 		this.running = true;
 		this.etat = etat;
-		this.affichage = affichage;
+
 	}
 	
 	public void terminate() {

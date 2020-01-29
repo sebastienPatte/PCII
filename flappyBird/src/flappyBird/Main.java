@@ -42,7 +42,7 @@ public class Main {
 		mod.setRepaintScreen(repaintScreen);
 		
 		/* Création JFrame*/
-		JFrame fenetre = new JFrame("titre de la fenêtre");
+		JFrame fenetre = new JFrame("suivre la ligne");
 		/* ajout de l'Affichage(JPanel) à la fenêtre (JFrame)*/
 		fenetre.add(aff);
 		

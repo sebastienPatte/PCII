@@ -150,8 +150,6 @@ public class Etat {
 			this.avance.terminate();
 			this.repaintScreen.terminate();
 		}
-		
-		
 
 		public void setRepaintScreen(RepaintScreen repaintScreen) {
 			this.repaintScreen = repaintScreen;

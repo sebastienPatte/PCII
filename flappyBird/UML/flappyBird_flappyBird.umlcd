@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_EavIoEKhEequ9J027I-KGQ">
+  <modelElement href="flappyBird.uml#_EA5sUEKhEequ9J027I-KGQ"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_Hk_eIUKhEequ9J027I-KGQ" targetItem="_HlAFMEKhEequ9J027I-KGQ" sourceItem="_Hk_eIEKhEequ9J027I-KGQ"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_Hk_eIEKhEequ9J027I-KGQ" sourceConnectionVisual="_Hk_eIUKhEequ9J027I-KGQ" text="Créé des instances de Etat, Affichage et Control et les relie entre elles &#xA;Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel)" item="_HlAFMEKhEequ9J027I-KGQ">
+    <modelElement href="flappyBird.uml#_EE_iI0KhEequ9J027I-KGQ"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_HlAFMEKhEequ9J027I-KGQ" comments="_Hk_eIEKhEequ9J027I-KGQ" targetConnectionVisual="_Hk_eIUKhEequ9J027I-KGQ" name="Main">
+    <modelElement href="flappyBird.uml#_EBneAEKhEequ9J027I-KGQ"/>
+    <visualProperties xmi:id="_HlAFMUKhEequ9J027I-KGQ" position="50.0,50.0"/>
+    <visibility xmi:id="_HlAFMkKhEequ9J027I-KGQ" label="+"/>
+    <operations xmi:id="_HlAFM0KhEequ9J027I-KGQ" name="main" staticOperation="true">
+      <modelElement href="flappyBird.uml#_EBoFEEKhEequ9J027I-KGQ"/>
+      <visibility xmi:id="_HlAFNEKhEequ9J027I-KGQ" label="+"/>
+      <cardinality xmi:id="_HlAFNUKhEequ9J027I-KGQ" label="1" max="1" min="1"/>
+      <parameters xmi:id="_HlAFNkKhEequ9J027I-KGQ" name="args">
+        <modelElement href="flappyBird.uml#_EBosIEKhEequ9J027I-KGQ"/>
+        <cardinality xmi:id="_HlAFN0KhEequ9J027I-KGQ" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_HlAFOEKhEequ9J027I-KGQ" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

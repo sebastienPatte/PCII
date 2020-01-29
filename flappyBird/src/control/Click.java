@@ -4,25 +4,21 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 import model.Etat;
-import view.Affichage;
 
 /**
  * lance la fonction jump de {@link Etat} 
  * si l'utilisateur clique sur la fenêtre
  */
-public class Control extends MouseAdapter{
-	/** attribut de type {@link Affichage} */
-	private Affichage affichage;
+public class Click extends MouseAdapter{
+
 	/** attribut de type {@link Etat} */
 	private Etat etat;
 	
 	/**
-	 * Constructeur
-	 * @param affichage de type {@link Affichage} 
+	 * Constructeur 
 	 * @param etat de type {@link Etat} 
 	 */
-	public Control(Affichage affichage, Etat etat){
-		this.affichage = affichage;
+	public Click(Etat etat){
 		this.etat = etat;
 	}
 	
@@ -34,7 +30,7 @@ public class Control extends MouseAdapter{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		this.etat.jump();
-		this.affichage.repaint();
+		this.etat.repaint();
 	}
 
 

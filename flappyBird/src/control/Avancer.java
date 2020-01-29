@@ -1,6 +1,6 @@
-package model;
+package control;
 
-import view.Affichage;
+import model.Etat;
 
 /**
  * {@link Thread} qui fait avancer la {@link Parcours#position position}  
@@ -18,18 +18,15 @@ public class Avancer extends Thread{
 	
 	private boolean running;
 	
-	private Parcours parcours;
-	private Affichage affichage;
+	private Etat etat;
 	
 	/**
 	 * Constructeur
 	 * @param parcours : instance de {@link Parcours} pour appeller {@link Parcours#incrPos} 
-	 * @param affichage : instance de {@link Affichage} pour appeller {@link Affichage#repaint}
 	 * */
-	public Avancer(Parcours parcours, Affichage affichage) {
-		this.running=true;
-		this.parcours = parcours;
-		this.affichage = affichage;
+	public Avancer(Etat etat) {
+		this.running = true;
+		this.etat = etat;
 	}
 	
 	public void terminate() {
@@ -40,7 +37,7 @@ public class Avancer extends Thread{
 	@Override
 	public void run() {
 		while(this.running) {
-			try { Thread.sleep(time); this.parcours.incrPos(avancement); this.affichage.repaint();}
+			try { Thread.sleep(time); this.etat.avance(avancement); this.etat.repaint();}
 			catch (Exception e) { e.printStackTrace(); this.terminate(); }
 		}
 	}

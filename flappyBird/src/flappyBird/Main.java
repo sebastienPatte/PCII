@@ -2,11 +2,11 @@ package flappyBird;
 
 import javax.swing.JFrame;
 
-import control.Control;
+import control.Avancer;
+import control.Click;
+import control.Parcours;
 import control.Voler;
-import model.Avancer;
 import model.Etat;
-import model.Parcours;
 import view.Affichage;
 /**
  * Créé des instances de Etat, Affichage et Control et les relie entre elles 
@@ -20,20 +20,22 @@ public class Main {
 		/* Création des instances de Etat, Affichage et Control*/
 		Etat mod = new Etat(new Parcours());
 		Affichage aff = new Affichage(mod);
-		Control ctrl = new Control(aff,mod);
+		Click ctrl = new Click(mod);
 		/* On ajoute l'instance de Control en tant que MouseListener de celle de Affichage*/
 		aff.addMouseListener(ctrl);
-		
-		// ajout du thread Voler
+		//on ajoute l'affichage au modèle
+		mod.setAff(aff);
+
+		// creation du thread Voler
 		Voler Vol = new Voler(mod,aff);
 		(new Thread(Vol)).start();
-		//ajout du thread Avancer
-		Avancer Avance = new Avancer(mod.getParcours(),aff); 
+		//creation du thread Avancer
+		Avancer Avance = new Avancer(mod); 
 		(new Thread(Avance)).start();;
 		
 		//on passe les instances de Voler et Avancer à L'Affichage
-		aff.setVol(Vol);
-		aff.setAvance(Avance);
+		mod.setVol(Vol);
+		mod.setAvance(Avance);
 		
 		/* Création JFrame*/
 		JFrame fenetre = new JFrame("titre de la fenêtre");

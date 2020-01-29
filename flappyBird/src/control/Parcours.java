@@ -1,10 +1,10 @@
-package model;
+package control;
 import java.awt.Point;
 import java.util.ArrayList;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-import control.Voler;
+import model.Etat;
 import view.Affichage;
 
 /**Génère les points de la ligne brisée au fur et à mesure de l'avancement de la {@link #position} 

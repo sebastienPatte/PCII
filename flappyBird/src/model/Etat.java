@@ -2,6 +2,9 @@ package model;
 
 import java.awt.Point;
 
+import control.Avancer;
+import control.Parcours;
+import control.Voler;
 import view.Affichage;
 
 /**
@@ -30,7 +33,9 @@ public class Etat {
 		private int hauteur;
 		
 		private Parcours parcours;
-		
+		private Avancer avance;
+		private Voler vol;
+		private Affichage aff;
 		/** 
 		 * Constructeur
 		 * @param parcours : on prend une instance de {@link Parcours} pour avoir accès à la position de l'ovale
@@ -45,16 +50,18 @@ public class Etat {
 		 * si on ne dépasse pas le cadre du JPanel. sinon on met l'ovale tout en haut
 		 * */
 		 public void jump() {
-			 if(this.hauteur-Etat.saut > 0) {
-		        this.hauteur -= Etat.saut;
-		     }else {
-		    	 this.hauteur = 0;
-		     }
+			 if(!testPerdu()) {
+			 	if(this.hauteur-Etat.saut > 0) {
+				 	this.hauteur -= Etat.saut;
+		     	}else {
+		    	 	this.hauteur = 0;
+		     	}
+			 }
 	     }
 		 
 		 /**fait baisser la {@link #hauteur} de l'Ovale de {@link #chute} pixels*/
 		 public void moveDown() {
-			 if(this.hauteur+Etat.chute+Affichage.ovalHeight < Affichage.HAUT) {
+			 if(this.hauteur+Etat.chute+Affichage.ovalHeight < Affichage.HAUT && !testPerdu()) {
 		        	this.hauteur += Etat.chute;
 		     }
 		 }
@@ -108,7 +115,36 @@ public class Etat {
 		public Parcours getParcours() {
 			return parcours;
 		}
-
+		
+		public void setAff(Affichage aff) {
+			this.aff = aff;
+		}
+		
+		public void setVol(Voler v) {
+        	this.vol = v;
+        }
+        public void setAvance(Avancer a) {
+        	this.avance = a;
+        }
+		
+        /**
+         * appelle {@link Affichage#repaint}
+         */
+		public void repaint() {
+			this.aff.repaint();
+		}
+		
+		public void avance(int n) {
+			this.parcours.incrPos(n);
+		}
+		
+		/**
+		 * Arrète les Threads Voler et Avancer
+		 */
+		public void stopThreads() {
+			this.vol.terminate();
+			this.avance.terminate();
+		}
 		
 }
 	

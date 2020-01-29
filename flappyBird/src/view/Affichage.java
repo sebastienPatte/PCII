@@ -6,9 +6,6 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Point;
 import javax.swing.JPanel;
-
-import control.Voler;
-import model.Avancer;
 import model.Etat;
 
 
@@ -18,9 +15,7 @@ import model.Etat;
 public class Affichage extends JPanel {
 		
 		private static final long serialVersionUID = 1L;
-		
-		private Voler Vol;
-		private Avancer Avance;
+
 		
 		/** largeur du JPanel*/
         public static final int LARG = 600;
@@ -72,12 +67,7 @@ public class Affichage extends JPanel {
         	g.drawString(strScore, LARG-printedLength, 20);
         }
         
-        public void setVol(Voler v) {
-        	this.Vol = v;
-        }
-        public void setAvance(Avancer a) {
-        	this.Avance = a;
-        }
+        
         
         /**
          * affiche une string au milieu de la fenetre
@@ -100,9 +90,7 @@ public class Affichage extends JPanel {
         	g.clearRect(0, 0, LARG, HAUT);
         	
         	if(etat.testPerdu()) {
-
-        		this.Vol.terminate();
-        		this.Avance.terminate();
+        		etat.stopThreads();
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);
         		g.setFont(newFont);
         		printMidStr("GAME OVER", HAUT/2, newFont, g);
@@ -115,7 +103,6 @@ public class Affichage extends JPanel {
         	this.afficheOvale(g);
         	this.afficheLigne(g);
         	
-        	etat.testPerdu();
         	g.drawOval(ovalDec, (int) etat.yPos0, 2, 2);
         	
         }

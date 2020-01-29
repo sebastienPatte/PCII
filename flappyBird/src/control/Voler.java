@@ -12,7 +12,11 @@ public class Voler extends Thread{
 	private Etat etat;
 	private Affichage affichage;
 	
-	/**Constructeur*/
+	/**
+	 * Constructeur
+	 * @param etat : une instance d'{@link Etat} pour appeler {@link Etat#moveDown()}
+	 * @param affichage :  une instance d'{@link Affichage} pour appeler {@link Affichage#repaint()}
+	 * */
 	public Voler(Etat etat, Affichage affichage) {
 		this.running = true;
 		this.etat = etat;

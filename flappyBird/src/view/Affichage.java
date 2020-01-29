@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Point;
@@ -79,7 +80,19 @@ public class Affichage extends JPanel {
         }
         
         /**
-         * nettoye l'affichage puis affiche l'ovale à l'endroit défini par l'{@link Etat}
+         * affiche une string au milieu de la fenetre
+         */
+        private void printMidStr(String str, int height, Font font, Graphics g) {
+        	FontMetrics fm = getFontMetrics(font);
+        	int width = LARG/2 - fm.stringWidth(str)/2;
+        	g.drawString(str,width,height);
+        }
+        
+        /**
+         * <p>- nettoye l'affichage </p>
+         * <p>- affiche l'ovale </p>
+         * <p>- affiche la ligne brisée </p>
+         * <p>- Si Game Over, stoppe les Threads et affiche un message avec le score.</p>
          * */
         @Override
         public void paint(Graphics g) {
@@ -87,17 +100,21 @@ public class Affichage extends JPanel {
         	g.clearRect(0, 0, LARG, HAUT);
         	
         	if(etat.testPerdu()) {
-        	// TEST
-        	//	this.Vol.terminate();
-        	//	this.Avance.terminate();
-        		g.drawString("GAME OVER", LARG/2, HAUT/2);
-        		g.drawString("Score:"+this.etat.getParcours().getPosition(), LARG/2, HAUT/2+20);
-        	} 
+
+        		this.Vol.terminate();
+        		this.Avance.terminate();
+        		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);
+        		g.setFont(newFont);
+        		printMidStr("GAME OVER", HAUT/2, newFont, g);
+        		printMidStr("Score:"+this.etat.getParcours().getPosition(), HAUT/2+50, newFont, g);
+        	}else {
+        		this.afficheScore(g);
+        	}
         	
         	
         	this.afficheOvale(g);
         	this.afficheLigne(g);
-        	this.afficheScore(g);
+        	
         	etat.testPerdu();
         	g.drawOval(ovalDec, (int) etat.yPos0, 2, 2);
         	

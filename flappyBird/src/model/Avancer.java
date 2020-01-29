@@ -21,7 +21,11 @@ public class Avancer extends Thread{
 	private Parcours parcours;
 	private Affichage affichage;
 	
-	/**Constructeur*/
+	/**
+	 * Constructeur
+	 * @param parcours : instance de {@link Parcours} pour appeller {@link Parcours#incrPos} 
+	 * @param affichage : instance de {@link Affichage} pour appeller {@link Affichage#repaint}
+	 * */
 	public Avancer(Parcours parcours, Affichage affichage) {
 		this.running=true;
 		this.parcours = parcours;

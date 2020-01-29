@@ -118,6 +118,7 @@ public class Parcours {
 
 	/**
 	 * augmente la {@link #position} de l'Ovale de n
+	 * @param n : taille (en pixels) de l'augmentation de la position  
 	 * */
 	public void incrPos(int n) {
 		this.position += n;

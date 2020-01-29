@@ -9,7 +9,7 @@ import view.Affichage;
  * */
 public class Etat {
 		/**
-		 * FOR TEST
+		 * POUR TEST
 		 */
 		public float yPos0;
 	
@@ -33,6 +33,7 @@ public class Etat {
 		
 		/** 
 		 * Constructeur
+		 * @param parcours : on prend une instance de {@link Parcours} pour avoir accès à la position de l'ovale
 		 */
 		public Etat(Parcours parcours) {
 			this.hauteur = 100;
@@ -58,14 +59,18 @@ public class Etat {
 		     }
 		 }
 		 
-		 /**Revoie vrai si l'ovale est sortie de la ligne brisée*/
+		 /**
+		  * vrai si l'ovale est sortie de la ligne brisée
+		  * @return <p>true si l'ovale est sortie de la ligne brisée </p>
+		  * 		<p>false sinon</p>
+		  * */
 		 public boolean testPerdu() {
 			 Point[] points = this.parcours.getParcours();
 			 int i=0;
 			 Point A = points[i];
 			 Point B = points[i+1];
-			 System.out.println("A: "+A.x);
-			 System.out.println("B: "+B.x);
+			 
+			 //tant que le deuxième point sélectioné est à gauche du milieu de l'ovale, on décal la sélection de 1 point 
 			 while(B.x < Affichage.ovalDec) {
 				 i++;
 				 A = points[i];
@@ -76,7 +81,7 @@ public class Etat {
 			 if(A.x>this.parcours.getPosition()-Affichage.ovalDec) {
 				 return false;
 			 }else {
-			 
+				 
 				float coeffDir = floatDiv(B.y - A.y ,(B.x - A.x));
 			 
 			 	float Ypos0 = ((-A.x+Affichage.ovalDec) * coeffDir) + A.y;
@@ -90,12 +95,16 @@ public class Etat {
 		 }
 		 
 		 
-		 /**Renvoie la {@link #hauteur} de l'Ovale*/
+		 /**
+		  * @return la {@link #hauteur} de l'Ovale
+		  * */
 		 public int getHauteur() {
 			 return this.hauteur;
 		 }
 		
-		/**Renvoie une instance de la classe {@link Parcours}*/
+		/**
+		 * @return une instance de la classe {@link Parcours}
+		 * */
 		public Parcours getParcours() {
 			return parcours;
 		}

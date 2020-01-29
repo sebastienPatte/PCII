@@ -44,7 +44,7 @@ public class Etat {
 		}
 		
 		/** 
-		 * on augmente la hauteur de l'ovale de la valeur définie par {@link saut}
+		 * on augmente la hauteur de l'ovale de la valeur définie par {@link #saut}
 		 * si on ne dépasse pas le cadre du JPanel. sinon on met l'ovale tout en haut
 		 * */
 		 public void jump() {

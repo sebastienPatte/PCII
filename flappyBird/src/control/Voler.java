@@ -7,7 +7,11 @@ import view.Affichage;
  */
 public class Voler extends Thread{
 	/**temps en millisecondes entre chaque chute de l'Ovale*/
-	public static int time = 15;
+	public static int time = 65;
+	/** 
+	 * hauteur en pixels de la chute
+	 * */
+	public static int chute = 5;
 	private boolean running;
 	private Etat etat;
 	private Affichage affichage;
@@ -32,7 +36,7 @@ public class Voler extends Thread{
 	@Override
 	public void run() {
 		while(this.running) {
-			try { Thread.sleep(Voler.time); this.etat.moveDown();this.affichage.repaint();}
+			try { Thread.sleep(Voler.time); this.etat.moveDown(chute);}
 			catch (Exception e) { e.printStackTrace(); this.terminate();}
 		}
 	}

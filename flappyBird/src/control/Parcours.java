@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-import model.Etat;
 import view.Affichage;
 
 /**Génère les points de la ligne brisée au fur et à mesure de l'avancement de la {@link #position} 
  * de l'Ovale*/
 public class Parcours {
 	public static int marge = 40;
-	
+	public static int maxDecPoints = 100;
+	public static int minDecPoints = 90;
 	/**Liste des points de la ligne brisée*/
 	private ArrayList<Point> points;
 	
@@ -24,8 +24,8 @@ public class Parcours {
 	public Parcours() {
 		this.position = 0;
 		this.points = new ArrayList<Point>();
-		this.incrPoints = 50;
 		this.yPrev = 0;
+		this.incrPoints = maxDecPoints;
 		initPoints();
 	}
 	
@@ -39,10 +39,10 @@ public class Parcours {
 	/**Génère un nouveau point et l'ajoute à la liste {@link #points}*/
 	private void addPoint() {
 		//On prend x entre i et i+50
-		int x = randint(incrPoints,incrPoints+50);
+		int x = randint(incrPoints+minDecPoints,incrPoints+maxDecPoints);
 		
 		//calcul vitesses
-		float Vchute = (float)(Etat.chute) / (float)(Voler.time);
+		float Vchute = (float)(Voler.chute) / (float)(Voler.time);
 		float Vavance = (float)(Avancer.avancement) / (float)(Avancer.time);
 		
 		//calcul différence de hauteur max entre 2 points
@@ -61,8 +61,8 @@ public class Parcours {
 		
 		//sauvegarde du y
 		this.yPrev = y;
-		//incrémentation de incrPoints pour l'abscisse du prochain point
-		incrPoints+=50;
+		//incrémentation de maxDecPoints pour l'abscisse du prochain point
+		incrPoints+=maxDecPoints;
 	}
 	
 	/** Génère un chiffre aléatoire entre min et max

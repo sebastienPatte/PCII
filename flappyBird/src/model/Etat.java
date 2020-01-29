@@ -6,6 +6,7 @@ import control.Avancer;
 import control.Parcours;
 import control.Voler;
 import view.Affichage;
+import view.RepaintScreen;
 
 /**
  * Stocke l'état de ce qu'on doit afficher
@@ -22,10 +23,6 @@ public class Etat {
 		 * */
 		private static int saut = 30;
 		
-		/** 
-		 * hauteur en pixels de la chute
-		 * */
-		public static int chute = 1;
 	
 		/** 
 		 * hauteur en pixels à laquelle se trouve l'ovale
@@ -35,6 +32,7 @@ public class Etat {
 		private Parcours parcours;
 		private Avancer avance;
 		private Voler vol;
+		private RepaintScreen repaintScreen;
 		private Affichage aff;
 		/** 
 		 * Constructeur
@@ -60,9 +58,9 @@ public class Etat {
 	     }
 		 
 		 /**fait baisser la {@link #hauteur} de l'Ovale de {@link #chute} pixels*/
-		 public void moveDown() {
-			 if(this.hauteur+Etat.chute+Affichage.ovalHeight < Affichage.HAUT && !testPerdu()) {
-		        	this.hauteur += Etat.chute;
+		 public void moveDown(int chute) {
+			 if(this.hauteur+chute+Affichage.ovalHeight < Affichage.HAUT && !testPerdu()) {
+		        	this.hauteur += chute;
 		     }
 		 }
 		 
@@ -77,18 +75,18 @@ public class Etat {
 			 Point A = points[i];
 			 Point B = points[i+1];
 			 
-			 //tant que le deuxième point sélectioné est à gauche du milieu de l'ovale, on décal la sélection de 1 point 
-			 while(B.x < Affichage.ovalDec) {
-				 i++;
-				 A = points[i];
-				 B = points[i+1];
-			 }
-			 
 			 //pas de game over si on a pas encore atteint le début de la courbe
-			 if(A.x>this.parcours.getPosition()-Affichage.ovalDec) {
+			 if(A.x>=Affichage.ovalDec) {
 				 return false;
 			 }else {
 				 
+				 
+				 //tant que le deuxième point sélectioné est à gauche du milieu de l'ovale, on décal la sélection de 1 point 
+				 while(B.x < Affichage.ovalDec) {
+					 i++;
+					 A = points[i];
+					 B = points[i+1];
+				 }
 				float coeffDir = floatDiv(B.y - A.y ,(B.x - A.x));
 			 
 			 	float Ypos0 = ((-A.x+Affichage.ovalDec) * coeffDir) + A.y;
@@ -150,6 +148,13 @@ public class Etat {
 		public void stopThreads() {
 			this.vol.terminate();
 			this.avance.terminate();
+			this.repaintScreen.terminate();
+		}
+		
+		
+
+		public void setRepaintScreen(RepaintScreen repaintScreen) {
+			this.repaintScreen = repaintScreen;
 		}
 		
 }

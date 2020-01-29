@@ -37,7 +37,7 @@ public class Avancer extends Thread{
 	@Override
 	public void run() {
 		while(this.running) {
-			try { Thread.sleep(time); this.etat.avance(avancement); this.etat.repaint();}
+			try { Thread.sleep(time); this.etat.avance(avancement);}
 			catch (Exception e) { e.printStackTrace(); this.terminate(); }
 		}
 	}

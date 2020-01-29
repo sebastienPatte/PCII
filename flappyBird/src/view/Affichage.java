@@ -90,7 +90,7 @@ public class Affichage extends JPanel {
         @Override
         public void paint(Graphics g) {
         	Graphics2D g2d = (Graphics2D) g;
-        	g2d.setStroke(new BasicStroke(3.0f));
+        	g2d.setStroke(new BasicStroke(2.0f));
         	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);

@@ -8,6 +8,7 @@ import control.Parcours;
 import control.Voler;
 import model.Etat;
 import view.Affichage;
+import view.RepaintScreen;
 /**
  * Créé des instances de Etat, Affichage et Control et les relie entre elles 
  * Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel) 
@@ -32,10 +33,13 @@ public class Main {
 		//creation du thread Avancer
 		Avancer Avance = new Avancer(mod); 
 		(new Thread(Avance)).start();;
-		
-		//on passe les instances de Voler et Avancer à L'Affichage
+		//creation du thread RepaintScreen		
+		RepaintScreen repaintScreen = new RepaintScreen(mod); 
+		(new Thread(repaintScreen)).start();;
+		//on passe les instances de Voler, Avancer et RepaintScreen au modèle
 		mod.setVol(Vol);
 		mod.setAvance(Avance);
+		mod.setRepaintScreen(repaintScreen);
 		
 		/* Création JFrame*/
 		JFrame fenetre = new JFrame("titre de la fenêtre");

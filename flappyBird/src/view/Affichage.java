@@ -89,8 +89,7 @@ public class Affichage extends JPanel {
          * */
         @Override
         public void paint(Graphics g) {
-        	Graphics2D g2d = (Graphics2D) g;
-        	g2d.setStroke(new BasicStroke(2.0f));
+        	
         	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
@@ -104,8 +103,10 @@ public class Affichage extends JPanel {
         		this.afficheScore(g);
         	}
         	
-        	
+        	Graphics2D g2d = (Graphics2D) g;
+        	g2d.setStroke(new BasicStroke(2.0f));
         	this.afficheOvale(g);
+        	g2d.setStroke(new BasicStroke(1.0f));
         	this.afficheLigne(g);
         	
         	g.drawOval(ovalDec, (int) etat.yPos0, 2, 2);

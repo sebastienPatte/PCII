@@ -10,43 +10,44 @@ import view.Affichage;
  * de l'Ovale*/
 public class Parcours {
 	public static int marge = 40;
-	public static int maxDecPoints = 100;
-	public static int minDecPoints = 90;
+	public static int maxDecPoints = 20;
+	public static int minDecPoints = 50;
 	/**Liste des points de la ligne brisée*/
 	private ArrayList<Point> points;
 	
 	/** Position de l'ovale sur le Parcours (distance parcourue sans perdre) correspondant au Score du joueur*/
 	private int position;
-	private int incrPoints;
+	private int xPrev;
 	private int yPrev;
+
 	
 	/**Constructeur*/
 	public Parcours() {
 		this.position = 0;
 		this.points = new ArrayList<Point>();
 		this.yPrev = 0;
-		this.incrPoints = maxDecPoints;
+		this.xPrev = 0;
 		initPoints();
 	}
 	
 	/**Initialise la liste {@link #points}*/
 	private void initPoints() {
-		while(incrPoints < Affichage.LARG){
+		while(xPrev < Affichage.LARG){
 			this.addPoint();
 		}
 	}
 
 	/**Génère un nouveau point et l'ajoute à la liste {@link #points}*/
 	private void addPoint() {
-		//On prend x entre i et i+50
-		int x = randint(incrPoints+minDecPoints,incrPoints+maxDecPoints);
+		//On prend x entre minDecPoints et maxDecPoints
+		int x = randint(xPrev+minDecPoints,xPrev+maxDecPoints);
 		
 		//calcul vitesses
 		float Vchute = (float)(Voler.chute) / (float)(Voler.time);
 		float Vavance = (float)(Avancer.avancement) / (float)(Avancer.time);
 		
 		//calcul différence de hauteur max entre 2 points
-		int yDiff = (int) (Vchute * (x-incrPoints) / Vavance);
+		int yDiff = (int) (Vchute * (x-xPrev) / Vavance);
 		
 		//calcul yMin et yMax
 		int yMin = this.yPrev - yDiff;
@@ -61,8 +62,8 @@ public class Parcours {
 		
 		//sauvegarde du y
 		this.yPrev = y;
-		//incrémentation de maxDecPoints pour l'abscisse du prochain point
-		incrPoints+=maxDecPoints;
+		//sauvegarde du x
+		this.xPrev = x;
 	}
 	
 	/** Génère un chiffre aléatoire entre min et max

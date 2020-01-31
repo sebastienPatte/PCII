@@ -1,9 +1,33 @@
-LARG <- largeur JPanel
-HAUT <- hauteur JPanel
-points <- liste de points  
+xPrev <- 0
+incrPoints <- 0
 
-Pour i allant de 0 à LARG:
-	x <- randint(i, i+50)
-	y <- randint(0, HAUT)
-	ajoute(points, point(x,y))	
 
+procédure init:
+	TantQue xPrev < LARG
+		ajoutePoint	()
+
+procédure ajoutePoint:
+	x <- randint(xPrev + minDecPoints, xPrev + maxDecPoints)  
+	VitesseChute <- distanceChute / tempsChute
+	VitesseAvancement <- distanceAvancement / tempsAvancement
+	ecartHauteur <- VitesseChute * (x-xPrev) / VitesseAvancement
+	
+	yMin <- xPrev - ecartHauteur 
+	yMax <- xPrev + ecartHauteur
+	
+	Si yMin < 0 Alors yMin <- 0
+	Si yMax > HAUT Alors yMax <- HAUT
+	
+	y <- randint(yMin, yMax)
+	
+	ajoute(points, Point(x,y))
+	
+	xPrev <- x
+	
+procédure majPoints:
+	Si dernierPoint - position < LARG
+	Alors ajoutePoint()
+	
+	Si deuxièmePoint < position
+	Alors retirer(deuxièmePoint)
+	

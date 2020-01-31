@@ -62,7 +62,7 @@ public class Parcours {
 		int yMax = this.yPrev + yDiff;
 		//vérification yMin et yMax dans la fenetre
 		if(yMin < marge) yMin = marge;
-		if(yMax < marge) yMax = marge;
+		//if(yMax < marge) yMax = marge;
 		if(yMax > Affichage.HAUT-marge) yMax = Affichage.HAUT-marge ;
 		//calcul du y du nouveau point
 		int y = randint(yMin, yMax);

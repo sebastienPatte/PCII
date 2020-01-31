@@ -4,7 +4,7 @@ import model.Etat;
 
 public class RepaintScreen extends Thread{
 	
-	public static int time = 10;
+	public static int time = 41;
 	private boolean running;
 	private Etat etat;
 	

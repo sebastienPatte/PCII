@@ -4,9 +4,9 @@ import java.awt.Point;
 
 import control.Avancer;
 import control.Parcours;
+import control.RepaintScreen;
 import control.Voler;
 import view.Affichage;
-import view.RepaintScreen;
 
 /**
  * Stocke l'état de ce qu'on doit afficher

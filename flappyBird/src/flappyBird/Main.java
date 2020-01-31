@@ -5,10 +5,10 @@ import javax.swing.JFrame;
 import control.Avancer;
 import control.Click;
 import control.Parcours;
+import control.RepaintScreen;
 import control.Voler;
 import model.Etat;
 import view.Affichage;
-import view.RepaintScreen;
 /**
  * Créé des instances de Etat, Affichage et Control et les relie entre elles 
  * Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel) 

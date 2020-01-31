@@ -91,7 +91,7 @@ public class Etat {
 			 
 			 	float Ypos0 = ((-A.x+Affichage.ovalDec) * coeffDir) + A.y;
 			 	this.yPos0 = Ypos0;
-			 	return this.hauteur >= Ypos0 || this.hauteur+Affichage.ovalHeight <= Ypos0;
+			 	return this.hauteur + Affichage.largTraits.getLineWidth() >= Ypos0 || this.hauteur+Affichage.ovalHeight - Affichage.largTraits.getLineWidth() <= Ypos0;
 			 }
 		 }
 		 

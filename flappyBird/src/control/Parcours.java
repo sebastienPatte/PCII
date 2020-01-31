@@ -80,7 +80,6 @@ public class Parcours {
 	 * @return random int between min and max
 	 */
 	private int randint(int min, int max) {
-		System.out.println(min+" "+max);
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	

@@ -18,6 +18,7 @@ public class Affichage extends JPanel {
 		
 		private static final long serialVersionUID = 1L;
 
+		public static final BasicStroke largTraits = new BasicStroke(3.0f);
 		
 		/** largeur du JPanel*/
         public static final int LARG = 1000;
@@ -90,6 +91,10 @@ public class Affichage extends JPanel {
         @Override
         public void paint(Graphics g) {
         	
+        	Graphics2D g2d = (Graphics2D) g;
+        	g2d.setStroke(largTraits);
+        	
+        	System.out.println(largTraits.getLineWidth());
         	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
@@ -103,10 +108,9 @@ public class Affichage extends JPanel {
         		this.afficheScore(g);
         	}
         	
-        	Graphics2D g2d = (Graphics2D) g;
-        	g2d.setStroke(new BasicStroke(2.0f));
+        	
         	this.afficheOvale(g);
-        	g2d.setStroke(new BasicStroke(1.0f));
+
         	this.afficheLigne(g);
         	
         	g.drawOval(ovalDec, (int) etat.yPos0, 2, 2);

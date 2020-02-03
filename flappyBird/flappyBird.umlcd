@@ -46,6 +46,9 @@
     <targetRole xmi:id="_ale2IEKtEequ9J027I-KGQ" aggregationKind="NONE" name="etat" navigable="true">
       <modelElement href="flappyBird.uml#_ajOzVkKtEequ9J027I-KGQ"/>
       <visualProperties xmi:id="_aqfR4EKtEequ9J027I-KGQ" position="133.48828227548174,124.51967408425082"/>
+      <stereotypes xmi:id="_QTtmAEa4EeqGk6cPser2Rw" name="LegacyStyledElement">
+        <modelElement href="flappyBird.uml#_ajOzV0KtEequ9J027I-KGQ"/>
+      </stereotypes>
       <visibility xmi:id="_ale2IUKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_ale2IkKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -94,6 +97,9 @@
     <targetRole xmi:id="_alhSV0KtEequ9J027I-KGQ" aggregationKind="NONE" name="etat" navigable="true">
       <modelElement href="flappyBird.uml#_ajQogkKtEequ9J027I-KGQ"/>
       <visualProperties xmi:id="_aqf48EKtEequ9J027I-KGQ" position="-188.22769353145947,100.85352010510394"/>
+      <stereotypes xmi:id="_QTwpUEa4EeqGk6cPser2Rw" name="LegacyStyledElement">
+        <modelElement href="flappyBird.uml#_ajQog0KtEequ9J027I-KGQ"/>
+      </stereotypes>
       <visibility xmi:id="_alh5YUKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alh5YEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -117,6 +123,9 @@
     <targetRole xmi:id="_alh5aUKtEequ9J027I-KGQ" aggregationKind="NONE" name="affichage" navigable="true">
       <modelElement href="flappyBird.uml#_ajQohEKtEequ9J027I-KGQ"/>
       <visualProperties xmi:id="_aqf480KtEequ9J027I-KGQ" position="-382.76767654136984,658.1759706055863"/>
+      <stereotypes xmi:id="_QT2I4Ea4EeqGk6cPser2Rw" name="LegacyStyledElement">
+        <modelElement href="flappyBird.uml#_ajQohUKtEequ9J027I-KGQ"/>
+      </stereotypes>
       <visibility xmi:id="_alh5akKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alh5a0KtEequ9J027I-KGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -139,6 +148,9 @@
     <targetRole xmi:id="_aljulEKtEequ9J027I-KGQ" aggregationKind="NONE" name="etat" navigable="true">
       <modelElement href="flappyBird.uml#_ajOzWEKtEequ9J027I-KGQ"/>
       <visualProperties xmi:id="_aqggAkKtEequ9J027I-KGQ" position="-29.258436327262842,183.2346744833598"/>
+      <stereotypes xmi:id="_QT2v8Ea4EeqGk6cPser2Rw" name="LegacyStyledElement">
+        <modelElement href="flappyBird.uml#_ajPaYEKtEequ9J027I-KGQ"/>
+      </stereotypes>
       <visibility xmi:id="_aljumUKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_aljumEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -189,6 +201,12 @@
     </sourceRole>
     <targetRole xmi:id="_almx5kKtEequ9J027I-KGQ" aggregationKind="NONE" name="points" navigable="true">
       <modelElement href="flappyBird.uml#_ajPaZEKtEequ9J027I-KGQ"/>
+      <stereotypes xmi:id="_QT4lIEa4EeqGk6cPser2Rw" name="Generics">
+        <modelElement href="flappyBird.uml#_ajPaZUKtEequ9J027I-KGQ"/>
+      </stereotypes>
+      <stereotypes xmi:id="_QT4lIUa4EeqGk6cPser2Rw" name="LegacyStyledElement">
+        <modelElement href="flappyBird.uml#_ajQBcEKtEequ9J027I-KGQ"/>
+      </stereotypes>
       <visibility xmi:id="_almx50KtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_almx6EKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -236,6 +254,9 @@
     <targetRole xmi:id="_alrDU0KtEequ9J027I-KGQ" aggregationKind="NONE" name="aff" navigable="true">
       <modelElement href="flappyBird.uml#_ajR2oUKtEequ9J027I-KGQ"/>
       <visualProperties xmi:id="_aqi8QkKtEequ9J027I-KGQ" position="-21.271500362414343,-145.08657916492882"/>
+      <stereotypes xmi:id="_QT5zQEa4EeqGk6cPser2Rw" name="LegacyStyledElement">
+        <modelElement href="flappyBird.uml#_ajR2okKtEequ9J027I-KGQ"/>
+      </stereotypes>
       <visibility xmi:id="_alrDXUKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alrDXEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
     </targetRole>
@@ -363,9 +384,9 @@
     </attributes>
     <attributes xmi:id="_ale2NUKtEequ9J027I-KGQ" name="etat">
       <modelElement href="flappyBird.uml#_ajOzVkKtEequ9J027I-KGQ"/>
-      <stereotypes xmi:id="_ale2NkKtEequ9J027I-KGQ" name="LegacyStyledElement">
-        <modelElement href="flappyBird.uml#_ajOzV0KtEequ9J027I-KGQ"/>
-      </stereotypes>
+      <stereotypes xmi:id="_QUZigEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUawoEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUxV8Ea4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_ale2N0KtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_ale2OEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_ale2OUKtEequ9J027I-KGQ" name="Etat">
@@ -436,9 +457,9 @@
     </attributes>
     <attributes xmi:id="_alh5eUKtEequ9J027I-KGQ" name="etat">
       <modelElement href="flappyBird.uml#_ajQogkKtEequ9J027I-KGQ"/>
-      <stereotypes xmi:id="_alh5ekKtEequ9J027I-KGQ" name="LegacyStyledElement">
-        <modelElement href="flappyBird.uml#_ajQog0KtEequ9J027I-KGQ"/>
-      </stereotypes>
+      <stereotypes xmi:id="_QUebAEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUfpIEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUzLIEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alh5e0KtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alh5fEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alh5fUKtEequ9J027I-KGQ" name="Etat">
@@ -447,9 +468,9 @@
     </attributes>
     <attributes xmi:id="_alh5fkKtEequ9J027I-KGQ" name="affichage">
       <modelElement href="flappyBird.uml#_ajQohEKtEequ9J027I-KGQ"/>
-      <stereotypes xmi:id="_alh5f0KtEequ9J027I-KGQ" name="LegacyStyledElement">
-        <modelElement href="flappyBird.uml#_ajQohUKtEequ9J027I-KGQ"/>
-      </stereotypes>
+      <stereotypes xmi:id="_QUg3QEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUiFYEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUzyMEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alh5gEKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alh5gUKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alh5gkKtEequ9J027I-KGQ" name="Affichage">
@@ -505,9 +526,9 @@
     <visibility xmi:id="_alkVokKtEequ9J027I-KGQ" label="+"/>
     <attributes xmi:id="_alkVo0KtEequ9J027I-KGQ" name="etat">
       <modelElement href="flappyBird.uml#_ajOzWEKtEequ9J027I-KGQ"/>
-      <stereotypes xmi:id="_alkVpEKtEequ9J027I-KGQ" name="LegacyStyledElement">
-        <modelElement href="flappyBird.uml#_ajPaYEKtEequ9J027I-KGQ"/>
-      </stereotypes>
+      <stereotypes xmi:id="_QUjTgEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUlIsEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QU1AUEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alkVpUKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alkVpkKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alkVp0KtEequ9J027I-KGQ" name="Etat">
@@ -569,12 +590,12 @@
     </attributes>
     <attributes xmi:id="_almx8UKtEequ9J027I-KGQ" name="points">
       <modelElement href="flappyBird.uml#_ajPaZEKtEequ9J027I-KGQ"/>
-      <stereotypes xmi:id="_almx8kKtEequ9J027I-KGQ" name="Generics">
-        <modelElement href="flappyBird.uml#_ajPaZUKtEequ9J027I-KGQ"/>
-      </stereotypes>
-      <stereotypes xmi:id="_almx80KtEequ9J027I-KGQ" name="LegacyStyledElement">
-        <modelElement href="flappyBird.uml#_ajQBcEKtEequ9J027I-KGQ"/>
-      </stereotypes>
+      <stereotypes xmi:id="_QUozEEa4EeqGk6cPser2Rw" name="Generics"/>
+      <stereotypes xmi:id="_QUozEUa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUqBMEa4EeqGk6cPser2Rw" name="Generics"/>
+      <stereotypes xmi:id="_QUqoQEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QU5RwEa4EeqGk6cPser2Rw" name="Generics"/>
+      <stereotypes xmi:id="_QU540Ea4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_almx9EKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_almx9UKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_almx9kKtEequ9J027I-KGQ" name="ArrayList">
@@ -754,6 +775,9 @@
     </attributes>
     <attributes xmi:id="_alrqdkKtEequ9J027I-KGQ" name="parcours">
       <modelElement href="flappyBird.uml#_ajRPlkKtEequ9J027I-KGQ"/>
+      <stereotypes xmi:id="_QUmW0Ea4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUnk8Ea4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QVBNkEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alrqd0KtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alrqeEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alrqeUKtEequ9J027I-KGQ" name="Parcours">
@@ -762,6 +786,9 @@
     </attributes>
     <attributes xmi:id="_alrqekKtEequ9J027I-KGQ" name="avance">
       <modelElement href="flappyBird.uml#_ajRPmEKtEequ9J027I-KGQ"/>
+      <stereotypes xmi:id="_QUWfMEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUYUYEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QVCbsEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alrqe0KtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alrqfEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alrqfUKtEequ9J027I-KGQ" name="Avancer">
@@ -770,6 +797,9 @@
     </attributes>
     <attributes xmi:id="_alrqfkKtEequ9J027I-KGQ" name="vol">
       <modelElement href="flappyBird.uml#_ajRPmkKtEequ9J027I-KGQ"/>
+      <stereotypes xmi:id="_QUb-wEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUdM4Ea4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QVDCwEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alrqf0KtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alrqgEKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alrqgUKtEequ9J027I-KGQ" name="Voler">
@@ -778,9 +808,9 @@
     </attributes>
     <attributes xmi:id="_alrqgkKtEequ9J027I-KGQ" name="aff">
       <modelElement href="flappyBird.uml#_ajR2oUKtEequ9J027I-KGQ"/>
-      <stereotypes xmi:id="_alrqg0KtEequ9J027I-KGQ" name="LegacyStyledElement">
-        <modelElement href="flappyBird.uml#_ajR2okKtEequ9J027I-KGQ"/>
-      </stereotypes>
+      <stereotypes xmi:id="_QUu5sEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUwH0Ea4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QVEQ4Ea4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alrqhEKtEequ9J027I-KGQ" label="-"/>
       <cardinality xmi:id="_alrqhUKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alrqhkKtEequ9J027I-KGQ" name="Affichage">
@@ -976,6 +1006,9 @@
     </attributes>
     <attributes xmi:id="_alv760KtEequ9J027I-KGQ" name="etat">
       <modelElement href="flappyBird.uml#_ajSdtkKtEequ9J027I-KGQ"/>
+      <stereotypes xmi:id="_QUsdcEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QUtrkEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_QVJwcEa4EeqGk6cPser2Rw" name="LegacyStyledElement"/>
       <visibility xmi:id="_alv77EKtEequ9J027I-KGQ" label="+"/>
       <cardinality xmi:id="_alv77UKtEequ9J027I-KGQ" label="1" max="1" min="1"/>
       <type xmi:id="_alv77kKtEequ9J027I-KGQ" name="Etat">

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_osY2gEa3EeqGk6cPser2Rw" name="flappyBird2">
+  <packagedElement xmi:type="uml:Class" xmi:id="_tN8WIEa3EeqGk6cPser2Rw" name="NewClass1"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tZvWcEa3EeqGk6cPser2Rw" name="NewClass2"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tj6mIEa3EeqGk6cPser2Rw" name="NewClass3"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_t7KogEa3EeqGk6cPser2Rw" name="NewClass4"/>
+</uml:Model>

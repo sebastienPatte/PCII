@@ -86,7 +86,6 @@ public class Parcours {
 		this.yPrev = y;
 		//sauvegarde du x
 		this.xPrev = x;
-		System.out.println(points.size());
 	}
 	
 	/** Génère un chiffre aléatoire entre min et max
@@ -103,7 +102,6 @@ public class Parcours {
 		updateParcours();
 		Point[] tabPoints = getParcours();
 		ArrayList<QuadCurve2D> res = new ArrayList<QuadCurve2D>();
-		System.out.println(tabPoints.length);
 		for(int i=0; i+4 < tabPoints.length; i+=2){
 			
 			QuadCurve2D courbe = new QuadCurve2D.Double();
@@ -127,7 +125,6 @@ public class Parcours {
 		Point lastPoint = points.get(points.size()-1);
 		//si il entre dans la fenêtre on en ajoute deux nouveaux
 		if (lastPoint.x - (this.position+Affichage.ovalDec)-70 < Affichage.LARG) {
-			System.out.println("add point");
 			this.addPoint();
 			this.addPoint();
 		}

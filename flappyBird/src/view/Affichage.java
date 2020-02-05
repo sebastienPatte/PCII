@@ -53,6 +53,7 @@ public class Affichage extends JPanel {
         
         /** affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}*/
         private void afficheOvale(Graphics g) {
+        	g.drawLine(ovalDec, etat.getHauteur(),ovalDec,etat.getHauteur()+ovalHeight);
         	g.drawOval(ovalDec-ovalWidth/2,this.etat.getHauteur(),ovalWidth,ovalHeight);
         }
         

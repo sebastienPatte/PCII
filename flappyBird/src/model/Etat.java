@@ -1,6 +1,11 @@
 package model;
 
 import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.geom.Point2D;
+import java.awt.geom.QuadCurve2D;
+import java.awt.geom.Rectangle2D;
+import java.util.ArrayList;
 
 import control.Avancer;
 import control.Parcours;
@@ -72,7 +77,29 @@ public class Etat {
 		  * 		<p>false sinon</p>
 		  * */
 		 public boolean testPerdu() {
-			 return false;
+			 ArrayList<QuadCurve2D> tabCourbes = parcours.getCourbe();
+			 
+			 if(tabCourbes.get(0).getP1().getX() > Affichage.ovalDec) {
+				 return false;
+			 }else {
+				 
+				 while(tabCourbes.get(0).getX2() < Affichage.ovalDec) {
+					 tabCourbes.remove(0);
+					 System.out.println("remove curve");
+				 }
+				 //pour chaque point ds l'ovale
+				 for(int i =this.hauteur; i<this.hauteur+Affichage.ovalHeight; i++) {
+					 System.out.println("i="+i);
+					 System.out.println("X1="+tabCourbes.get(0).getX1()+" x2="+tabCourbes.get(0).getX2()+" y1="+tabCourbes.get(0).getY1()+" y2="+tabCourbes.get(0).getY2());
+					 if(tabCourbes.get(0).contains(Affichage.ovalDec,i)) {
+						 System.out.println("OK");
+						 return false;
+					 }
+				 }
+				 System.out.println("#####################################################");
+				 return true;
+				 
+			 }
 			 /*
 			 Point[] points = this.parcours.getParcours();
 			 int i=0;

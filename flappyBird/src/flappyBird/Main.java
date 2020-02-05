@@ -9,6 +9,7 @@ import control.RepaintScreen;
 import control.Voler;
 import model.Etat;
 import view.Affichage;
+import view.VueOiseau;
 /**
  * Créé des instances de Etat, Affichage et Control et les relie entre elles 
  * Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel) 
@@ -18,9 +19,13 @@ public class Main {
 	public static void main(String[] args) {
 		
 		
+		
 		/* Création des instances de Etat, Affichage et Control*/
 		Etat mod = new Etat(new Parcours());
-		Affichage aff = new Affichage(mod);
+		
+		
+		
+		Affichage aff = new Affichage(mod, new VueOiseau(mod));
 		Click ctrl = new Click(mod);
 		/* On ajoute l'instance de Control en tant que MouseListener de celle de Affichage*/
 		aff.addMouseListener(ctrl);
@@ -32,7 +37,7 @@ public class Main {
 		(new Thread(Vol)).start();
 		//creation du thread Avancer
 		Avancer Avance = new Avancer(mod); 
-		(new Thread(Avance)).start();;
+		(new Thread(Avance)).start();
 		//creation du thread RepaintScreen		
 		RepaintScreen repaintScreen = new RepaintScreen(mod); 
 		(new Thread(repaintScreen)).start();;

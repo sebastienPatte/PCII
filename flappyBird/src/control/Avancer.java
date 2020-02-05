@@ -22,7 +22,7 @@ public class Avancer extends Thread{
 	
 	/**
 	 * Constructeur
-	 * @param parcours : instance de {@link Parcours} pour appeller {@link Parcours#incrPos} 
+	 * @param etat : instance de {@link Etat} pour appeller {@link Etat#avance} 
 	 * */
 	public Avancer(Etat etat) {
 		this.running = true;

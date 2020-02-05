@@ -35,14 +35,17 @@ public class Affichage extends JPanel {
         /** attribut de type {@link Etat}*/
         public Etat etat;
 
+		private VueOiseau vueOiseau;
+
         
         /** 
          * Constructeur:
          * @param etat de type {@link Etat}
          * */
-        public Affichage(Etat etat) {
+        public Affichage(Etat etat, VueOiseau vueOiseau) {
                 this.setPreferredSize(new Dimension(LARG, HAUT));
                 this.etat = etat;
+                this.vueOiseau = vueOiseau;
         }
         
         /** affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}*/
@@ -94,12 +97,11 @@ public class Affichage extends JPanel {
         	Graphics2D g2d = (Graphics2D) g;
         	g2d.setStroke(largTraits);
         	
-        	System.out.println(largTraits.getLineWidth());
-        	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
         	if(etat.testPerdu()) {
         		etat.stopThreads();
+        		vueOiseau.finiOiseaux();
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);
         		g.setFont(newFont);
         		printMidStr("GAME OVER", HAUT/2, newFont, g);
@@ -108,7 +110,7 @@ public class Affichage extends JPanel {
         		this.afficheScore(g);
         	}
         	
-        	
+        	this.vueOiseau.dessiner(g);
         	this.afficheOvale(g);
 
         	this.afficheLigne(g);

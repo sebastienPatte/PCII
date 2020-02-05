@@ -57,7 +57,9 @@ public class Etat {
 			 }
 	     }
 		 
-		 /**fait baisser la {@link #hauteur} de l'Ovale de {@link #chute} pixels*/
+		 /**
+		  * @param chute nombre de pixels de la chute  
+		  * fait baisser la {@link #hauteur} de l'Ovale de {@link Voler#chute} pixels*/
 		 public void moveDown(int chute) {
 			 if(this.hauteur+chute+Affichage.ovalHeight < Affichage.HAUT && !testPerdu()) {
 		        	this.hauteur += chute;

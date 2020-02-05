@@ -18,8 +18,8 @@ public class Voler extends Thread{
 	
 	/**
 	 * Constructeur
-	 * @param etat : une instance d'{@link Etat} pour appeler {@link Etat#moveDown()}
-	 * @param affichage :  une instance d'{@link Affichage} pour appeler {@link Affichage#repaint()}
+	 * @param etat : une instance d'{@link Etat} pour appeler {@link Etat#moveDown}
+	 * @param affichage :  une instance d'{@link Affichage} pour appeler {@link Affichage#repaint}
 	 * */
 	public Voler(Etat etat, Affichage affichage) {
 		this.running = true;
@@ -32,7 +32,7 @@ public class Voler extends Thread{
 	}
 	
 	/**Méthode 'run' du {@link Thread} {@link Voler} qui lance la chute de l'Ovale
-	 * toutes les {@link #time} millisecondes en appelant la méthode {@link Etat#moveDown()}*/
+	 * toutes les {@link #time} millisecondes en appelant la méthode {@link Etat#moveDown}*/
 	@Override
 	public void run() {
 		while(this.running) {

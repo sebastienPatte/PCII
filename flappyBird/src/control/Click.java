@@ -25,7 +25,7 @@ public class Click extends MouseAdapter{
 	/**
 	 * fonction appellée si l'utilisateur clique sur la fenêtre :
 	 * on appelle la fonction {@link Etat#jump()}
-	 * puis on actualise l'affichage avec {@link #affichage}.repaint()
+	 * puis on actualise l'affichage avec {@link Etat#repaint}
 	 */
 	@Override
 	public void mouseClicked(MouseEvent e) {

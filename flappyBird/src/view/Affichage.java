@@ -7,6 +7,9 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Point;
+import java.awt.geom.QuadCurve2D;
+import java.util.ArrayList;
+
 import javax.swing.JPanel;
 import model.Etat;
 
@@ -65,6 +68,15 @@ public class Affichage extends JPanel {
         	}
         }
         
+        private void afficheCourbe(Graphics2D g2d) {
+        	
+        	ArrayList<QuadCurve2D> curveList = this.etat.getParcours().getCourbe();
+        	
+        	for(QuadCurve2D courbe : curveList) {
+        		g2d.draw(courbe);
+        	}
+        }
+        
         /** affiche le score actuel, c'est à dire la position définie par la classe {@link Parcours}*/
         private void afficheScore(Graphics g) {
         	int score = this.etat.getParcours().getPosition();
@@ -113,7 +125,8 @@ public class Affichage extends JPanel {
         	this.vueOiseau.dessiner(g);
         	this.afficheOvale(g);
 
-        	this.afficheLigne(g);
+        	//this.afficheLigne(g);
+        	this.afficheCourbe(g2d);
         	
         	g.drawOval(ovalDec, (int) etat.yPos0, 2, 2);
         	

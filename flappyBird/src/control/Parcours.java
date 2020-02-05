@@ -1,5 +1,7 @@
 package control;
 import java.awt.Point;
+import java.awt.geom.Point2D;
+import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
 
 import java.util.concurrent.ThreadLocalRandom;
@@ -60,18 +62,31 @@ public class Parcours {
 		//calcul yMin et yMax
 		int yMin = this.yPrev - yDiff;
 		int yMax = this.yPrev + yDiff;
+		
 		//vérification yMin et yMax dans la fenetre
 		if(yMin < marge) yMin = marge;
 		//if(yMax < marge) yMax = marge;
 		if(yMax > Affichage.HAUT-marge) yMax = Affichage.HAUT-marge ;
+
 		//calcul du y du nouveau point
 		int y = randint(yMin, yMax);
-		this.points.add(new Point (x,y));
+		//nouveau point
+		Point newPoint = new Point (x,y);
+		
+		//calcul du milieu entre ancient et nouveau point
+		int midX = xPrev + (newPoint.x - xPrev)/2;
+		int midY = yPrev + (newPoint.y - yPrev)/2;
+		
+		//ajout du milieu
+		this.points.add(new Point(midX,midY));
+		//ajout du nouveau point
+		this.points.add(newPoint);
 		
 		//sauvegarde du y
 		this.yPrev = y;
 		//sauvegarde du x
 		this.xPrev = x;
+		System.out.println(points.size());
 	}
 	
 	/** Génère un chiffre aléatoire entre min et max
@@ -83,20 +98,47 @@ public class Parcours {
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	
+	public ArrayList<QuadCurve2D> getCourbe() {
+		
+		updateParcours();
+		Point[] tabPoints = getParcours();
+		ArrayList<QuadCurve2D> res = new ArrayList<QuadCurve2D>();
+		System.out.println(tabPoints.length);
+		for(int i=0; i+4 < tabPoints.length; i+=2){
+			
+			QuadCurve2D courbe = new QuadCurve2D.Double();
+			Point A = tabPoints[i];
+			Point B = tabPoints[i+1];
+			Point C = tabPoints[i+2];
+			
+			Point2D.Double debut = new Point2D.Double(A.x,A.y);
+			Point2D.Double ctrl = new Point2D.Double(B.x,B.y);
+			Point2D.Double fin = new Point2D.Double(C.x,C.y);
+			courbe.setCurve(debut,ctrl,fin);
+			res.add(courbe);
+		}
+		
+		return res;
+	}
+	
 	/**Supprime les points qui ne sont plus dans la vue et ajoute des nouveaux points si nécessaire*/
 	private void updateParcours() {
 		//on prend le dernier point
 		Point lastPoint = points.get(points.size()-1);
-		//si il entre dans la fenêtre on en ajoute un nouveau
-		if (lastPoint.x - (this.position+Affichage.ovalDec) < Affichage.LARG) {
+		//si il entre dans la fenêtre on en ajoute deux nouveaux
+		if (lastPoint.x - (this.position+Affichage.ovalDec)-70 < Affichage.LARG) {
+			System.out.println("add point");
+			this.addPoint();
 			this.addPoint();
 		}
 		
-		//on prend le 2 ème point
-		Point point1 = this.points.get(1);
-		//si il sort de la fenetre on retire le 1er point
+		//on prend le 3 ème point
+		Point point1 = this.points.get(2);
+		//si il sort de la fenetre on retire les 2 premiers point
 		if(point1.x < this.position) {
 			points.remove(0);
+			points.remove(0);
+			
 		}
 	
 	}

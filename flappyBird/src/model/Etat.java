@@ -72,6 +72,8 @@ public class Etat {
 		  * 		<p>false sinon</p>
 		  * */
 		 public boolean testPerdu() {
+			 return false;
+			 /*
 			 Point[] points = this.parcours.getParcours();
 			 int i=0;
 			 Point A = points[i];
@@ -95,6 +97,7 @@ public class Etat {
 			 	this.yPos0 = Ypos0;
 			 	return this.hauteur + Affichage.largTraits.getLineWidth() >= Ypos0 || this.hauteur+Affichage.ovalHeight - Affichage.largTraits.getLineWidth() <= Ypos0;
 			 }
+			 */
 		 }
 		 
 		 /**

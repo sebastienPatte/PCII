@@ -30,7 +30,6 @@ public class Click extends MouseAdapter{
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		this.etat.jump();
-		this.etat.repaint();
 	}
 
 

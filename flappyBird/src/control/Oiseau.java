@@ -2,7 +2,6 @@ package control;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-import model.Etat;
 import view.Affichage;
 
 public class Oiseau extends Thread{
@@ -13,7 +12,7 @@ public class Oiseau extends Thread{
 	private int hauteur;
 	private int position;
 	
-	public Oiseau(Etat etat) {
+	public Oiseau() {
 		this.running = true;
 		this.delai = randint(24, 200);
 		this.hauteur = randint(0,Affichage.HAUT);
@@ -25,7 +24,7 @@ public class Oiseau extends Thread{
 	 * @param int max
 	 * @return random int between min and max
 	 */
-	private int randint(int min, int max) {
+	public int randint(int min, int max) {
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	@Override

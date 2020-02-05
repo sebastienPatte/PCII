@@ -55,8 +55,8 @@ public class VueOiseau implements ImageObserver{
 	void genererOiseaux() {
 		//on génére des oiseaux seulement si on a pas dépassé la taille max
 		if(this.list.size() < MaxOiseaux){
-			//une chance sur 1000 qu'un oiseau apparaisse
-			if(randint(0,1000) == 0 ) {
+			//une chance sur 10 000 qu'un oiseau apparaisse
+			if(randint(0,10000) == 0 ) {
 				Oiseau oiseau = new Oiseau();
 				(new Thread(oiseau)).start();
 				this.list.add(oiseau);

@@ -23,6 +23,8 @@ public class Parcours {
 	private int xPrev;
 	private int yPrev;
 	private boolean firstPoint;
+	//utilisé dans Etat pour testPerdu()
+	private int idCourbe = 0;
 	
 	/**Constructeur*/
 	public Parcours() {
@@ -135,6 +137,8 @@ public class Parcours {
 		if(point1.x < this.position) {
 			points.remove(0);
 			points.remove(0);
+			//on decr l'id car on supprime un elt
+			decrIdCourbe();
 			
 		}
 	
@@ -172,4 +176,15 @@ public class Parcours {
 		this.position += n;
 	}
 	
+	public void incrIdCourbe() {
+		this.idCourbe++;
+	}
+	
+	public void decrIdCourbe() {
+		this.idCourbe--;
+	}
+	
+	public int getIdCourbe() {
+		return this.idCourbe;
+	}
 }

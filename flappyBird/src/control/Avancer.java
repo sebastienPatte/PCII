@@ -14,7 +14,7 @@ public class Avancer extends Thread{
 	
 	/**Nombre de pixels d'avancement de la {@link Parcours#position position}
 	 * de l'Ovale toutes les {@link #time} millisecondes.*/
-	public static int avancement = 2;
+	public static int avancement = 1;
 	
 	private boolean running;
 	

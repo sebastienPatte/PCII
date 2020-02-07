@@ -21,7 +21,7 @@ public class Affichage extends JPanel {
 		
 		private static final long serialVersionUID = 1L;
 
-		public static final BasicStroke largTraits = new BasicStroke(3.0f);
+		public static final BasicStroke largTraits = new BasicStroke(1.0f);
 		
 		/** largeur du JPanel*/
         public static final int LARG = 1000;
@@ -53,7 +53,7 @@ public class Affichage extends JPanel {
         
         /** affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}*/
         private void afficheOvale(Graphics g) {
-        	g.drawLine(ovalDec, etat.getHauteur(),ovalDec,etat.getHauteur()+ovalHeight);
+        	
         	g.drawOval(ovalDec-ovalWidth/2,this.etat.getHauteur(),ovalWidth,ovalHeight);
         }
         
@@ -112,7 +112,7 @@ public class Affichage extends JPanel {
         	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
-        	if(etat.testPerdu()) {
+        	if(etat.testPerdu(g)) {
         		etat.stopThreads();
         		vueOiseau.finiOiseaux();
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);
@@ -129,7 +129,6 @@ public class Affichage extends JPanel {
         	//this.afficheLigne(g);
         	this.afficheCourbe(g2d);
         	
-        	g.drawOval(ovalDec, (int) etat.yPos0, 2, 2);
         	
         }
 }

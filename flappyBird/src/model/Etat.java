@@ -5,7 +5,6 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.geom.Point2D;
 import java.awt.geom.QuadCurve2D;
-import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 
 import control.Avancer;
@@ -26,7 +25,7 @@ public class Etat {
 		/** 
 		 * hauteur en pixels du saut
 		 * */
-		private static int saut = 5;
+		private static int saut = 20;
 		
 	
 		/** 
@@ -62,6 +61,21 @@ public class Etat {
 			 }
 	     }
 		 
+		 private boolean onCurve(QuadCurve2D c, Point p){
+			 for(double t=0.0; t<1.0;t+=0.0001) {
+				 Point2D p1 = c.getP1();
+				 Point2D p2 = c.getCtrlPt();
+				 Point2D p3 = c.getP2();
+				 int x = (int) ((1 - t) * (1 - t) * p1.getX() + 2 * (1 - t) * t * p2.getX() + t * t * p3.getX());
+				 int y = (int) ((1 - t) * (1 - t) * p1.getY() + 2 * (1 - t) * t * p2.getY() + t * t * p3.getY());
+				// System.out.println(x+"="+p.x+" "+y+"="+p.y);
+				 if(p.x==x && p.y==y) {
+					 return true;
+				 }
+			 }
+			 return false;
+		 }
+		 
 		 /**
 		  * @param chute nombre de pixels de la chute  
 		  * fait baisser la {@link #hauteur} de l'Ovale de {@link Voler#chute} pixels*/
@@ -84,12 +98,15 @@ public class Etat {
 				 return false;
 			 }else {
 				
-				 while(tabCourbes.get(parcours.getIdCourbe()).getX2() < Affichage.ovalDec) {
-					System.out.println(tabCourbes.get(parcours.getIdCourbe()).getX1()+" "+tabCourbes.get(parcours.getIdCourbe()).getX2());
+				 
+				 
+				 //on skip curve si on X2 passe à gauche de l'ovale
+				 while(tabCourbes.get(parcours.getIdCourbe()).getX2() <= Affichage.ovalDec) {
+					//System.out.println(tabCourbes.get(parcours.getIdCourbe()).getX1()+" "+tabCourbes.get(parcours.getIdCourbe()).getX2());
 					//tabCourbes.remove(parcours.getIdCourbe());
 					parcours.incrIdCourbe();
-					System.out.println("skip curve "+parcours.getIdCourbe());
-					System.out.println(tabCourbes.get(parcours.getIdCourbe()).getX1()+" "+tabCourbes.get(parcours.getIdCourbe()).getX2());
+					//System.out.println("skip curve "+parcours.getIdCourbe());
+					//System.out.println(tabCourbes.get(parcours.getIdCourbe()).getX1()+" "+tabCourbes.get(parcours.getIdCourbe()).getX2());
 				 }
 				 
 				 g.drawLine(Affichage.ovalDec, this.hauteur, Affichage.ovalDec, this.hauteur+Affichage.ovalHeight);
@@ -100,17 +117,17 @@ public class Etat {
 				 for(int i =this.hauteur; i<=this.hauteur+Affichage.ovalHeight; i+=1) {
 					 //System.out.println("i="+i);
 					 //System.out.println("i="+i);
-					 if(tabCourbes.get(parcours.getIdCourbe()).contains(tabCourbes.get(parcours.getIdCourbe()).getP1()))System.out.println("contient p1");
-					 if(tabCourbes.get(parcours.getIdCourbe()).contains(tabCourbes.get(parcours.getIdCourbe()).getP2()))System.out.println("contient p2");
-					 
-					 if(tabCourbes.get(parcours.getIdCourbe()).contains((double)Affichage.ovalDec,(double)i)) {
-						 //System.out.println("OK i="+i);
+					 Point actualPoint = new Point(Affichage.ovalDec,i);
+					 if(onCurve(tabCourbes.get(parcours.getIdCourbe()), actualPoint)) {
+						// System.out.println("OK i="+i);
 						 return false;
 					 }
 				 }
 				 
+				 
+				 
 				 System.out.println("X1="+tabCourbes.get(parcours.getIdCourbe()).getX1()+" x2="+tabCourbes.get(parcours.getIdCourbe()).getX2()+" y1="+tabCourbes.get(parcours.getIdCourbe()).getY1()+" y2="+tabCourbes.get(parcours.getIdCourbe()).getY2()+" hMin="+this.hauteur+" hMax="+(this.hauteur+Affichage.ovalHeight)+" parcours.getIdCourbe()= "+parcours.getIdCourbe());
-				 return false;
+				 return true;
 			 }
 			 /*
 			 Point[] points = this.parcours.getParcours();

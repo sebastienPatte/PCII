@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.MouseInfo;
 import java.awt.Point;
 import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
@@ -107,6 +108,7 @@ public class Affichage extends JPanel {
         @Override
         public void paint(Graphics g) {
         	
+            
         	Graphics2D g2d = (Graphics2D) g;
         	g2d.setStroke(largTraits);
         	

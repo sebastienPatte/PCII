@@ -6,8 +6,6 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.MouseInfo;
-import java.awt.Point;
 import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
 
@@ -58,17 +56,6 @@ public class Affichage extends JPanel {
         	g.drawOval(ovalDec-ovalWidth/2,this.etat.getHauteur(),ovalWidth,ovalHeight);
         }
         
-        /** affiche la ligne brisée à partir des points définis par la classe {@link Parcours}*/
-        private void afficheLigne(Graphics g) {
-        	
-        	Point[] p = this.etat.getParcours().getParcours();
-        	
-        	int i=1;
-        	while(i < p.length) {
-        		g.drawLine(p[i-1].x, p[i-1].y, p[i].x, p[i].y);
-        		i++;
-        	}
-        }
         
         private void afficheCourbe(Graphics2D g2d) {
         	

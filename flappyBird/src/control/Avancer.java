@@ -16,6 +16,9 @@ public class Avancer extends Thread{
 	 * de l'Ovale toutes les {@link #time} millisecondes.*/
 	public static int avancement = 2;
 	
+	/**
+	 * indique si le {@link Thread} tourne encore
+	 */
 	private boolean running;
 	
 	private Etat etat;

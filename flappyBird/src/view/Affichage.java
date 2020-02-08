@@ -8,19 +8,20 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
-
 import javax.swing.JPanel;
 import model.Etat;
 
 
 /**
- * la classe Affichage est le JPanel dans lequel on va afficher l'ovale 
+ * la classe Affichage est le JPanel dans lequel on va afficher les éléments du jeu (Ovale, courbe, oiseaux, ...) 
  */
 public class Affichage extends JPanel {
 		
 		private static final long serialVersionUID = 1L;
-
-		public static final BasicStroke largTraits = new BasicStroke(1.0f);
+		/**
+		 * largeur des traits
+		 */
+		public static final BasicStroke largTraits = new BasicStroke(3.0f);
 		
 		/** largeur du JPanel*/
         public static final int LARG = 1000;
@@ -108,17 +109,20 @@ public class Affichage extends JPanel {
         	boolean perdu =etat.testPerdu();
         	//calcul du score
     		int score = this.etat.getParcours().getPosition() - etat.getScore0();
-        	
     		if(perdu) {
         		//si on a perdu on stoppe tout les threads et on affiche game over avec le score
     			etat.stopThreads();
         		vueOiseau.finiOiseaux();
+        		//on retire l'unique MouseListener "Click" de l'affichage si il y est encore 
+        		if(this.getMouseListeners().length > 0) {
+        			this.removeMouseListener(this.getMouseListeners()[0]);
+        		}
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);
         		g.setFont(newFont);
         		printMidStr("GAME OVER", HAUT/2, newFont, g);
         		printMidStr("Score:"+score, HAUT/2+50, newFont, g);
         	}else {
-        		//si on a pas perdu on affiche le score en haut à droite
+        		//si on a encore pas perdu on affiche le score en haut à droite
         		this.afficheScore(g,score);
         	}
     		

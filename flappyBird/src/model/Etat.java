@@ -4,7 +4,6 @@ import java.awt.Point;
 import java.awt.geom.Point2D;
 import java.awt.geom.QuadCurve2D;
 import java.util.ArrayList;
-
 import control.Avancer;
 import control.Parcours;
 import control.RepaintScreen;
@@ -143,7 +142,7 @@ public class Etat {
 			this.aff = aff;
 		}
 		/**
-		 * pour ajouter l'instance de {@link Vol} au modèle après l'appel au constructeur d'Etat
+		 * pour ajouter l'instance de {@link Voler} au modèle après l'appel au constructeur d'Etat
 		 * @param v
 		 */
 		public void setVol(Voler v) {

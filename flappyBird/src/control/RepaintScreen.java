@@ -1,6 +1,7 @@
 package control;
 
 import model.Etat;
+
 /**
  * Rafraichit l'affichage toutes les {@link #time} millisecondes
  */
@@ -10,6 +11,9 @@ public class RepaintScreen extends Thread{
 	 * temps entre chaque rafraichissement de l'affichage 
 	 */
 	public static int time = 41;
+	/**
+	 * indique si le {@link Thread} tourne encore
+	 */
 	private boolean running;
 	/**
 	 * instance de Etat pour lancer le raffraichissement avec {@link Etat#repaint()}

@@ -56,7 +56,10 @@ public class Affichage extends JPanel {
         	g.drawOval(ovalDec-ovalWidth/2,this.etat.getHauteur(),ovalWidth,ovalHeight);
         }
         
-        
+        /**
+         * affiche les courbes actuelles
+         * @param g2d
+         */
         private void afficheCourbe(Graphics2D g2d) {
         	
         	ArrayList<QuadCurve2D> curveList = this.etat.getParcours().getCourbe();
@@ -68,13 +71,13 @@ public class Affichage extends JPanel {
         
         /** affiche le score actuel, c'est à dire la position définie par la classe {@link Parcours}*/
         private void afficheScore(Graphics g, int score) {
+        	Font newFont = new Font("TimesRoman", Font.PLAIN, 20);
+    		g.setFont(newFont);
         	String strScore ="Score : "+score;
-        	FontMetrics fm = getFontMetrics(getFont());
+        	FontMetrics fm = getFontMetrics(newFont);
         	int printedLength = fm.stringWidth(strScore) +10; // on ajoute 10 pour pas etre collé au bord
         	g.drawString(strScore, LARG-printedLength, 20);
         }
-        
-        
         
         /**
          * affiche une string au milieu de la fenetre
@@ -100,25 +103,28 @@ public class Affichage extends JPanel {
         	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
+        	
+        	//test perdu
+        	boolean perdu =etat.testPerdu();
         	//calcul du score
-        	System.out.println(etat.getScore0());
-        	boolean perdu =etat.testPerdu(); 
     		int score = this.etat.getParcours().getPosition() - etat.getScore0();
-        	if(perdu) {
-        		etat.stopThreads();
+        	
+    		if(perdu) {
+        		//si on a perdu on stoppe tout les threads et on affiche game over avec le score
+    			etat.stopThreads();
         		vueOiseau.finiOiseaux();
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);
         		g.setFont(newFont);
         		printMidStr("GAME OVER", HAUT/2, newFont, g);
         		printMidStr("Score:"+score, HAUT/2+50, newFont, g);
         	}else {
+        		//si on a pas perdu on affiche le score en haut à droite
         		this.afficheScore(g,score);
         	}
-        	
+    		
+    		//dans tout les cas on affiche les oiseaux, l'ovale et la courbe
         	this.vueOiseau.dessiner(g);
         	this.afficheOvale(g);
-
-        	//this.afficheLigne(g);
         	this.afficheCourbe(g2d);
         	
         	

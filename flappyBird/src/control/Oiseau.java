@@ -8,10 +8,14 @@ public class Oiseau extends Thread{
 	public static int posDiff = 1; 
 	private boolean running;
 	private int delai;
-	private int etat;
+	private int state;
 	private int hauteur;
 	private int position;
 	
+	/**
+	 * on choisit un {@link #delai} et une {@link #hauteur} aléatoire
+	 * et une position de 50 pixels à droite de la fenêtre
+	 */
 	public Oiseau() {
 		this.running = true;
 		this.delai = randint(24, 200);
@@ -27,6 +31,10 @@ public class Oiseau extends Thread{
 	public int randint(int min, int max) {
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
+	
+	/**
+	 * TODO
+	 */
 	@Override
 	public void run() {
 		while(this.running) {
@@ -34,10 +42,10 @@ public class Oiseau extends Thread{
 				Thread.sleep(delai);
 				if(this.position > 0) {
 					this.position -= posDiff;  
-					if(this.etat == 7) {
-						this.etat = 0;
+					if(this.state == 7) {
+						this.state = 0;
 					}else {
-						this.etat++;
+						this.state++;
 					}
 				}else {
 					this.terminate();
@@ -49,54 +57,39 @@ public class Oiseau extends Thread{
 		
 		
 	}
-
+	
+	/**
+	 * @return true si le thread tourne encore, false sinon
+	 */
 	public boolean isRunning() {
 		return this.running;
 	}
 	
+	/**
+	 * stoppe le {@link Thread}
+	 */
 	public void terminate() {
 		this.running = false;
 	}
+
+	/**
+	 * @return l'{@link #state état} de l'oiseau
+	 */
+	public int getStateBird() {
+		return state;
+	}
 	
-	public int getDelai() {
-		return delai;
-	}
-
-
-	public void setDelai(int delai) {
-		this.delai = delai;
-	}
-
-
-	public int getEtat() {
-		return etat;
-	}
-
-
-	public void setEtat(int etat) {
-		this.etat = etat;
-	}
-
-
+	/**
+	 * @return la {@link #hauteur} de l'oiseau
+	 */
 	public int getHauteur() {
 		return hauteur;
 	}
 
-
-	public void setHauteur(int hauteur) {
-		this.hauteur = hauteur;
-	}
-
-
+	/**
+	 * @return la {@link #position} de l'oiseau
+	 */
 	public int getPosition() {
 		return position;
 	}
-
-
-	public void setPosition(int position) {
-		this.position = position;
-	}
-	
-	
-	
 }

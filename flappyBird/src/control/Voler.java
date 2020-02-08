@@ -11,7 +11,7 @@ public class Voler extends Thread{
 	/** 
 	 * hauteur en pixels de la chute
 	 * */
-	public static int chute = 1;
+	public static int chute = 6;
 	private boolean running;
 	private Etat etat;
 

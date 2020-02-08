@@ -15,15 +15,11 @@ import view.Affichage;
  * Stocke l'état de ce qu'on doit afficher
  * */
 public class Etat {
-		/**
-		 * POUR TEST
-		 */
-		public float yPos0;
 	
 		/** 
 		 * hauteur en pixels du saut
 		 * */
-		private static int saut = 20;
+		private static int saut = 34;
 		
 	
 		/** 
@@ -31,6 +27,7 @@ public class Etat {
 		 * */
 		private int hauteur;
 		
+		//instances des threads
 		private Parcours parcours;
 		private Avancer avance;
 		private Voler vol;
@@ -64,6 +61,12 @@ public class Etat {
 			 }
 	     }
 		 
+		 /**
+		  * 
+		  * @param c courbe actuelle
+		  * @param p point à tester
+		  * @return vrai si p est sur la courbe c, false sinon
+		  */
 		 private boolean onCurve(QuadCurve2D c, Point p){
 			 for(double t=0.0; t<1.0;t+=0.001) {
 				 Point2D p1 = c.getP1();
@@ -92,7 +95,7 @@ public class Etat {
 		  * @return <p>true si l'ovale est sortie de la ligne brisée </p>
 		  * 		<p>false sinon</p>
 		  * */
-		 public boolean testPerdu() {
+		 public boolean testPerdu(){
 			 
 			 ArrayList<QuadCurve2D> tabCourbes = parcours.getCourbe();
 			 //si on a pas encore dépassé la courbe on a pas perdu
@@ -100,19 +103,20 @@ public class Etat {
 				 this.score0 = parcours.getPosition();
 				 return false;
 			 }else {
-				 //on skip curve si on X2 passe à gauche de l'ovale
-				 while(tabCourbes.get(parcours.getIdCourbe()).getX2() <= Affichage.ovalDec) {
+				 //on passe à la courbe suivante si on X2 passe à gauche de l'ovale
+				 while(tabCourbes.get(parcours.getIdCourbe()).getX2() <= Affichage.ovalDec){
 					parcours.incrIdCourbe();	
 				 }
 				 
-				 //pour chaque point ds l'ovale
+				 //pour chaque point sur le segment qui traverse l'ovale en son milieu  
 				 for(int i =this.hauteur; i<=this.hauteur+Affichage.ovalHeight; i+=1) {
-					 
+					 //si le point est sur la courbe c'est qu'on a pas encore perdu
 					 Point actualPoint = new Point(Affichage.ovalDec,i);
 					 if(onCurve(tabCourbes.get(parcours.getIdCourbe()), actualPoint)) {
 						 return false;
 					 }
 				 }
+				 //si aucun point n'est sur la courbe alors on a perdu
 				 return true;
 			 }
 		 }
@@ -131,17 +135,35 @@ public class Etat {
 			return parcours;
 		}
 		
+		/**
+		 * pour ajouter l'instance de {@link Affichage} au modèle après l'appel au constructeur d'Etat
+		 * @param aff
+		 */
 		public void setAff(Affichage aff) {
 			this.aff = aff;
 		}
-		
+		/**
+		 * pour ajouter l'instance de {@link Vol} au modèle après l'appel au constructeur d'Etat
+		 * @param v
+		 */
 		public void setVol(Voler v) {
         	this.vol = v;
         }
+		/**
+		 * pour ajouter l'instance de {@link Avancer} au modèle après l'appel au constructeur d'Etat
+		 * @param a
+		 */
         public void setAvance(Avancer a) {
         	this.avance = a;
         }
-		
+		/**
+		 * pour ajouter l'instance de {@link RepaintScreen} au modèle après l'appel au constructeur d'Etat
+		 * @param repaintScreen
+		 */
+        public void setRepaintScreen(RepaintScreen repaintScreen) {
+			this.repaintScreen = repaintScreen;
+		}
+        
         /**
          * appelle {@link Affichage#repaint}
          */
@@ -149,6 +171,10 @@ public class Etat {
 			this.aff.repaint();
 		}
 		
+		/**
+		 * fait avancer la position de l'ovale de n pixels
+		 * @param n
+		 */
 		public void avance(int n) {
 			this.parcours.incrPos(n);
 		}
@@ -161,11 +187,10 @@ public class Etat {
 			this.avance.terminate();
 			this.repaintScreen.terminate();
 		}
-
-		public void setRepaintScreen(RepaintScreen repaintScreen) {
-			this.repaintScreen = repaintScreen;
-		}
-
+		
+		/**
+		 * @return la position où le score doit commencer à augmenter (quand on arrive au début de la 1ère courbe) 
+		 */
 		public int getScore0() {
 			return score0;
 		}

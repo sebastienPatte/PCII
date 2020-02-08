@@ -41,7 +41,7 @@ public class VueOiseau implements ImageObserver{
 			
 			
 			
-			String str = Path+oiseau.getEtat()+".png";
+			String str = Path+oiseau.getStateBird()+".png";
 			
 			ImageIcon icon = new ImageIcon(str);
 			

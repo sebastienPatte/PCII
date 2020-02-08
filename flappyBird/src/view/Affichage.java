@@ -114,7 +114,7 @@ public class Affichage extends JPanel {
         	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
-        	if(etat.testPerdu(g)) {
+        	if(etat.testPerdu()) {
         		etat.stopThreads();
         		vueOiseau.finiOiseaux();
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);

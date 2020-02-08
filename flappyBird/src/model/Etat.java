@@ -36,6 +36,10 @@ public class Etat {
 		private Voler vol;
 		private RepaintScreen repaintScreen;
 		private Affichage aff;
+		/**
+		 * position où on arrive sur la 1ere courbe c'est à dire où le score doit etre 0 
+		 * */
+		private int score0;
 		/** 
 		 * Constructeur
 		 * @param parcours : on prend une instance de {@link Parcours} pour avoir accès à la position de l'ovale
@@ -43,6 +47,7 @@ public class Etat {
 		public Etat(Parcours parcours) {
 			this.hauteur = 100;
 			this.parcours = parcours;
+			this.score0 = 0;
 		}
 		
 		/** 
@@ -90,7 +95,9 @@ public class Etat {
 		 public boolean testPerdu() {
 			 
 			 ArrayList<QuadCurve2D> tabCourbes = parcours.getCourbe();
+			 //si on a pas encore dépassé la courbe on a pas perdu
 			 if(tabCourbes.get(0).getX1() >= Affichage.ovalDec) {
+				 this.score0 = parcours.getPosition();
 				 return false;
 			 }else {
 				 //on skip curve si on X2 passe à gauche de l'ovale
@@ -158,6 +165,12 @@ public class Etat {
 		public void setRepaintScreen(RepaintScreen repaintScreen) {
 			this.repaintScreen = repaintScreen;
 		}
+
+		public int getScore0() {
+			return score0;
+		}
+
+		
 		
 }
 	

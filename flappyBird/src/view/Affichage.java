@@ -67,8 +67,7 @@ public class Affichage extends JPanel {
         }
         
         /** affiche le score actuel, c'est à dire la position définie par la classe {@link Parcours}*/
-        private void afficheScore(Graphics g) {
-        	int score = this.etat.getParcours().getPosition();
+        private void afficheScore(Graphics g, int score) {
         	String strScore ="Score : "+score;
         	FontMetrics fm = getFontMetrics(getFont());
         	int printedLength = fm.stringWidth(strScore) +10; // on ajoute 10 pour pas etre collé au bord
@@ -101,15 +100,19 @@ public class Affichage extends JPanel {
         	
         	//nettoie le JFrame 
         	g.clearRect(0, 0, LARG, HAUT);
-        	if(etat.testPerdu()) {
+        	//calcul du score
+        	System.out.println(etat.getScore0());
+        	boolean perdu =etat.testPerdu(); 
+    		int score = this.etat.getParcours().getPosition() - etat.getScore0();
+        	if(perdu) {
         		etat.stopThreads();
         		vueOiseau.finiOiseaux();
         		Font newFont = new Font("TimesRoman", Font.PLAIN, 50);
         		g.setFont(newFont);
         		printMidStr("GAME OVER", HAUT/2, newFont, g);
-        		printMidStr("Score:"+this.etat.getParcours().getPosition(), HAUT/2+50, newFont, g);
+        		printMidStr("Score:"+score, HAUT/2+50, newFont, g);
         	}else {
-        		this.afficheScore(g);
+        		this.afficheScore(g,score);
         	}
         	
         	this.vueOiseau.dessiner(g);

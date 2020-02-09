@@ -107,8 +107,9 @@ public class Etat {
 					parcours.incrIdCourbe();	
 				 }
 				 
+				 int largTraits = (int)Affichage.largTraits.getLineWidth();
 				 //pour chaque point sur le segment qui traverse l'ovale en son milieu  
-				 for(int i =this.hauteur; i<=this.hauteur+Affichage.ovalHeight; i+=1) {
+				 for(int i = this.hauteur+largTraits; i<=this.hauteur+Affichage.ovalHeight-largTraits; i+=1) {
 					 //si le point est sur la courbe c'est qu'on a pas encore perdu
 					 Point actualPoint = new Point(Affichage.ovalDec,i);
 					 if(onCurve(tabCourbes.get(parcours.getIdCourbe()), actualPoint)) {

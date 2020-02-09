@@ -10,7 +10,7 @@ public class Oiseau extends Thread{
 	/**
 	 * delai minimum entre chaque maj de l'oiseau
 	 */
-	public static int delaiMin = 35; 
+	public static int delaiMin = 50; 
 	/**
 	 * delai maximum entre chaque maj de l'oiseau
 	 */
@@ -43,7 +43,7 @@ public class Oiseau extends Thread{
 	public Oiseau() {
 		this.running = true;
 		this.delai = randint(delaiMin, delaiMax);
-		this.hauteur = randint(0,Affichage.HAUT);
+		this.hauteur = randint(0,Affichage.HAUT-maxHeightImg());
 		this.position = Affichage.LARG +50;
 	}
 	
@@ -96,6 +96,22 @@ public class Oiseau extends Thread{
 			Image image = icon.getImage();
 			if(image.getWidth(null) > max) {
 				max = image.getWidth(null);
+			}
+		}
+		return max;
+	}
+	
+	/**
+	 * @return la largeur de l'image d'oiseau la plus large
+	 */
+	private int maxHeightImg() {
+		int max = 0;
+		for(int i=0; i<7; i++) {
+			String str = VueOiseau.Path+i+".png";
+			ImageIcon icon = new ImageIcon(str);
+			Image image = icon.getImage();
+			if(image.getHeight(null) > max) {
+				max = image.getHeight(null);
 			}
 		}
 		return max;

@@ -21,7 +21,7 @@ public class Affichage extends JPanel {
 		/**
 		 * largeur des traits
 		 */
-		public static final BasicStroke largTraits = new BasicStroke(3.0f);
+		public static final BasicStroke largTraits = new BasicStroke(2.0f);
 		
 		/** largeur du JPanel*/
         public static final int LARG = 1000;

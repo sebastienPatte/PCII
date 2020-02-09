@@ -1,6 +1,6 @@
 package control;
 
-import model.Etat;
+import view.Affichage;
 
 /**
  * Rafraichit l'affichage toutes les {@link #time} millisecondes
@@ -16,17 +16,17 @@ public class RepaintScreen extends Thread{
 	 */
 	private boolean running;
 	/**
-	 * instance de Etat pour lancer le raffraichissement avec {@link Etat#repaint()}
+	 * instance de Affichage pour lancer le raffraichissement avec {@link Affichage#repaint()}
 	 */
-	private Etat etat;
+	private Affichage aff;
 	
 	/**
 	 * Constructeur
-	 * @param etat
+	 * @param aff
 	 */
-	public RepaintScreen(Etat etat) {
+	public RepaintScreen(Affichage aff) {
 		this.running = true;
-		this.etat = etat;
+		this.aff = aff;
 	}
 	
 	/**
@@ -40,7 +40,7 @@ public class RepaintScreen extends Thread{
 	@Override
 	public void run() {
 		while(this.running) {
-			try { Thread.sleep(time);  this.etat.repaint();}
+			try { Thread.sleep(time);  this.aff.repaint();}
 			catch (Exception e) { e.printStackTrace(); this.terminate(); }
 		}
 	}

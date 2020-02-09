@@ -7,25 +7,53 @@ import java.util.ArrayList;
 
 import java.util.concurrent.ThreadLocalRandom;
 
+import model.Etat;
 import view.Affichage;
 
 /**Génère les points de la ligne brisée au fur et à mesure de l'avancement de la {@link #position} 
  * de l'Ovale*/
 public class Parcours {
+	/**
+	 * marge pour éviter d'avoir des points de la courbe collés au bord
+	 */
 	public static int marge = 40;
+	/**
+	 * maximum de décalage entre deux points
+	 */
 	public static int maxDecPoints = 70;
+	/**
+	 * minimum de décalage entre deux points
+	 */
 	public static int minDecPoints = 30;
+	/**
+	 * décalage entre le début de la courbe et la position de départ
+	 * (pour que le joueur ait le temps de se positionner avant d'arriver sur la courbe) 
+	 */
 	public static int decFirstPoint = 400;
-	/**Liste des points de la ligne brisée*/
+	/**
+	 * Liste des points de la ligne brisée
+	 */ 
 	private ArrayList<Point> points;
-	
-	/** Position de l'ovale sur le Parcours (distance parcourue sans perdre) correspondant au Score du joueur*/
+	/**
+	 *  Position de l'ovale sur le Parcours (distance parcourue sans perdre) correspondant au Score du joueur
+	 */
 	private int position;
-	private int xPrev;
-	private int yPrev;
+	/**
+	 * vrai si on a pas encore ajouté le premier point, false sinon
+	 */
 	private boolean firstPoint;
-	//utilisé dans Etat pour testPerdu()
+	/**
+	 * indice de la courbe courante (utilisé dans {@link Etat#testPerdu()})
+	 */
 	private int idCourbe = 0;
+	/**
+	 * stocke la position x du point précédent
+	 */
+	private int xPrev;
+	/**
+	 * stocke la position y du point précédent
+	 */
+	private int yPrev;
 	
 	/**Constructeur*/
 	public Parcours() {

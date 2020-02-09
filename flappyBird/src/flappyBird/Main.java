@@ -18,8 +18,6 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		
-		
 		/* Création des instances de Etat, Affichage et Control*/
 		Etat mod = new Etat(new Parcours());
 		Affichage aff = new Affichage(mod, new VueOiseau());
@@ -28,9 +26,6 @@ public class Main {
 		/* On ajoute l'instance de Control en tant que MouseListener de celle de Affichage*/
 		aff.addMouseListener(ctrl);
 
-		//on ajoute l'affichage au modèle
-		mod.setAff(aff);
-
 		// creation du thread Voler
 		Voler Vol = new Voler(mod);
 		(new Thread(Vol)).start();
@@ -38,7 +33,7 @@ public class Main {
 		Avancer Avance = new Avancer(mod); 
 		(new Thread(Avance)).start();
 		//creation du thread RepaintScreen		
-		RepaintScreen repaintScreen = new RepaintScreen(mod); 
+		RepaintScreen repaintScreen = new RepaintScreen(aff); 
 		(new Thread(repaintScreen)).start();;
 		//on passe les instances de Voler, Avancer et RepaintScreen au modèle
 		mod.setVol(Vol);

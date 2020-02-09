@@ -31,7 +31,6 @@ public class Etat {
 		private Avancer avance;
 		private Voler vol;
 		private RepaintScreen repaintScreen;
-		private Affichage aff;
 		/**
 		 * position où on arrive sur la 1ere courbe c'est à dire où le score doit etre 0 
 		 * */
@@ -93,7 +92,7 @@ public class Etat {
 		  * vrai si l'ovale est sortie de la ligne brisée
 		  * @return <p>true si l'ovale est sortie de la ligne brisée </p>
 		  * 		<p>false sinon</p>
-		  * */
+		  */
 		 public boolean testPerdu(){
 			 
 			 ArrayList<QuadCurve2D> tabCourbes = parcours.getCourbe();
@@ -136,13 +135,6 @@ public class Etat {
 		}
 		
 		/**
-		 * pour ajouter l'instance de {@link Affichage} au modèle après l'appel au constructeur d'Etat
-		 * @param aff
-		 */
-		public void setAff(Affichage aff) {
-			this.aff = aff;
-		}
-		/**
 		 * pour ajouter l'instance de {@link Voler} au modèle après l'appel au constructeur d'Etat
 		 * @param v
 		 */
@@ -164,12 +156,6 @@ public class Etat {
 			this.repaintScreen = repaintScreen;
 		}
         
-        /**
-         * appelle {@link Affichage#repaint}
-         */
-		public void repaint() {
-			this.aff.repaint();
-		}
 		
 		/**
 		 * fait avancer la position de l'ovale de n pixels

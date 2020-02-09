@@ -1,6 +1,7 @@
 package view;
 
 import java.awt.BasicStroke;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -53,8 +54,9 @@ public class Affichage extends JPanel {
         
         /** affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}*/
         private void afficheOvale(Graphics g) {
-        	
+        	g.setColor(Color.red);
         	g.drawOval(ovalDec-ovalWidth/2,this.etat.getHauteur(),ovalWidth,ovalHeight);
+        	g.setColor(Color.black);
         }
         
         /**

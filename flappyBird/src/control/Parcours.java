@@ -133,7 +133,7 @@ public class Parcours {
 		updateParcours();
 		Point[] tabPoints = getParcours();
 		ArrayList<QuadCurve2D> res = new ArrayList<QuadCurve2D>();
-		for(int i=0; i+4 < tabPoints.length; i+=2){
+		for(int i=0; i+2 < tabPoints.length; i+=2){
 			
 			QuadCurve2D courbe = new QuadCurve2D.Double();
 			Point A = tabPoints[i];

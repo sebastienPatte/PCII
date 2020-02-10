@@ -70,8 +70,8 @@ public class Etat {
 				 Point2D p1 = c.getP1();
 				 Point2D p2 = c.getCtrlPt();
 				 Point2D p3 = c.getP2();
-				 int x = (int) Math.round( ((1 - t) * (1 - t) * p1.getX() + 2 * (1 - t) * t * p2.getX() + t * t * p3.getX()));
-				 int y = (int) Math.round(((1 - t) * (1 - t) * p1.getY() + 2 * (1 - t) * t * p2.getY() + t * t * p3.getY()));
+				 int x = (int) Math.round( (1 - t) * (1 - t) * p1.getX() + 2 * (1 - t) * t * p2.getX() + t * t * p3.getX());
+				 int y = (int) Math.round( (1 - t) * (1 - t) * p1.getY() + 2 * (1 - t) * t * p2.getY() + t * t * p3.getY());
 				 if(p.x==x && p.y==y) {
 					 return true;
 				 }

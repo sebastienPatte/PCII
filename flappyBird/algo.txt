@@ -1,0 +1,56 @@
+xPrev ← 0
+yPrev ← 0
+
+procédure init:
+	TantQue xPrev < LARG
+		ajoutePoint	()
+
+procédure ajoutePoint:
+	x ← randint(xPrev + minDecPoints, xPrev + maxDecPoints)  
+	
+	VitesseChute ← distanceChute / tempsChute
+	VitesseAvancement ← distanceAvancement / tempsAvancement
+	
+	ecartHauteur ← VitesseChute * (x-xPrev) / VitesseAvancement
+	
+	yMin ← xPrev - ecartHauteur 
+	yMax ← xPrev + ecartHauteur
+	
+	Si yMin < 0 Alors yMin <- 0
+	Si yMax > HAUT Alors yMax <- HAUT
+	
+	y ← randint(yMin, yMax)
+	
+	newPoint <- Point(x,y)
+	
+	midX <- xPrev + (newPoint.x - xPrev)/2
+	midY <- yPrev + (newPoint.y - yPrev)/2
+	
+	ajoute(points, Point(midX, midY))
+	ajoute(points, newPoint)
+	
+	xPrev ← x
+	yPrev ← y
+	
+procédure majPoints:
+	Si dernierPoint - position < LARG
+	Alors :
+		ajoutePoint()
+		ajoutePoint()
+	
+	Si deuxièmePoint < position
+	Alors :
+		retirer(premierPoint)
+		retirer(premierPoint)
+		
+fonction getCourbe: liste de courbes 
+	res <- liste de courbes vide
+	i <- 0
+	Tant que i+2 < taille(points):
+		A <- points[i]
+		B <- points[i+1]
+		C <- points[i+2]
+		courbe <- Courbe(A,B,C)
+		ajoute(res,courbe)	
+	renvoie res
+	

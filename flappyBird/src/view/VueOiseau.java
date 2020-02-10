@@ -24,7 +24,7 @@ public class VueOiseau{
 	/**
 	 * on a une chance sur probaOiseau qu'on oiseau apparaisse
 	 */
-	public static int probaOiseau= 100;
+	public static int probaOiseau= 10000;
 	
 	/**
 	 * liste des oiseaux

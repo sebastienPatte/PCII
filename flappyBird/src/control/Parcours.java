@@ -43,7 +43,7 @@ public class Parcours {
 	 */
 	private boolean firstPoint;
 	/**
-	 * indice de la courbe courante (utilisé dans {@link Etat#testPerdu()})
+	 * indice de la courbe sur laquelle est l'Ovale (utilisé dans {@link Etat#testPerdu()})
 	 */
 	private int idCourbe = 0;
 	/**
@@ -128,6 +128,11 @@ public class Parcours {
 		return ThreadLocalRandom.current().nextInt(min, max + 1);
 	}
 	
+	/**
+	 * @return un tableau de {@link QuadCurve2D} à partir de {@link #points} 
+	 * qui sera utilisé dans {@link Etat} et {@link Affichage} pour représenter la 
+	 * grande courbe que devra suivre l'Ovale
+	 */
 	public ArrayList<QuadCurve2D> getCourbe() {
 		
 		updateParcours();
@@ -167,10 +172,8 @@ public class Parcours {
 			points.remove(0);
 			points.remove(0);
 			//on decr l'id car on supprime un elt
-			decrIdCourbe();
-			
+			idCourbe--;
 		}
-	
 	}
 	
 	
@@ -205,14 +208,16 @@ public class Parcours {
 		this.position += n;
 	}
 	
+	/**
+	 * augmente {@link #idCourbe}
+	 */
 	public void incrIdCourbe() {
 		this.idCourbe++;
 	}
-	
-	public void decrIdCourbe() {
-		this.idCourbe--;
-	}
-	
+
+	/**
+	 * @return {@link #idCourbe}
+	 */
 	public int getIdCourbe() {
 		return this.idCourbe;
 	}

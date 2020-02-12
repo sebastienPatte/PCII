@@ -4,7 +4,14 @@
     <eAnnotations xmi:id="_ULH04Et4EeqjV5oE9659NA" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_ULH04Ut4EeqjV5oE9659NA" source="codegen">
         <details xmi:id="_ULH04kt4EeqjV5oE9659NA" key="codegenDirectory" value="/flappyBird/src"/>
-        <details xmi:id="_VGScoEt4EeqjV5oE9659NA" key="AssociatedSourceCode" value="/flappyBird/src/control/Avancer.java;877415151/1;/flappyBird/src/control/Click.java;1953664154/1;/flappyBird/src/control/Oiseau.java;3512883263/1;/flappyBird/src/control/Parcours.java;2758792086/1;/flappyBird/src/control/RepaintScreen.java;274428111/1;/flappyBird/src/control/Voler.java;3760059662/1;/flappyBird/src/flappyBird/Main.java;4003727124/1;/flappyBird/src/view/Affichage.java;2283806199/1;/flappyBird/src/model/Etat.java;2916857092/1;/flappyBird/src/view/VueOiseau.java;2998936708/1;"/>
+        <details xmi:id="_VGScoEt4EeqjV5oE9659NA" key="AssociatedSourceCode" value="/flappyBird/src/control/Avancer.java;1190620482/1;/flappyBird/src/control/Click.java;1626149278/1;/flappyBird/src/control/Oiseau.java;3512883263/1;/flappyBird/src/control/Parcours.java;77906525/1;/flappyBird/src/control/RepaintScreen.java;1826127221/1;/flappyBird/src/control/Voler.java;3738500447/1;/flappyBird/src/flappyBird/Main.java;1945060003/1;/flappyBird/src/view/Affichage.java;3068264435/1;/flappyBird/src/model/Etat.java;875751143/1;/flappyBird/src/view/VueOiseau.java;2360823320/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_N6CI0E0OEeq5Xo9twdeW-g" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_N6CI0U0OEeq5Xo9twdeW-g" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_N6D-AE0OEeq5Xo9twdeW-g" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_N6D-AU0OEeq5Xo9twdeW-g" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+          <details xmi:id="_N6D-Ak0OEeq5Xo9twdeW-g" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+        </contents>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_Uze1YEt4EeqjV5oE9659NA">
@@ -36,7 +43,7 @@
     </elementImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_UzgqkEt4EeqjV5oE9659NA" name="model">
       <packagedElement xmi:type="uml:Class" xmi:id="_U3GKEEt4EeqjV5oE9659NA" name="Etat">
-        <ownedComment xmi:id="_HouugEt8EeqjV5oE9659NA">
+        <ownedComment xmi:id="_PM10gE0OEeq5Xo9twdeW-g">
           <body>Stocke l'état de ce qu'on doit afficher
  *</body>
         </ownedComment>
@@ -51,7 +58,7 @@
         <ownedAttribute xmi:id="_U-ImMEt4EeqjV5oE9659NA" name="avance" visibility="private" type="_U1YS0Et4EeqjV5oE9659NA" association="_U_bmsUt4EeqjV5oE9659NA"/>
         <ownedAttribute xmi:id="_U-KbYEt4EeqjV5oE9659NA" name="vol" visibility="private" type="_U2jXgEt4EeqjV5oE9659NA" association="_U_cNwUt4EeqjV5oE9659NA"/>
         <ownedAttribute xmi:id="_U-NesEt4EeqjV5oE9659NA" name="repaintScreen" visibility="private" type="_U2bbsEt4EeqjV5oE9659NA" association="_U_db4Ut4EeqjV5oE9659NA"/>
-        <ownedAttribute xmi:id="_U-PT4Ut4EeqjV5oE9659NA" name="score0" isReadOnly="true">
+        <ownedAttribute xmi:id="_U-PT4Ut4EeqjV5oE9659NA" name="score0" visibility="private" isReadOnly="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
         </ownedAttribute>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-tN8kt4EeqjV5oE9659NA" name="Etat" specification="_U8JCIEt4EeqjV5oE9659NA">
@@ -88,8 +95,8 @@
 				 Point2D p1 = c.getP1();
 				 Point2D p2 = c.getCtrlPt();
 				 Point2D p3 = c.getP2();
-				 int x = (int) Math.round( ((1 - t) * (1 - t) * p1.getX() + 2 * (1 - t) * t * p2.getX() + t * t * p3.getX()));
-				 int y = (int) Math.round(((1 - t) * (1 - t) * p1.getY() + 2 * (1 - t) * t * p2.getY() + t * t * p3.getY()));
+				 int x = (int) Math.round( (1 - t) * (1 - t) * p1.getX() + 2 * (1 - t) * t * p2.getX() + t * t * p3.getX());
+				 int y = (int) Math.round( (1 - t) * (1 - t) * p1.getY() + 2 * (1 - t) * t * p2.getY() + t * t * p3.getY());
 				 if(p.x==x &amp;&amp; p.y==y) {
 					 return true;
 				 }
@@ -179,15 +186,23 @@
 			this.repaintScreen.terminate();
 		</body>
         </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_PMsqkE0OEeq5Xo9twdeW-g" name="getScore" specification="_PLo6oE0OEeq5Xo9twdeW-g">
+          <ownedParameter xmi:id="_PMsqkU0OEeq5Xo9twdeW-g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return this.parcours.getPosition() - score0;
+		</body>
+        </ownedBehavior>
         <ownedOperation xmi:id="_U3ImUEt4EeqjV5oE9659NA" name="jump" method="_U-t1AEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_Houugkt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10gk0OEeq5Xo9twdeW-g">
             <body>on augmente la hauteur de l'ovale de la valeur définie par {@link #saut}
 		 * si on ne dépasse pas le cadre du JPanel. sinon on met l'ovale tout en haut
 		 *</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_U3JNYEt4EeqjV5oE9659NA" name="moveDown" method="_U-t1BUt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_HouuhEt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10hE0OEeq5Xo9twdeW-g">
             <body>@param chute nombre de pixels de la chute  
 		  * fait baisser la {@link #hauteur} de l'Ovale de {@link Voler#chute} pixels</body>
           </ownedComment>
@@ -196,7 +211,7 @@
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_U3J0cEt4EeqjV5oE9659NA" name="testPerdu" method="_U-ucEEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_HouuhUt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10hU0OEeq5Xo9twdeW-g">
             <body>vrai si l'ovale est sortie de la ligne brisée
 		  * @return &lt;p>true si l'ovale est sortie de la ligne brisée &lt;/p>
 		  * 		&lt;p>false sinon&lt;/p></body>
@@ -206,14 +221,14 @@
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_U3Ne0Et4EeqjV5oE9659NA" name="getParcours" method="_U-ucEkt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_Houuhkt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10hk0OEeq5Xo9twdeW-g">
             <body>@return une instance de la classe {@link Parcours}
 		 *</body>
           </ownedComment>
           <ownedParameter xmi:id="_U8JpMEt4EeqjV5oE9659NA" type="_U1-IsEt4EeqjV5oE9659NA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U3PUAEt4EeqjV5oE9659NA" name="avance" method="_U-vqMUt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_HovVkUt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM2bkU0OEeq5Xo9twdeW-g">
             <body>fait avancer la position de l'ovale de n pixels
 		 * @param n</body>
           </ownedComment>
@@ -222,7 +237,7 @@
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_U3P7EEt4EeqjV5oE9659NA" name="stopThreads" method="_U-wRQEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_HovVkkt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM4QwE0OEeq5Xo9twdeW-g">
             <body>Arrète les Threads Voler, Avancer et RepaintScreen</body>
           </ownedComment>
         </ownedOperation>
@@ -230,7 +245,7 @@
           <eAnnotations xmi:id="_U8JCIkt4EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_U8JCI0t4EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_HouugUt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10gU0OEeq5Xo9twdeW-g">
             <body>Constructeur
 		 * @param parcours : on prend une instance de {@link Parcours} pour avoir accès à la position de l'ovale</body>
           </ownedComment>
@@ -238,28 +253,28 @@
           <ownedParameter xmi:id="_U8JCJEt4EeqjV5oE9659NA" type="_U3GKEEt4EeqjV5oE9659NA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U8KQQUt4EeqjV5oE9659NA" name="setVol" method="_U-vDIEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_Houuh0t8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10h00OEeq5Xo9twdeW-g">
             <body>pour ajouter l'instance de {@link Voler} au modèle après l'appel au constructeur d'Etat
 		 * @param v</body>
           </ownedComment>
           <ownedParameter xmi:id="_U8KQQkt4EeqjV5oE9659NA" name="v" type="_U2jXgEt4EeqjV5oE9659NA"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U8K3UEt4EeqjV5oE9659NA" name="setAvance" method="_U-vDIkt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_HouuiEt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10iE0OEeq5Xo9twdeW-g">
             <body>pour ajouter l'instance de {@link Avancer} au modèle après l'appel au constructeur d'Etat
 		 * @param a</body>
           </ownedComment>
           <ownedParameter xmi:id="_U8K3UUt4EeqjV5oE9659NA" name="a" type="_U1YS0Et4EeqjV5oE9659NA"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U8LeYEt4EeqjV5oE9659NA" name="setRepaintScreen" method="_U-vDJEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_HovVkEt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM2bkE0OEeq5Xo9twdeW-g">
             <body>pour ajouter l'instance de {@link RepaintScreen} au modèle après l'appel au constructeur d'Etat
 		 * @param repaintScreen</body>
           </ownedComment>
           <ownedParameter xmi:id="_U8LeYUt4EeqjV5oE9659NA" name="repaintScreen" type="_U2bbsEt4EeqjV5oE9659NA"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U9By8Et4EeqjV5oE9659NA" name="onCurve" visibility="private" method="_U-t1AUt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_Houug0t8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM10g00OEeq5Xo9twdeW-g">
             <body>
 		  * @param c courbe actuelle
 		  * @param p point à tester
@@ -269,6 +284,14 @@
           <ownedParameter xmi:id="_U9By8kt4EeqjV5oE9659NA" name="p" type="_U69WYEt4EeqjV5oE9659NA"/>
           <ownedParameter xmi:id="_U9By80t4EeqjV5oE9659NA" direction="return">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_PLo6oE0OEeq5Xo9twdeW-g" name="getScore" method="_PMsqkE0OEeq5Xo9twdeW-g">
+          <ownedComment xmi:id="_PM4QwU0OEeq5Xo9twdeW-g">
+            <body>@return le score actuel</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_PMkHsE0OEeq5Xo9twdeW-g" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
       </packagedElement>
@@ -287,7 +310,7 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_UzmKIEt4EeqjV5oE9659NA" name="control">
       <packagedElement xmi:type="uml:Class" xmi:id="_U1YS0Et4EeqjV5oE9659NA" name="Avancer">
-        <ownedComment xmi:id="_U-yGcEt4EeqjV5oE9659NA">
+        <ownedComment xmi:id="_PMufwE0OEeq5Xo9twdeW-g">
           <body>{@link Thread} qui fait avancer la {@link Parcours#position position}  
 de {@link #avancement} pixels toutes les de {@link #time} millisecondes.</body>
         </ownedComment>
@@ -306,7 +329,9 @@ de {@link #avancement} pixels toutes les de {@link #time} millisecondes.</body>
         <ownedAttribute xmi:id="_U9OAMEt4EeqjV5oE9659NA" name="etat" visibility="private" type="_U3GKEEt4EeqjV5oE9659NA" association="_U_HdoEt4EeqjV5oE9659NA"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-iO0Et4EeqjV5oE9659NA" name="Avancer" specification="_U6gDYEt4EeqjV5oE9659NA">
           <ownedParameter xmi:id="_U-iO0Ut4EeqjV5oE9659NA" name="etat" type="_U3GKEEt4EeqjV5oE9659NA"/>
-          <ownedParameter xmi:id="_U-iO0kt4EeqjV5oE9659NA" type="_U1YS0Et4EeqjV5oE9659NA" direction="return"/>
+          <ownedParameter xmi:id="_U-iO0kt4EeqjV5oE9659NA" type="_U1YS0Et4EeqjV5oE9659NA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>this.running = true;
 		this.etat = etat;
@@ -325,13 +350,17 @@ de {@link #avancement} pixels toutes les de {@link #time} millisecondes.</body>
 		}
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_U1gOoEt4EeqjV5oE9659NA" name="terminate" method="_U-i14Et4EeqjV5oE9659NA"/>
+        <ownedOperation xmi:id="_U1gOoEt4EeqjV5oE9659NA" name="terminate" method="_U-i14Et4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMvt4E0OEeq5Xo9twdeW-g">
+            <body>Termine le {@link Thread}</body>
+          </ownedComment>
+        </ownedOperation>
         <ownedOperation xmi:id="_U1g1sEt4EeqjV5oE9659NA" name="run" method="_U-i14Ut4EeqjV5oE9659NA"/>
         <ownedOperation xmi:id="_U6gDYEt4EeqjV5oE9659NA" name="Avancer" method="_U-iO0Et4EeqjV5oE9659NA">
           <eAnnotations xmi:id="_U6jGsEt4EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_U6jGsUt4EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_U-ytgEt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMufwU0OEeq5Xo9twdeW-g">
             <body>Constructeur
 	 * @param etat : instance de {@link Etat} pour appeller {@link Etat#avance} 
 	 *</body>
@@ -341,15 +370,17 @@ de {@link #avancement} pixels toutes les de {@link #time} millisecondes.</body>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_U1j5AEt4EeqjV5oE9659NA" name="Click">
-        <ownedComment xmi:id="_U-ytgUt4EeqjV5oE9659NA">
-          <body>lance la fonction jump de {@link Etat} 
+        <ownedComment xmi:id="_PMwU8E0OEeq5Xo9twdeW-g">
+          <body>lance la fonction {@link Etat#jump()} 
 si l'utilisateur clique sur la fenêtre</body>
         </ownedComment>
         <generalization xmi:id="_U8njQkt4EeqjV5oE9659NA" general="_U6li8Et4EeqjV5oE9659NA"/>
         <ownedAttribute xmi:id="_U9S4sEt4EeqjV5oE9659NA" name="etat" visibility="private" type="_U3GKEEt4EeqjV5oE9659NA" association="_U_J54Et4EeqjV5oE9659NA"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-jc8Et4EeqjV5oE9659NA" name="Click" specification="_U6s3sEt4EeqjV5oE9659NA">
           <ownedParameter xmi:id="_U-jc8Ut4EeqjV5oE9659NA" name="etat" type="_U3GKEEt4EeqjV5oE9659NA"/>
-          <ownedParameter xmi:id="_U-jc8kt4EeqjV5oE9659NA" type="_U1j5AEt4EeqjV5oE9659NA" direction="return"/>
+          <ownedParameter xmi:id="_U-jc8kt4EeqjV5oE9659NA" type="_U1j5AEt4EeqjV5oE9659NA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>this.etat = etat;
 	</body>
@@ -364,7 +395,7 @@ si l'utilisateur clique sur la fenêtre</body>
           <eAnnotations xmi:id="_U6v7AUt4EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_U6v7Akt4EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_U-ytgkt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMyxME0OEeq5Xo9twdeW-g">
             <body>Constructeur 
 	 * @param etat de type {@link Etat}</body>
           </ownedComment>
@@ -554,7 +585,7 @@ si l'utilisateur clique sur la fenêtre</body>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_U1-IsEt4EeqjV5oE9659NA" name="Parcours">
-        <ownedComment xmi:id="_jT0K8Et7EeqjV5oE9659NA">
+        <ownedComment xmi:id="_PMzYQE0OEeq5Xo9twdeW-g">
           <body>Génère les points de la ligne brisée au fur et à mesure de l'avancement de la {@link #position} 
 de l'Ovale</body>
         </ownedComment>
@@ -681,7 +712,7 @@ de l'Ovale</body>
           <body>updateParcours();
 		Point[] tabPoints = getParcours();
 		ArrayList&lt;QuadCurve2D> res = new ArrayList&lt;QuadCurve2D>();
-		for(int i=0; i+4 &lt; tabPoints.length; i+=2){
+		for(int i=0; i+2 &lt; tabPoints.length; i+=2){
 			
 			QuadCurve2D courbe = new QuadCurve2D.Double();
 			Point A = tabPoints[i];
@@ -715,10 +746,8 @@ de l'Ovale</body>
 			points.remove(0);
 			points.remove(0);
 			//on decr l'id car on supprime un elt
-			decrIdCourbe();
-			
+			idCourbe--;
 		}
-	
 	</body>
         </ownedBehavior>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-oVcEt4EeqjV5oE9659NA" name="getParcours" specification="_U2LkEEt4EeqjV5oE9659NA">
@@ -750,32 +779,27 @@ de l'Ovale</body>
           <body>this.idCourbe++;
 	</body>
         </ownedBehavior>
-        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-o8gUt4EeqjV5oE9659NA" name="decrIdCourbe" specification="_U2RqsUt4EeqjV5oE9659NA">
-          <language>java</language>
-          <body>this.idCourbe--;
-	</body>
-        </ownedBehavior>
         <ownedOperation xmi:id="_U2CaIEt4EeqjV5oE9659NA" name="Parcours" method="_U-mgQEt4EeqjV5oE9659NA">
           <eAnnotations xmi:id="_U2DBMEt4EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_U2DBMUt4EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_jT0K8Ut7EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMzYQU0OEeq5Xo9twdeW-g">
             <body>Constructeur</body>
           </ownedComment>
           <ownedParameter xmi:id="_U2DBMkt4EeqjV5oE9659NA" type="_U1-IsEt4EeqjV5oE9659NA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U2DBM0t4EeqjV5oE9659NA" name="initPoints" visibility="private" method="_U-nHUEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_jT0K8kt7EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMz_UE0OEeq5Xo9twdeW-g">
             <body>Initialise la liste {@link #points}</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_U2DoQEt4EeqjV5oE9659NA" name="addPoint" visibility="private" method="_U-nHUUt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_jT0yAEt7EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMz_UU0OEeq5Xo9twdeW-g">
             <body>Génère un nouveau point et l'ajoute à la liste {@link #points}</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_U2EPUEt4EeqjV5oE9659NA" name="randint" visibility="private" method="_U-nHUkt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_jT0yAUt7EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMz_Uk0OEeq5Xo9twdeW-g">
             <body>Génère un chiffre aléatoire entre min et max
 	 * @param int min
 	 * @param int max
@@ -792,15 +816,20 @@ de l'Ovale</body>
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_U2E2YUt4EeqjV5oE9659NA" name="getCourbe" method="_U-nuYEt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMz_U00OEeq5Xo9twdeW-g">
+            <body>@return un tableau de {@link QuadCurve2D} à partir de {@link #points} 
+	 * qui sera utilisé dans {@link Etat} et {@link Affichage} pour représenter la 
+	 * grande courbe que devra suivre l'Ovale</body>
+          </ownedComment>
           <ownedParameter xmi:id="_U8x7UEt4EeqjV5oE9659NA" type="_U7L_4Ut4EeqjV5oE9659NA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U2K9AEt4EeqjV5oE9659NA" name="updateParcours" visibility="private" method="_U-nuYkt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_jT0yAkt7EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMz_VE0OEeq5Xo9twdeW-g">
             <body>Supprime les points qui ne sont plus dans la vue et ajoute des nouveaux points si nécessaire</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_U2LkEEt4EeqjV5oE9659NA" name="getParcours" method="_U-oVcEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_jT0yA0t7EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMz_VU0OEeq5Xo9twdeW-g">
             <body>renvoie les points à afficher
 	 * @return Point[]
 	 *</body>
@@ -810,7 +839,7 @@ de l'Ovale</body>
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_U2RDoEt4EeqjV5oE9659NA" name="incrPos" method="_U-oVc0t4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_jT0yBEt7EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PMz_Vk0OEeq5Xo9twdeW-g">
             <body>augmente la {@link #position} de l'Ovale de n
 	 * @param n : taille (en pixels) de l'augmentation de la position  
 	 *</body>
@@ -819,11 +848,14 @@ de l'Ovale</body>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
         </ownedOperation>
-        <ownedOperation xmi:id="_U2RqsEt4EeqjV5oE9659NA" name="incrIdCourbe" method="_U-o8gEt4EeqjV5oE9659NA"/>
-        <ownedOperation xmi:id="_U2RqsUt4EeqjV5oE9659NA" name="decrIdCourbe" method="_U-o8gUt4EeqjV5oE9659NA"/>
+        <ownedOperation xmi:id="_U2RqsEt4EeqjV5oE9659NA" name="incrIdCourbe" method="_U-o8gEt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM0mYE0OEeq5Xo9twdeW-g">
+            <body>augmente {@link #idCourbe}</body>
+          </ownedComment>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_U2bbsEt4EeqjV5oE9659NA" name="RepaintScreen">
-        <ownedComment xmi:id="_dKYSEEt8EeqjV5oE9659NA">
+        <ownedComment xmi:id="_PM0mYU0OEeq5Xo9twdeW-g">
           <body>Rafraichit l'affichage toutes les {@link #time} millisecondes</body>
         </ownedComment>
         <generalization xmi:id="_U8zwgEt4EeqjV5oE9659NA" general="_U8bWAUt4EeqjV5oE9659NA"/>
@@ -859,7 +891,7 @@ de l'Ovale</body>
 	</body>
         </ownedBehavior>
         <ownedOperation xmi:id="_U2dQ4Et4EeqjV5oE9659NA" name="terminate" method="_U-pjk0t4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_dKYSEkt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM0mY00OEeq5Xo9twdeW-g">
             <body>stoppe le Thread</body>
           </ownedComment>
         </ownedOperation>
@@ -868,7 +900,7 @@ de l'Ovale</body>
           <eAnnotations xmi:id="_UElLMkt8EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_UElLM0t8EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_dKYSEUt8EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM0mYk0OEeq5Xo9twdeW-g">
             <body>Constructeur
 	 * @param aff</body>
           </ownedComment>
@@ -877,7 +909,7 @@ de l'Ovale</body>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_U2jXgEt4EeqjV5oE9659NA" name="Voler">
-        <ownedComment xmi:id="_U-1JwEt4EeqjV5oE9659NA">
+        <ownedComment xmi:id="_PM0mZE0OEeq5Xo9twdeW-g">
           <body>{@link Thread} qui fait chuter l'ovale toutes les {@link #time} millisecondes</body>
         </ownedComment>
         <generalization xmi:id="_U84B8Et4EeqjV5oE9659NA" general="_U8bWAUt4EeqjV5oE9659NA"/>
@@ -895,7 +927,9 @@ de l'Ovale</body>
         <ownedAttribute xmi:id="_U91EMUt4EeqjV5oE9659NA" name="etat" visibility="private" type="_U3GKEEt4EeqjV5oE9659NA" association="_U_Tq4Ut4EeqjV5oE9659NA"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-qKoUt4EeqjV5oE9659NA" name="Voler" specification="_U7aCUEt4EeqjV5oE9659NA">
           <ownedParameter xmi:id="_U-qKokt4EeqjV5oE9659NA" name="etat" type="_U3GKEEt4EeqjV5oE9659NA"/>
-          <ownedParameter xmi:id="_U-qKo0t4EeqjV5oE9659NA" type="_U2jXgEt4EeqjV5oE9659NA" direction="return"/>
+          <ownedParameter xmi:id="_U-qKo0t4EeqjV5oE9659NA" type="_U2jXgEt4EeqjV5oE9659NA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>this.running = true;
 		this.etat = etat;
@@ -915,13 +949,17 @@ de l'Ovale</body>
 		}
 	</body>
         </ownedBehavior>
-        <ownedOperation xmi:id="_U2ma0Et4EeqjV5oE9659NA" name="terminate" method="_U-qxsEt4EeqjV5oE9659NA"/>
+        <ownedOperation xmi:id="_U2ma0Et4EeqjV5oE9659NA" name="terminate" method="_U-qxsEt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM0mZk0OEeq5Xo9twdeW-g">
+            <body>stoppe le {@link Thread}</body>
+          </ownedComment>
+        </ownedOperation>
         <ownedOperation xmi:id="_U2nB4Et4EeqjV5oE9659NA" name="run" method="_U-qxsUt4EeqjV5oE9659NA"/>
         <ownedOperation xmi:id="_U7aCUEt4EeqjV5oE9659NA" name="Voler" method="_U-qKoUt4EeqjV5oE9659NA">
           <eAnnotations xmi:id="_U7apYEt4EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_U7apYUt4EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_U-1JwUt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM0mZU0OEeq5Xo9twdeW-g">
             <body>Constructeur
 	 * @param etat : une instance d'{@link Etat} pour appeler {@link Etat#moveDown}
 	 *</body>
@@ -986,7 +1024,7 @@ de l'Ovale</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_UzxJQEt4EeqjV5oE9659NA" name="view">
       <packagedElement xmi:type="uml:Class" xmi:id="_U2z2MEt4EeqjV5oE9659NA" name="Affichage">
-        <ownedComment xmi:id="_U-1Jw0t4EeqjV5oE9659NA">
+        <ownedComment xmi:id="_PM1NcU0OEeq5Xo9twdeW-g">
           <body>la classe Affichage est le JPanel dans lequel on va afficher les éléments du jeu (Ovale, courbe, oiseaux, ...)</body>
         </ownedComment>
         <generalization xmi:id="_U8-vokt4EeqjV5oE9659NA" general="_U7wAkEt4EeqjV5oE9659NA"/>
@@ -1022,7 +1060,9 @@ de l'Ovale</body>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-rYw0t4EeqjV5oE9659NA" name="Affichage" specification="_U7zq8Et4EeqjV5oE9659NA">
           <ownedParameter xmi:id="_U-rYxEt4EeqjV5oE9659NA" name="etat" type="_U3GKEEt4EeqjV5oE9659NA"/>
           <ownedParameter xmi:id="_U-rYxUt4EeqjV5oE9659NA" name="vueOiseau" type="_U3i2AEt4EeqjV5oE9659NA"/>
-          <ownedParameter xmi:id="_U-rYxkt4EeqjV5oE9659NA" type="_U2z2MEt4EeqjV5oE9659NA" direction="return"/>
+          <ownedParameter xmi:id="_U-rYxkt4EeqjV5oE9659NA" type="_U2z2MEt4EeqjV5oE9659NA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>this.setPreferredSize(new Dimension(LARG, HAUT));
              this.etat = etat;
@@ -1088,7 +1128,7 @@ de l'Ovale</body>
      	//test perdu
      	boolean perdu =etat.testPerdu();
      	//calcul du score
- 		int score = this.etat.getParcours().getPosition() - etat.getScore0();
+ 		int score = etat.getScore();
  		if(perdu) {
      		//si on a perdu on stoppe tout les threads et on affiche game over avec le score
  			etat.stopThreads();
@@ -1118,7 +1158,7 @@ de l'Ovale</body>
           <eAnnotations xmi:id="_U73VUkt4EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_U738YEt4EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_U-1JxEt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM1Nck0OEeq5Xo9twdeW-g">
             <body>Constructeur:
          * @param etat de type {@link Etat}
          *</body>
@@ -1128,20 +1168,20 @@ de l'Ovale</body>
           <ownedParameter xmi:id="_U738YUt4EeqjV5oE9659NA" type="_U2z2MEt4EeqjV5oE9659NA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U853IEt4EeqjV5oE9659NA" name="afficheOvale" visibility="private" method="_U-r_0Et4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-1JxUt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM1Nc00OEeq5Xo9twdeW-g">
             <body>affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}</body>
           </ownedComment>
           <ownedParameter xmi:id="_U853IUt4EeqjV5oE9659NA" name="g" type="_U7ndsEt4EeqjV5oE9659NA"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U87FQEt4EeqjV5oE9659NA" name="afficheCourbe" visibility="private" method="_U-r_0kt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-1Jxkt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM1NdE0OEeq5Xo9twdeW-g">
             <body>affiche les courbes actuelles
          * @param g2d</body>
           </ownedComment>
           <ownedParameter xmi:id="_U87FQUt4EeqjV5oE9659NA" name="g2d" type="_U7p58Ut4EeqjV5oE9659NA"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U87sUEt4EeqjV5oE9659NA" name="afficheScore" visibility="private" method="_U-sm4Et4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-1w0Et4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM1NdU0OEeq5Xo9twdeW-g">
             <body>affiche le score actuel, c'est à dire la position définie par la classe {@link Parcours}</body>
           </ownedComment>
           <ownedParameter xmi:id="_U87sUUt4EeqjV5oE9659NA" name="g" type="_U7ndsEt4EeqjV5oE9659NA"/>
@@ -1150,7 +1190,7 @@ de l'Ovale</body>
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_U88TYUt4EeqjV5oE9659NA" name="printMidStr" visibility="private" method="_U-sm40t4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-1w0Ut4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM1Ndk0OEeq5Xo9twdeW-g">
             <body>affiche une string au milieu de la fenetre</body>
           </ownedComment>
           <ownedParameter xmi:id="_U886cEt4EeqjV5oE9659NA" name="str">
@@ -1167,6 +1207,10 @@ de l'Ovale</body>
         </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_U3i2AEt4EeqjV5oE9659NA" name="VueOiseau">
+        <ownedComment xmi:id="_PM430E0OEeq5Xo9twdeW-g">
+          <body>Affiche les oiseaux à l'écran
+et a une chance sur {@link #probaOiseau} de générer un oiseau</body>
+        </ownedComment>
         <ownedAttribute xmi:id="_U-SXMEt4EeqjV5oE9659NA" name="Path" isStatic="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
           <defaultValue xmi:type="uml:LiteralString" xmi:id="_U-S-QEt4EeqjV5oE9659NA" value="&quot;bird/&quot;"/>
@@ -1177,11 +1221,13 @@ de l'Ovale</body>
         </ownedAttribute>
         <ownedAttribute xmi:id="_U-WBkUt4EeqjV5oE9659NA" name="probaOiseau" isStatic="true">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          <defaultValue xmi:type="uml:LiteralString" xmi:id="_U-WooEt4EeqjV5oE9659NA" value="100"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_U-WooEt4EeqjV5oE9659NA" value="10000"/>
         </ownedAttribute>
         <ownedAttribute xmi:id="_U-Yd0Ut4EeqjV5oE9659NA" name="list" visibility="private" type="_U7L_4Ut4EeqjV5oE9659NA" association="_U_gfMEt4EeqjV5oE9659NA"/>
         <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_U-wRQUt4EeqjV5oE9659NA" name="VueOiseau" specification="_U3o8oEt4EeqjV5oE9659NA">
-          <ownedParameter xmi:id="_U-wRQkt4EeqjV5oE9659NA" type="_U3i2AEt4EeqjV5oE9659NA" direction="return"/>
+          <ownedParameter xmi:id="_U-wRQkt4EeqjV5oE9659NA" type="_U3i2AEt4EeqjV5oE9659NA" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
           <language>java</language>
           <body>this.list = new ArrayList&lt;Oiseau>();
 	</body>
@@ -1241,6 +1287,7 @@ de l'Ovale</body>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <ownedParameter xmi:id="_U-w4V0t4EeqjV5oE9659NA" direction="return">
+            <name xsi:nil="true"/>
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
           </ownedParameter>
           <language>java</language>
@@ -1251,23 +1298,23 @@ de l'Ovale</body>
           <eAnnotations xmi:id="_U3pjsEt4EeqjV5oE9659NA" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_U3pjsUt4EeqjV5oE9659NA" key="create"/>
           </eAnnotations>
-          <ownedComment xmi:id="_U-2-9Ut4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM430U0OEeq5Xo9twdeW-g">
             <body>initialise la {@link #list liste d'oiseaux}</body>
           </ownedComment>
           <ownedParameter xmi:id="_U3pjskt4EeqjV5oE9659NA" type="_U3i2AEt4EeqjV5oE9659NA" direction="return"/>
         </ownedOperation>
         <ownedOperation xmi:id="_U3qKwEt4EeqjV5oE9659NA" name="genererOiseaux" visibility="package" method="_U-w4Ukt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-3mAUt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM43000OEeq5Xo9twdeW-g">
             <body>à chaque rafraichissement de l'affichage on génère un oiseau avec 1 chance sur 10 000 si on a pas dépassé le {@link #MaxOiseaux maximum d'oiseaux}</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_U3qx0Et4EeqjV5oE9659NA" name="finiOiseaux" method="_U-w4U0t4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-3mAkt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM431E0OEeq5Xo9twdeW-g">
             <body>termine tous les Threads Oiseau, appelé lors du Game Over</body>
           </ownedComment>
         </ownedOperation>
         <ownedOperation xmi:id="_U3r_8Et4EeqjV5oE9659NA" name="randint" method="_U-w4VEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-3mA0t4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM431U0OEeq5Xo9twdeW-g">
             <body>Génère un chiffre aléatoire entre min et max
 	 * @param min
 	 * @param max
@@ -1284,7 +1331,7 @@ de l'Ovale</body>
           </ownedParameter>
         </ownedOperation>
         <ownedOperation xmi:id="_U9E2QEt4EeqjV5oE9659NA" name="dessiner" visibility="package" method="_U-w4UEt4EeqjV5oE9659NA">
-          <ownedComment xmi:id="_U-3mAEt4EeqjV5oE9659NA">
+          <ownedComment xmi:id="_PM430k0OEeq5Xo9twdeW-g">
             <body>dessine les oiseaux qui sont dans la fenetre, supprime ceux qui sont terminés
 	 * @param g</body>
           </ownedComment>
@@ -1306,7 +1353,7 @@ de l'Ovale</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_U0N1MEt4EeqjV5oE9659NA" name="flappyBird">
       <packagedElement xmi:type="uml:Class" xmi:id="_U2xZ8Et4EeqjV5oE9659NA" name="Main">
-        <ownedComment xmi:id="_vrUdsEt8EeqjV5oE9659NA">
+        <ownedComment xmi:id="_PM1NcE0OEeq5Xo9twdeW-g">
           <body>Créé des instances de Etat, Affichage et Control et les relie entre elles 
 Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel)</body>
         </ownedComment>
@@ -1316,13 +1363,13 @@ Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel)</body
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_U-rYwkt4EeqjV5oE9659NA" value="*"/>
           </ownedParameter>
           <language>java</language>
-          <body>/* Création des instances de Etat, Affichage et Control*/
+          <body>/* Création des instances de Etat, Affichage et Click*/
 		Etat mod = new Etat(new Parcours());
 		Affichage aff = new Affichage(mod, new VueOiseau());
-		Click ctrl = new Click(mod);
+		Click click = new Click(mod);
 
-		/* On ajoute l'instance de Control en tant que MouseListener de celle de Affichage*/
-		aff.addMouseListener(ctrl);
+		/* On ajoute l'instance de Click en tant que MouseListener de celle de Affichage*/
+		aff.addMouseListener(click);
 
 		// creation du thread Voler
 		Voler Vol = new Voler(mod);
@@ -1464,4 +1511,5 @@ Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel)</body
   <UMLLabProfile:Reference xmi:id="_PRNi0Et8EeqjV5oE9659NA" base_Element="_PRLGkEt8EeqjV5oE9659NA"/>
   <UMLLabProfile:LegacyStyledElement xmi:id="_PRQmIUt8EeqjV5oE9659NA" base_Element="_PRQmIEt8EeqjV5oE9659NA"/>
   <UMLLabProfile:Reference xmi:id="_PRTpcEt8EeqjV5oE9659NA" base_Element="_PRTCYEt8EeqjV5oE9659NA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_PMRz0E0OEeq5Xo9twdeW-g" base_Element="_U-PT4Ut4EeqjV5oE9659NA"/>
 </xmi:XMI>

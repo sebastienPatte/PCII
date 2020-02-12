@@ -38,6 +38,9 @@ public class Voler extends Thread{
 
 	}
 	
+	/**
+	 * stoppe le {@link Thread}
+	 */
 	public void terminate() {
 		this.running = false;
 	}

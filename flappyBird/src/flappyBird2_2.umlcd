@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_UBpv0Et4EeqjV5oE9659NA">
   <modelElement href="flappyBird2.uml#_T6D6EEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VGiUQEt4EeqjV5oE9659NA" targetItem="_VGzaAEt4EeqjV5oE9659NA" sourceItem="_VGhtMEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VGnz0Ut4EeqjV5oE9659NA" targetItem="_VGzaH0t4EeqjV5oE9659NA" sourceItem="_VGnz0Et4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VGvvoEt4EeqjV5oE9659NA" sourceAnchor="0.0,264.0" targetAnchor="274.0,112.0" target="_VGzaAEt4EeqjV5oE9659NA" source="_VKdyAEt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U_bmsUt4EeqjV5oE9659NA"/>
     <stereotypes xmi:id="_VGvvoUt4EeqjV5oE9659NA" name="Reference">
@@ -57,7 +55,6 @@
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VIJd0Ut4EeqjV5oE9659NA" targetItem="_VIWSM0t4EeqjV5oE9659NA" sourceItem="_VIJd0Et4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VIJd00t4EeqjV5oE9659NA" targetItem="_VIWSOEt4EeqjV5oE9659NA" sourceItem="_VIJd0kt4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VIKE4Ut4EeqjV5oE9659NA" targetItem="_VIWSO0t4EeqjV5oE9659NA" sourceItem="_VIKE4Et4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VIusoUt4EeqjV5oE9659NA" targetItem="_VI3PgEt4EeqjV5oE9659NA" sourceItem="_VIusoEt4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VIvTsEt4EeqjV5oE9659NA" sourceAnchor="0.0,92.0" targetAnchor="238.0,112.0" target="_VI3PgEt4EeqjV5oE9659NA" source="_VKdyAEt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U_cNwUt4EeqjV5oE9659NA"/>
     <stereotypes xmi:id="_VIy-E0t4EeqjV5oE9659NA" name="Reference">
@@ -106,8 +103,6 @@
       <cardinality xmi:id="_VI2BYEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VIxI4Ut4EeqjV5oE9659NA" targetItem="_VI32rkt4EeqjV5oE9659NA" sourceItem="_VIxI4Et4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VJDcwUt4EeqjV5oE9659NA" targetItem="_VJHuMEt4EeqjV5oE9659NA" sourceItem="_VJDcwEt4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VJED0Et4EeqjV5oE9659NA" sourceAnchor="301.0,38.0" targetAnchor="203.0,324.0" target="_VKdyAEt4EeqjV5oE9659NA" source="_VJHuMEt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U_J54Et4EeqjV5oE9659NA"/>
     <bendpoints xmi:id="_bLQdgEt9EeqjV5oE9659NA" sourceX="399" targetY="40"/>
@@ -133,7 +128,6 @@
       <cardinality xmi:id="_VJGgEkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VJEq4Ut4EeqjV5oE9659NA" targetItem="_VJHuOEt4EeqjV5oE9659NA" sourceItem="_VJEq4Et4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VJOb4Ut4EeqjV5oE9659NA" targetItem="_VJYM4Et4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VJPC8Et4EeqjV5oE9659NA" sourceAnchor="0.0,32.0" targetAnchor="288.0,145.0" target="_VJYM4Et4EeqjV5oE9659NA" source="_VKdyAEt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U_db4Ut4EeqjV5oE9659NA"/>
@@ -256,12 +250,6 @@
       <cardinality xmi:id="_VKbVyUt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VLtvMUt4EeqjV5oE9659NA" targetItem="_VL9m0Et4EeqjV5oE9659NA" sourceItem="_VLtvMEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VLvkYUt4EeqjV5oE9659NA" targetItem="_VL9m-Et4EeqjV5oE9659NA" sourceItem="_VLvkYEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VLwLcUt4EeqjV5oE9659NA" targetItem="_VL9nBEt4EeqjV5oE9659NA" sourceItem="_VLwLcEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VLwygUt4EeqjV5oE9659NA" targetItem="_VL9nCkt4EeqjV5oE9659NA" sourceItem="_VLwygEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VLxZkUt4EeqjV5oE9659NA" targetItem="_VL9nEEt4EeqjV5oE9659NA" sourceItem="_VLxZkEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VLyAoUt4EeqjV5oE9659NA" targetItem="_VL9nGUt4EeqjV5oE9659NA" sourceItem="_VLyAoEt4EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_VL7KkEt4EeqjV5oE9659NA" source="_VL9m0Et4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U_VgEUt4EeqjV5oE9659NA"/>
     <stereotypes xmi:id="_VL7KkUt4EeqjV5oE9659NA" name="Reference">
@@ -326,23 +314,6 @@
       <cardinality xmi:id="_VMgZYUt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VMYdkEt4EeqjV5oE9659NA" targetItem="_VMkq6Et4EeqjV5oE9659NA" sourceItem="_VMX2gEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VMaSwUt4EeqjV5oE9659NA" targetItem="_VMlR4Et4EeqjV5oE9659NA" sourceItem="_VMaSwEt4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VMa50Ut4EeqjV5oE9659NA" targetItem="_VMlR40t4EeqjV5oE9659NA" sourceItem="_VMa50Et4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VMbg4Ut4EeqjV5oE9659NA" targetItem="_VMlR5kt4EeqjV5oE9659NA" sourceItem="_VMbg4Et4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VMcvAEt4EeqjV5oE9659NA" targetItem="_VMlR8Ut4EeqjV5oE9659NA" sourceItem="_VMcH8Et4EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HUz3gUt9EeqjV5oE9659NA" targetItem="_VKdyAEt4EeqjV5oE9659NA" sourceItem="_HUz3gEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU2Twkt9EeqjV5oE9659NA" targetItem="_VKdyJUt4EeqjV5oE9659NA" sourceItem="_HU2TwUt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU4wAUt9EeqjV5oE9659NA" targetItem="_VKdyKEt4EeqjV5oE9659NA" sourceItem="_HU4wAEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU5XEUt9EeqjV5oE9659NA" targetItem="_VKdyLkt4EeqjV5oE9659NA" sourceItem="_HU5XEEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU5XE0t9EeqjV5oE9659NA" targetItem="_VKdyM0t4EeqjV5oE9659NA" sourceItem="_HU5XEkt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU5-IUt9EeqjV5oE9659NA" targetItem="_VKeZFEt4EeqjV5oE9659NA" sourceItem="_HU5-IEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU6lMEt9EeqjV5oE9659NA" targetItem="_VKeZGkt4EeqjV5oE9659NA" sourceItem="_HU5-Ikt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU6lMkt9EeqjV5oE9659NA" targetItem="_VKeZHUt4EeqjV5oE9659NA" sourceItem="_HU6lMUt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU7MQUt9EeqjV5oE9659NA" targetItem="_VKeZLEt4EeqjV5oE9659NA" sourceItem="_HU7MQEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU7MQ0t9EeqjV5oE9659NA" targetItem="_VKeZMkt4EeqjV5oE9659NA" sourceItem="_HU7MQkt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU7zUUt9EeqjV5oE9659NA" targetItem="_VKeZOEt4EeqjV5oE9659NA" sourceItem="_HU7zUEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HU7zU0t9EeqjV5oE9659NA" targetItem="_VKeZPkt4EeqjV5oE9659NA" sourceItem="_HU7zUkt9EeqjV5oE9659NA"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_HU9BcEt9EeqjV5oE9659NA" sourceAnchor="388.0,77.0" targetAnchor="0.0,152.0" target="_VL9m0Et4EeqjV5oE9659NA" source="_VJYM4Et4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_PRTCYEt8EeqjV5oE9659NA"/>
     <stereotypes xmi:id="_HVIno0t9EeqjV5oE9659NA" name="Reference">
@@ -360,28 +331,60 @@
     <targetRole xmi:id="_HVInokt9EeqjV5oE9659NA" aggregationKind="NONE" name="aff" navigable="true">
       <modelElement href="flappyBird2.uml#_PRQmIEt8EeqjV5oE9659NA"/>
       <visualProperties xmi:id="_Opb7sEt9EeqjV5oE9659NA" position="-47.0,-51.0"/>
+      <stereotypes xmi:id="_LBX5oE0OEeq5Xo9twdeW-g" name="LegacyStyledElement">
+        <modelElement href="flappyBird2.uml#_PRQmIUt8EeqjV5oE9659NA"/>
+      </stereotypes>
       <visibility xmi:id="_HVw5wEt9EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_HVwSt0t9EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVInpkt9EeqjV5oE9659NA" targetItem="_VJYM4Et4EeqjV5oE9659NA" sourceItem="_HVInpUt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVMSAUt9EeqjV5oE9659NA" targetItem="_VJYM8kt4EeqjV5oE9659NA" sourceItem="_HVMSAEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVWDAEt9EeqjV5oE9659NA" targetItem="_VJwnYEt4EeqjV5oE9659NA" sourceItem="_HVVb8kt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVbikUt9EeqjV5oE9659NA" targetItem="_VJwnlEt4EeqjV5oE9659NA" sourceItem="_HVbikEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVhCIUt9EeqjV5oE9659NA" targetItem="_VJwnmkt4EeqjV5oE9659NA" sourceItem="_HVhCIEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVhCI0t9EeqjV5oE9659NA" targetItem="_VJwnnUt4EeqjV5oE9659NA" sourceItem="_HVhCIkt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVhpMUt9EeqjV5oE9659NA" targetItem="_VJwnoEt4EeqjV5oE9659NA" sourceItem="_HVhpMEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVi3UUt9EeqjV5oE9659NA" targetItem="_VJxOcEt4EeqjV5oE9659NA" sourceItem="_HVi3UEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVksgUt9EeqjV5oE9659NA" targetItem="_VJxOc0t4EeqjV5oE9659NA" sourceItem="_HVksgEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVlTkUt9EeqjV5oE9659NA" targetItem="_VJxOeUt4EeqjV5oE9659NA" sourceItem="_HVlTkEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVudgUt9EeqjV5oE9659NA" targetItem="_VKHMsEt4EeqjV5oE9659NA" sourceItem="_HVudgEt9EeqjV5oE9659NA"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_HVvrp0t9EeqjV5oE9659NA" targetItem="_HVIAkEt9EeqjV5oE9659NA" sourceItem="_HVvrpkt9EeqjV5oE9659NA"/>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VGhtMEt4EeqjV5oE9659NA" sourceConnectionVisual="_VGiUQEt4EeqjV5oE9659NA" text="{@link Thread} qui fait avancer la {@link Parcours#position position}  &#xA;de {@link #avancement} pixels toutes les de {@link #time} millisecondes." item="_VGzaAEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-yGcEt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VGnz0Et4EeqjV5oE9659NA" sourceConnectionVisual="_VGnz0Ut4EeqjV5oE9659NA" text="Constructeur&#xA;&#x9; * @param etat : instance de {@link Etat} pour appeller {@link Etat#avance} &#xA;&#x9; *" item="_VGzaH0t4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-ytgEt4EeqjV5oE9659NA"/>
-  </nodes>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PNWK0E0OEeq5Xo9twdeW-g" targetItem="_PNWK0U0OEeq5Xo9twdeW-g" sourceItem="_PNUVoE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PNacQE0OEeq5Xo9twdeW-g" targetItem="_VKdyAEt4EeqjV5oE9659NA" sourceItem="_PNZOIE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PNfUwU0OEeq5Xo9twdeW-g" targetItem="_VKdyJUt4EeqjV5oE9659NA" sourceItem="_PNfUwE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PNjmMU0OEeq5Xo9twdeW-g" targetItem="_VKdyKEt4EeqjV5oE9659NA" sourceItem="_PNjmME0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PN-c8E0OEeq5Xo9twdeW-g" targetItem="_VKdyLkt4EeqjV5oE9659NA" sourceItem="_PNmCcE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_POFxsE0OEeq5Xo9twdeW-g" targetItem="_VKdyM0t4EeqjV5oE9659NA" sourceItem="_POFKoE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_POJcEE0OEeq5Xo9twdeW-g" targetItem="_VKeZFEt4EeqjV5oE9659NA" sourceItem="_POIN8E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_POLRQE0OEeq5Xo9twdeW-g" targetItem="_VKeZGkt4EeqjV5oE9659NA" sourceItem="_POKqME0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_POO7oU0OEeq5Xo9twdeW-g" targetItem="_VKeZHUt4EeqjV5oE9659NA" sourceItem="_POO7oE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_POT0IE0OEeq5Xo9twdeW-g" targetItem="_VKeZLEt4EeqjV5oE9659NA" sourceItem="_POTNEE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_POrAgE0OEeq5Xo9twdeW-g" targetItem="_VKeZMkt4EeqjV5oE9659NA" sourceItem="_POW3cE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_POzjYU0OEeq5Xo9twdeW-g" targetItem="_VKeZOEt4EeqjV5oE9659NA" sourceItem="_POzjYE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PO4b4E0OEeq5Xo9twdeW-g" targetItem="_VKeZPkt4EeqjV5oE9659NA" sourceItem="_PO300E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PO_JkE0OEeq5Xo9twdeW-g" targetItem="_VGzaAEt4EeqjV5oE9659NA" sourceItem="_PO8GQE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PPCz8U0OEeq5Xo9twdeW-g" targetItem="_VGzaH0t4EeqjV5oE9659NA" sourceItem="_PPCz8E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PPcckE0OEeq5Xo9twdeW-g" targetItem="_VJHuMEt4EeqjV5oE9659NA" sourceItem="_PPYLIE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PPlmgE0OEeq5Xo9twdeW-g" targetItem="_VJHuOEt4EeqjV5oE9659NA" sourceItem="_PPk_cE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PP-BAE0OEeq5Xo9twdeW-g" targetItem="_VJwnYEt4EeqjV5oE9659NA" sourceItem="_PPrGEE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PQKOQE0OEeq5Xo9twdeW-g" targetItem="_VJwnlEt4EeqjV5oE9659NA" sourceItem="_PQJnME0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PRaLcE0OEeq5Xo9twdeW-g" targetItem="_VJwnmkt4EeqjV5oE9659NA" sourceItem="_PRNXIE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PRwJsE0OEeq5Xo9twdeW-g" targetItem="_VJwnnUt4EeqjV5oE9659NA" sourceItem="_PRvioE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PR4FgE0OEeq5Xo9twdeW-g" targetItem="_VJwnoEt4EeqjV5oE9659NA" sourceItem="_PR3ecE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PR5ToU0OEeq5Xo9twdeW-g" targetItem="_VJxOcEt4EeqjV5oE9659NA" sourceItem="_PR5ToE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PR9lEE0OEeq5Xo9twdeW-g" targetItem="_VJxOc0t4EeqjV5oE9659NA" sourceItem="_PR8-AE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PR-zMU0OEeq5Xo9twdeW-g" targetItem="_VJxOeUt4EeqjV5oE9659NA" sourceItem="_PR-zME0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PSM1oE0OEeq5Xo9twdeW-g" targetItem="_VJYM4Et4EeqjV5oE9659NA" sourceItem="_PSMOkE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PSRHEE0OEeq5Xo9twdeW-g" targetItem="_VJYM8kt4EeqjV5oE9659NA" sourceItem="_PSQgAE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PSSVME0OEeq5Xo9twdeW-g" targetItem="_HVIAkEt9EeqjV5oE9659NA" sourceItem="_PSRuIE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PSWmoE0OEeq5Xo9twdeW-g" targetItem="_VI3PgEt4EeqjV5oE9659NA" sourceItem="_PSVYgE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PSwPQE0OEeq5Xo9twdeW-g" targetItem="_VI32rkt4EeqjV5oE9659NA" sourceItem="_PSYb0E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PS3kAE0OEeq5Xo9twdeW-g" targetItem="_VL9m0Et4EeqjV5oE9659NA" sourceItem="_PS1u0E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PS71cE0OEeq5Xo9twdeW-g" targetItem="_VL9m-Et4EeqjV5oE9659NA" sourceItem="_PS6AQE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PS9DkU0OEeq5Xo9twdeW-g" targetItem="_VL9nBEt4EeqjV5oE9659NA" sourceItem="_PS9DkE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTB8EE0OEeq5Xo9twdeW-g" targetItem="_VL9nCkt4EeqjV5oE9659NA" sourceItem="_PS_f0E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTEYUU0OEeq5Xo9twdeW-g" targetItem="_VL9nEEt4EeqjV5oE9659NA" sourceItem="_PTEYUE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTJQ0E0OEeq5Xo9twdeW-g" targetItem="_VL9nGUt4EeqjV5oE9659NA" sourceItem="_PTIpwE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTM7ME0OEeq5Xo9twdeW-g" targetItem="_VMkq6Et4EeqjV5oE9659NA" sourceItem="_PTLtEE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTkHkE0OEeq5Xo9twdeW-g" targetItem="_VMlR4Et4EeqjV5oE9659NA" sourceItem="_PTjggE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PToZAE0OEeq5Xo9twdeW-g" targetItem="_VMlR40t4EeqjV5oE9659NA" sourceItem="_PTnK4E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTq1QE0OEeq5Xo9twdeW-g" targetItem="_VMlR5kt4EeqjV5oE9659NA" sourceItem="_PTqOME0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTtRgU0OEeq5Xo9twdeW-g" targetItem="_VMlR8Ut4EeqjV5oE9659NA" sourceItem="_PTtRgE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PTxi8E0OEeq5Xo9twdeW-g" targetItem="_VKHMsEt4EeqjV5oE9659NA" sourceItem="_PTw74E0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PUAMcE0OEeq5Xo9twdeW-g" targetItem="_VMkq0Et4EeqjV5oE9659NA" sourceItem="_PT5ewE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PUWxwE0OEeq5Xo9twdeW-g" targetItem="_VGzaF0t4EeqjV5oE9659NA" sourceItem="_PUUVgE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PUnQcE0OEeq5Xo9twdeW-g" targetItem="_VJwnq0t4EeqjV5oE9659NA" sourceItem="_PUmpYE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PUoekU0OEeq5Xo9twdeW-g" targetItem="_VJxOf0t4EeqjV5oE9659NA" sourceItem="_PUoekE0OEeq5Xo9twdeW-g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_PUsI8E0OEeq5Xo9twdeW-g" targetItem="_VI32pkt4EeqjV5oE9659NA" sourceItem="_PUqTwE0OEeq5Xo9twdeW-g"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VIGagEt4EeqjV5oE9659NA" sourceConnectionVisual="_VIHBkEt4EeqjV5oE9659NA" text="on choisit un {@link #delai} et une {@link #hauteur} aléatoire&#xA;&#x9; * et une position de 50 pixels à droite de la fenêtre" item="_VIVrM0t4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U-ytg0t4EeqjV5oE9659NA"/>
   </nodes>
@@ -400,52 +403,7 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VIKE4Et4EeqjV5oE9659NA" sourceConnectionVisual="_VIKE4Ut4EeqjV5oE9659NA" text="@return l'{@link #state état} de l'oiseau" item="_VIWSO0t4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U-zUk0t4EeqjV5oE9659NA"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VIusoEt4EeqjV5oE9659NA" sourceConnectionVisual="_VIusoUt4EeqjV5oE9659NA" text="{@link Thread} qui fait chuter l'ovale toutes les {@link #time} millisecondes" item="_VI3PgEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1JwEt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VIxI4Et4EeqjV5oE9659NA" sourceConnectionVisual="_VIxI4Ut4EeqjV5oE9659NA" text="Constructeur&#xA;&#x9; * @param etat : une instance d'{@link Etat} pour appeler {@link Etat#moveDown}&#xA;&#x9; *" item="_VI32rkt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1JwUt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VJDcwEt4EeqjV5oE9659NA" sourceConnectionVisual="_VJDcwUt4EeqjV5oE9659NA" text="lance la fonction jump de {@link Etat} &#xA;si l'utilisateur clique sur la fenêtre" item="_VJHuMEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-ytgUt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VJEq4Et4EeqjV5oE9659NA" sourceConnectionVisual="_VJEq4Ut4EeqjV5oE9659NA" text="Constructeur &#xA;&#x9; * @param etat de type {@link Etat}" item="_VJHuOEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-ytgkt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VLtvMEt4EeqjV5oE9659NA" sourceConnectionVisual="_VLtvMUt4EeqjV5oE9659NA" text="la classe Affichage est le JPanel dans lequel on va afficher les éléments du jeu (Ovale, courbe, oiseaux, ...)" item="_VL9m0Et4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1Jw0t4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VLvkYEt4EeqjV5oE9659NA" sourceConnectionVisual="_VLvkYUt4EeqjV5oE9659NA" text="Constructeur:&#xA;         * @param etat de type {@link Etat}&#xA;         *" item="_VL9m-Et4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1JxEt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VLwLcEt4EeqjV5oE9659NA" sourceConnectionVisual="_VLwLcUt4EeqjV5oE9659NA" text="affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}" item="_VL9nBEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1JxUt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VLwygEt4EeqjV5oE9659NA" sourceConnectionVisual="_VLwygUt4EeqjV5oE9659NA" text="affiche les courbes actuelles&#xA;         * @param g2d" item="_VL9nCkt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1Jxkt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VLxZkEt4EeqjV5oE9659NA" sourceConnectionVisual="_VLxZkUt4EeqjV5oE9659NA" text="affiche le score actuel, c'est à dire la position définie par la classe {@link Parcours}" item="_VL9nEEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1w0Et4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VLyAoEt4EeqjV5oE9659NA" sourceConnectionVisual="_VLyAoUt4EeqjV5oE9659NA" text="affiche une string au milieu de la fenetre" item="_VL9nGUt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-1w0Ut4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VMX2gEt4EeqjV5oE9659NA" sourceConnectionVisual="_VMYdkEt4EeqjV5oE9659NA" text="initialise la {@link #list liste d'oiseaux}" item="_VMkq6Et4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-2-9Ut4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VMaSwEt4EeqjV5oE9659NA" sourceConnectionVisual="_VMaSwUt4EeqjV5oE9659NA" text="à chaque rafraichissement de l'affichage on génère un oiseau avec 1 chance sur 10 000 si on a pas dépassé le {@link #MaxOiseaux maximum d'oiseaux}" item="_VMlR4Et4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-3mAUt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VMa50Et4EeqjV5oE9659NA" sourceConnectionVisual="_VMa50Ut4EeqjV5oE9659NA" text="termine tous les Threads Oiseau, appelé lors du Game Over" item="_VMlR40t4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-3mAkt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VMbg4Et4EeqjV5oE9659NA" sourceConnectionVisual="_VMbg4Ut4EeqjV5oE9659NA" text="Génère un chiffre aléatoire entre min et max&#xA;&#x9; * @param min&#xA;&#x9; * @param max&#xA;&#x9; * @return random int between min and max" item="_VMlR5kt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-3mA0t4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VMcH8Et4EeqjV5oE9659NA" sourceConnectionVisual="_VMcvAEt4EeqjV5oE9659NA" text="dessine les oiseaux qui sont dans la fenetre, supprime ceux qui sont terminés&#xA;&#x9; * @param g" item="_VMlR8Ut4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_U-3mAEt4EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VL9m0Et4EeqjV5oE9659NA" comments="_VLtvMEt4EeqjV5oE9659NA" targetConnectionVisual="_VLtvMUt4EeqjV5oE9659NA" name="Affichage" associationsIn="_HU9BcEt9EeqjV5oE9659NA" associationsOut="_VKbVwEt4EeqjV5oE9659NA _VL7KkEt4EeqjV5oE9659NA _VL8_wEt4EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VL9m0Et4EeqjV5oE9659NA" comments="_PS1u0E0OEeq5Xo9twdeW-g" targetConnectionVisual="_PS3kAE0OEeq5Xo9twdeW-g" name="Affichage" associationsIn="_HU9BcEt9EeqjV5oE9659NA" associationsOut="_VKbVwEt4EeqjV5oE9659NA _VL7KkEt4EeqjV5oE9659NA _VL8_wEt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U2z2MEt4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VL9m0Ut4EeqjV5oE9659NA" position="-480.0,-840.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VL9m0kt4EeqjV5oE9659NA" label="+"/>
@@ -510,6 +468,9 @@
       <stereotypes xmi:id="_HWPa4Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWRQEEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWjj8Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDkSAE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDnVUE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LD_IwE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VL9m8Et4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VL9m8Ut4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VL9m8kt4EeqjV5oE9659NA" name="Etat">
@@ -521,13 +482,16 @@
       <stereotypes xmi:id="_HWU6cEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWVhgEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWkyEEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDyUcE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDzikE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LECzIE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VL9m9Ut4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VL9m9kt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VL9m90t4EeqjV5oE9659NA" name="VueOiseau">
         <modelElement href="flappyBird2.uml#_U3i2AEt4EeqjV5oE9659NA"/>
       </type>
     </attributes>
-    <operations xmi:id="_VL9m-Et4EeqjV5oE9659NA" comments="_VLvkYEt4EeqjV5oE9659NA" targetConnectionVisual="_VLvkYUt4EeqjV5oE9659NA" name="Affichage">
+    <operations xmi:id="_VL9m-Et4EeqjV5oE9659NA" comments="_PS6AQE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PS71cE0OEeq5Xo9twdeW-g" name="Affichage">
       <modelElement href="flappyBird2.uml#_U7zq8Et4EeqjV5oE9659NA"/>
       <keywords xmi:id="_VL9m-Ut4EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_VL9m-kt4EeqjV5oE9659NA" label="+"/>
@@ -553,7 +517,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VL9nBEt4EeqjV5oE9659NA" comments="_VLwLcEt4EeqjV5oE9659NA" targetConnectionVisual="_VLwLcUt4EeqjV5oE9659NA" name="afficheOvale">
+    <operations xmi:id="_VL9nBEt4EeqjV5oE9659NA" comments="_PS9DkE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PS9DkU0OEeq5Xo9twdeW-g" name="afficheOvale">
       <modelElement href="flappyBird2.uml#_U853IEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VL9nBUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VL9nBkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -565,7 +529,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VL9nCkt4EeqjV5oE9659NA" comments="_VLwygEt4EeqjV5oE9659NA" targetConnectionVisual="_VLwygUt4EeqjV5oE9659NA" name="afficheCourbe">
+    <operations xmi:id="_VL9nCkt4EeqjV5oE9659NA" comments="_PS_f0E0OEeq5Xo9twdeW-g" targetConnectionVisual="_PTB8EE0OEeq5Xo9twdeW-g" name="afficheCourbe">
       <modelElement href="flappyBird2.uml#_U87FQEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VL9nC0t4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VL9nDEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -577,7 +541,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VL9nEEt4EeqjV5oE9659NA" comments="_VLxZkEt4EeqjV5oE9659NA" targetConnectionVisual="_VLxZkUt4EeqjV5oE9659NA" name="afficheScore">
+    <operations xmi:id="_VL9nEEt4EeqjV5oE9659NA" comments="_PTEYUE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PTEYUU0OEeq5Xo9twdeW-g" name="afficheScore">
       <modelElement href="flappyBird2.uml#_U87sUEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VL9nEUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VL9nEkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -596,7 +560,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VL9nGUt4EeqjV5oE9659NA" comments="_VLyAoEt4EeqjV5oE9659NA" targetConnectionVisual="_VLyAoUt4EeqjV5oE9659NA" name="printMidStr">
+    <operations xmi:id="_VL9nGUt4EeqjV5oE9659NA" comments="_PTIpwE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PTJQ0E0OEeq5Xo9twdeW-g" name="printMidStr">
       <modelElement href="flappyBird2.uml#_U88TYUt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VL9nGkt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VL9nG0t4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -648,7 +612,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VGzaAEt4EeqjV5oE9659NA" comments="_VGhtMEt4EeqjV5oE9659NA" targetConnectionVisual="_VGiUQEt4EeqjV5oE9659NA" name="Avancer" associationsIn="_VGvvoEt4EeqjV5oE9659NA" associationsOut="_VGyy8Et4EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VGzaAEt4EeqjV5oE9659NA" comments="_PO8GQE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PO_JkE0OEeq5Xo9twdeW-g" name="Avancer" associationsIn="_VGvvoEt4EeqjV5oE9659NA" associationsOut="_VGyy8Et4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U1YS0Et4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VGzaAUt4EeqjV5oE9659NA" position="-948.0,-260.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VGzaAkt4EeqjV5oE9659NA" label="+"/>
@@ -690,13 +654,16 @@
       <stereotypes xmi:id="_HV7R0Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HV9HAEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWvxMEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCjlYE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCmBoE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEFPYE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VGzaFEt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VGzaFUt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VGzaFkt4EeqjV5oE9659NA" name="Etat">
         <modelElement href="flappyBird2.uml#_U3GKEEt4EeqjV5oE9659NA"/>
       </type>
     </attributes>
-    <operations xmi:id="_VGzaF0t4EeqjV5oE9659NA" name="terminate">
+    <operations xmi:id="_VGzaF0t4EeqjV5oE9659NA" comments="_PUUVgE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PUWxwE0OEeq5Xo9twdeW-g" name="terminate">
       <modelElement href="flappyBird2.uml#_U1gOoEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VGzaGEt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VGzaGUt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -712,7 +679,7 @@
       <visibility xmi:id="_VGzaHUt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VGzaHkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VGzaH0t4EeqjV5oE9659NA" comments="_VGnz0Et4EeqjV5oE9659NA" targetConnectionVisual="_VGnz0Ut4EeqjV5oE9659NA" name="Avancer">
+    <operations xmi:id="_VGzaH0t4EeqjV5oE9659NA" comments="_PPCz8E0OEeq5Xo9twdeW-g" targetConnectionVisual="_PPCz8U0OEeq5Xo9twdeW-g" name="Avancer">
       <modelElement href="flappyBird2.uml#_U6gDYEt4EeqjV5oE9659NA"/>
       <keywords xmi:id="_VGzaIEt4EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_VGzaIUt4EeqjV5oE9659NA" label="+"/>
@@ -732,79 +699,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HUz3gEt9EeqjV5oE9659NA" sourceConnectionVisual="_HUz3gUt9EeqjV5oE9659NA" text="Stocke l'état de ce qu'on doit afficher&#xA; *" item="_VKdyAEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HouugEt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU2TwUt9EeqjV5oE9659NA" sourceConnectionVisual="_HU2Twkt9EeqjV5oE9659NA" text="on augmente la hauteur de l'ovale de la valeur définie par {@link #saut}&#xA;&#x9;&#x9; * si on ne dépasse pas le cadre du JPanel. sinon on met l'ovale tout en haut&#xA;&#x9;&#x9; *" item="_VKdyJUt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_Houugkt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU4wAEt9EeqjV5oE9659NA" sourceConnectionVisual="_HU4wAUt9EeqjV5oE9659NA" text="@param chute nombre de pixels de la chute  &#xA;&#x9;&#x9;  * fait baisser la {@link #hauteur} de l'Ovale de {@link Voler#chute} pixels" item="_VKdyKEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HouuhEt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU5XEEt9EeqjV5oE9659NA" sourceConnectionVisual="_HU5XEUt9EeqjV5oE9659NA" text="vrai si l'ovale est sortie de la ligne brisée&#xA;&#x9;&#x9;  * @return &lt;p>true si l'ovale est sortie de la ligne brisée &lt;/p>&#xA;&#x9;&#x9;  * &#x9;&#x9;&lt;p>false sinon&lt;/p>" item="_VKdyLkt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HouuhUt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU5XEkt9EeqjV5oE9659NA" sourceConnectionVisual="_HU5XE0t9EeqjV5oE9659NA" text="@return une instance de la classe {@link Parcours}&#xA;&#x9;&#x9; *" item="_VKdyM0t4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_Houuhkt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU5-IEt9EeqjV5oE9659NA" sourceConnectionVisual="_HU5-IUt9EeqjV5oE9659NA" text="fait avancer la position de l'ovale de n pixels&#xA;&#x9;&#x9; * @param n" item="_VKeZFEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HovVkUt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU5-Ikt9EeqjV5oE9659NA" sourceConnectionVisual="_HU6lMEt9EeqjV5oE9659NA" text="Arrète les Threads Voler, Avancer et RepaintScreen" item="_VKeZGkt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HovVkkt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU6lMUt9EeqjV5oE9659NA" sourceConnectionVisual="_HU6lMkt9EeqjV5oE9659NA" text="Constructeur&#xA;&#x9;&#x9; * @param parcours : on prend une instance de {@link Parcours} pour avoir accès à la position de l'ovale" item="_VKeZHUt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HouugUt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU7MQEt9EeqjV5oE9659NA" sourceConnectionVisual="_HU7MQUt9EeqjV5oE9659NA" text="pour ajouter l'instance de {@link Voler} au modèle après l'appel au constructeur d'Etat&#xA;&#x9;&#x9; * @param v" item="_VKeZLEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_Houuh0t8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU7MQkt9EeqjV5oE9659NA" sourceConnectionVisual="_HU7MQ0t9EeqjV5oE9659NA" text="pour ajouter l'instance de {@link Avancer} au modèle après l'appel au constructeur d'Etat&#xA;&#x9;&#x9; * @param a" item="_VKeZMkt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HouuiEt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU7zUEt9EeqjV5oE9659NA" sourceConnectionVisual="_HU7zUUt9EeqjV5oE9659NA" text="pour ajouter l'instance de {@link RepaintScreen} au modèle après l'appel au constructeur d'Etat&#xA;&#x9;&#x9; * @param repaintScreen" item="_VKeZOEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_HovVkEt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HU7zUkt9EeqjV5oE9659NA" sourceConnectionVisual="_HU7zU0t9EeqjV5oE9659NA" text="&#xA;&#x9;&#x9;  * @param c courbe actuelle&#xA;&#x9;&#x9;  * @param p point à tester&#xA;&#x9;&#x9;  * @return vrai si p est sur la courbe c, false sinon" item="_VKeZPkt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_Houug0t8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVInpUt9EeqjV5oE9659NA" sourceConnectionVisual="_HVInpkt9EeqjV5oE9659NA" text="Rafraichit l'affichage toutes les {@link #time} millisecondes" item="_VJYM4Et4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_dKYSEEt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVMSAEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVMSAUt9EeqjV5oE9659NA" text="stoppe le Thread" item="_VJYM8kt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_dKYSEkt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVVb8kt9EeqjV5oE9659NA" sourceConnectionVisual="_HVWDAEt9EeqjV5oE9659NA" text="Génère les points de la ligne brisée au fur et à mesure de l'avancement de la {@link #position} &#xA;de l'Ovale" item="_VJwnYEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0K8Et7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVbikEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVbikUt9EeqjV5oE9659NA" text="Constructeur" item="_VJwnlEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0K8Ut7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVhCIEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVhCIUt9EeqjV5oE9659NA" text="Initialise la liste {@link #points}" item="_VJwnmkt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0K8kt7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVhCIkt9EeqjV5oE9659NA" sourceConnectionVisual="_HVhCI0t9EeqjV5oE9659NA" text="Génère un nouveau point et l'ajoute à la liste {@link #points}" item="_VJwnnUt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0yAEt7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVhpMEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVhpMUt9EeqjV5oE9659NA" text="Génère un chiffre aléatoire entre min et max&#xA;&#x9; * @param int min&#xA;&#x9; * @param int max&#xA;&#x9; * @return random int between min and max" item="_VJwnoEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0yAUt7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVi3UEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVi3UUt9EeqjV5oE9659NA" text="Supprime les points qui ne sont plus dans la vue et ajoute des nouveaux points si nécessaire" item="_VJxOcEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0yAkt7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVksgEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVksgUt9EeqjV5oE9659NA" text="renvoie les points à afficher&#xA;&#x9; * @return Point[]&#xA;&#x9; *" item="_VJxOc0t4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0yA0t7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVlTkEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVlTkUt9EeqjV5oE9659NA" text="augmente la {@link #position} de l'Ovale de n&#xA;&#x9; * @param n : taille (en pixels) de l'augmentation de la position  &#xA;&#x9; *" item="_VJxOeUt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_jT0yBEt7EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVudgEt9EeqjV5oE9659NA" sourceConnectionVisual="_HVudgUt9EeqjV5oE9659NA" text="Créé des instances de Etat, Affichage et Control et les relie entre elles &#xA;Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel)" item="_VKHMsEt4EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_vrUdsEt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_HVvrpkt9EeqjV5oE9659NA" sourceConnectionVisual="_HVvrp0t9EeqjV5oE9659NA" text="Constructeur&#xA;&#x9; * @param aff" item="_HVIAkEt9EeqjV5oE9659NA">
-    <modelElement href="flappyBird2.uml#_dKYSEUt8EeqjV5oE9659NA"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VJYM4Et4EeqjV5oE9659NA" comments="_HVInpUt9EeqjV5oE9659NA" targetConnectionVisual="_VJOb4Ut4EeqjV5oE9659NA _HVInpkt9EeqjV5oE9659NA" name="RepaintScreen" associationsIn="_VJPC8Et4EeqjV5oE9659NA" associationsOut="_HU9BcEt9EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VJYM4Et4EeqjV5oE9659NA" comments="_PSMOkE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJOb4Ut4EeqjV5oE9659NA _PSM1oE0OEeq5Xo9twdeW-g" name="RepaintScreen" associationsIn="_VJPC8Et4EeqjV5oE9659NA" associationsOut="_HU9BcEt9EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U2bbsEt4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VJYM4Ut4EeqjV5oE9659NA" position="-936.0,-765.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VJYM4kt4EeqjV5oE9659NA" label="+"/>
@@ -832,16 +727,16 @@
     </attributes>
     <attributes xmi:id="_HVInpEt9EeqjV5oE9659NA" name="aff">
       <modelElement href="flappyBird2.uml#_PRQmIEt8EeqjV5oE9659NA"/>
-      <stereotypes xmi:id="_HVwSs0t9EeqjV5oE9659NA" name="LegacyStyledElement">
-        <modelElement href="flappyBird2.uml#_PRQmIUt8EeqjV5oE9659NA"/>
-      </stereotypes>
+      <stereotypes xmi:id="_LD6QQE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LD7eYE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEHroE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_HVwSskt9EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_HVwStEt9EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_HVwSsUt9EeqjV5oE9659NA" name="Affichage">
         <modelElement href="flappyBird2.uml#_U2z2MEt4EeqjV5oE9659NA"/>
       </type>
     </attributes>
-    <operations xmi:id="_VJYM8kt4EeqjV5oE9659NA" comments="_HVMSAEt9EeqjV5oE9659NA" targetConnectionVisual="_VJPqAUt4EeqjV5oE9659NA _HVMSAUt9EeqjV5oE9659NA" name="terminate">
+    <operations xmi:id="_VJYM8kt4EeqjV5oE9659NA" comments="_PSQgAE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJPqAUt4EeqjV5oE9659NA _PSRHEE0OEeq5Xo9twdeW-g" name="terminate">
       <modelElement href="flappyBird2.uml#_U2dQ4Et4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VJYM80t4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VJYM9Et4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -857,7 +752,7 @@
       <visibility xmi:id="_VJYM-Et4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VJYM-Ut4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_HVIAkEt9EeqjV5oE9659NA" comments="_HVvrpkt9EeqjV5oE9659NA" targetConnectionVisual="_HVvrp0t9EeqjV5oE9659NA" name="RepaintScreen">
+    <operations xmi:id="_HVIAkEt9EeqjV5oE9659NA" comments="_PSRuIE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PSSVME0OEeq5Xo9twdeW-g" name="RepaintScreen">
       <modelElement href="flappyBird2.uml#_UEkkIEt8EeqjV5oE9659NA"/>
       <keywords xmi:id="_HVwSsEt9EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_HVvrpUt9EeqjV5oE9659NA" label="+"/>
@@ -877,7 +772,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VJHuMEt4EeqjV5oE9659NA" comments="_VJDcwEt4EeqjV5oE9659NA" targetConnectionVisual="_VJDcwUt4EeqjV5oE9659NA" name="Click" associationsOut="_VJED0Et4EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VJHuMEt4EeqjV5oE9659NA" comments="_PPYLIE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PPcckE0OEeq5Xo9twdeW-g" name="Click" associationsOut="_VJED0Et4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U1j5AEt4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VJHuMUt4EeqjV5oE9659NA" position="-961.0,-86.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VJHuMkt4EeqjV5oE9659NA" label="+"/>
@@ -886,13 +781,16 @@
       <stereotypes xmi:id="_HWD0sEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWFp4Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWtU8Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCvLkE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCxAwE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEJg0E0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VJHuNUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VJHuNkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VJHuN0t4EeqjV5oE9659NA" name="Etat">
         <modelElement href="flappyBird2.uml#_U3GKEEt4EeqjV5oE9659NA"/>
       </type>
     </attributes>
-    <operations xmi:id="_VJHuOEt4EeqjV5oE9659NA" comments="_VJEq4Et4EeqjV5oE9659NA" targetConnectionVisual="_VJEq4Ut4EeqjV5oE9659NA" name="Click">
+    <operations xmi:id="_VJHuOEt4EeqjV5oE9659NA" comments="_PPk_cE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PPlmgE0OEeq5Xo9twdeW-g" name="Click">
       <modelElement href="flappyBird2.uml#_U6s3sEt4EeqjV5oE9659NA"/>
       <keywords xmi:id="_VJHuOUt4EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_VJHuOkt4EeqjV5oE9659NA" label="+"/>
@@ -930,7 +828,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VI3PgEt4EeqjV5oE9659NA" comments="_VIusoEt4EeqjV5oE9659NA" targetConnectionVisual="_VIusoUt4EeqjV5oE9659NA" name="Voler" associationsIn="_VIvTsEt4EeqjV5oE9659NA" associationsOut="_VIvTsUt4EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VI3PgEt4EeqjV5oE9659NA" comments="_PSVYgE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PSWmoE0OEeq5Xo9twdeW-g" name="Voler" associationsIn="_VIvTsEt4EeqjV5oE9659NA" associationsOut="_VIvTsUt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U2jXgEt4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VI32kEt4EeqjV5oE9659NA" position="-922.0,-432.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VI32kUt4EeqjV5oE9659NA" label="+"/>
@@ -972,13 +870,16 @@
       <stereotypes xmi:id="_HWBYcEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWCmkEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWsG0Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCsIQE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCtWYE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LENLME0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VI32o0t4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VI32pEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VI32pUt4EeqjV5oE9659NA" name="Etat">
         <modelElement href="flappyBird2.uml#_U3GKEEt4EeqjV5oE9659NA"/>
       </type>
     </attributes>
-    <operations xmi:id="_VI32pkt4EeqjV5oE9659NA" name="terminate">
+    <operations xmi:id="_VI32pkt4EeqjV5oE9659NA" comments="_PUqTwE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PUsI8E0OEeq5Xo9twdeW-g" name="terminate">
       <modelElement href="flappyBird2.uml#_U2ma0Et4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VI32p0t4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VI32qEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -994,7 +895,7 @@
       <visibility xmi:id="_VI32rEt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VI32rUt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VI32rkt4EeqjV5oE9659NA" comments="_VIxI4Et4EeqjV5oE9659NA" targetConnectionVisual="_VIxI4Ut4EeqjV5oE9659NA" name="Voler">
+    <operations xmi:id="_VI32rkt4EeqjV5oE9659NA" comments="_PSYb0E0OEeq5Xo9twdeW-g" targetConnectionVisual="_PSwPQE0OEeq5Xo9twdeW-g" name="Voler">
       <modelElement href="flappyBird2.uml#_U7aCUEt4EeqjV5oE9659NA"/>
       <keywords xmi:id="_VI32r0t4EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_VI32sEt4EeqjV5oE9659NA" label="+"/>
@@ -1014,7 +915,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VKHMsEt4EeqjV5oE9659NA" comments="_HVudgEt9EeqjV5oE9659NA" targetConnectionVisual="_VKF-kUt4EeqjV5oE9659NA _HVudgUt9EeqjV5oE9659NA" name="Main">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VKHMsEt4EeqjV5oE9659NA" comments="_PTw74E0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKF-kUt4EeqjV5oE9659NA _PTxi8E0OEeq5Xo9twdeW-g" name="Main">
     <modelElement href="flappyBird2.uml#_U2xZ8Et4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VKHMsUt4EeqjV5oE9659NA" position="-395.0,-2.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VKHMskt4EeqjV5oE9659NA" label="+"/>
@@ -1031,7 +932,7 @@
       </parameters>
     </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VJwnYEt4EeqjV5oE9659NA" comments="_HVVb8kt9EeqjV5oE9659NA" targetConnectionVisual="_VJhW0Ut4EeqjV5oE9659NA _HVWDAEt9EeqjV5oE9659NA" name="Parcours" associationsIn="_VJh94Et4EeqjV5oE9659NA" associationsOut="_VJwAUEt4EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VJwnYEt4EeqjV5oE9659NA" comments="_PPrGEE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJhW0Ut4EeqjV5oE9659NA _PP-BAE0OEeq5Xo9twdeW-g" name="Parcours" associationsIn="_VJh94Et4EeqjV5oE9659NA" associationsOut="_VJwAUEt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U1-IsEt4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VJwnYUt4EeqjV5oE9659NA" position="111.0,-388.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VJwnYkt4EeqjV5oE9659NA" label="+"/>
@@ -1087,6 +988,12 @@
       <stereotypes xmi:id="_HWNlsEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWyNcEt9EeqjV5oE9659NA" name="Generics"/>
       <stereotypes xmi:id="_HWyNcUt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDPh4E0OEeq5Xo9twdeW-g" name="Generics"/>
+      <stereotypes xmi:id="_LDTzUE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDZS4E0OEeq5Xo9twdeW-g" name="Generics"/>
+      <stereotypes xmi:id="_LDc9QE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEPncE0OEeq5Xo9twdeW-g" name="Generics"/>
+      <stereotypes xmi:id="_LEQOgE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VJwnekt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VJwne0t4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VJwnfEt4EeqjV5oE9659NA" name="ArrayList">
@@ -1142,7 +1049,7 @@
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <operations xmi:id="_VJwnlEt4EeqjV5oE9659NA" comments="_HVbikEt9EeqjV5oE9659NA" targetConnectionVisual="_VJik8Ut4EeqjV5oE9659NA _HVbikUt9EeqjV5oE9659NA" name="Parcours">
+    <operations xmi:id="_VJwnlEt4EeqjV5oE9659NA" comments="_PQJnME0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJik8Ut4EeqjV5oE9659NA _PQKOQE0OEeq5Xo9twdeW-g" name="Parcours">
       <modelElement href="flappyBird2.uml#_U2CaIEt4EeqjV5oE9659NA"/>
       <keywords xmi:id="_VJwnlUt4EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_VJwnlkt4EeqjV5oE9659NA" label="+"/>
@@ -1154,17 +1061,17 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_VJwnmkt4EeqjV5oE9659NA" comments="_HVhCIEt9EeqjV5oE9659NA" targetConnectionVisual="_VJjMAUt4EeqjV5oE9659NA _HVhCIUt9EeqjV5oE9659NA" name="initPoints">
+    <operations xmi:id="_VJwnmkt4EeqjV5oE9659NA" comments="_PRNXIE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJjMAUt4EeqjV5oE9659NA _PRaLcE0OEeq5Xo9twdeW-g" name="initPoints">
       <modelElement href="flappyBird2.uml#_U2DBM0t4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VJwnm0t4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VJwnnEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VJwnnUt4EeqjV5oE9659NA" comments="_HVhCIkt9EeqjV5oE9659NA" targetConnectionVisual="_VJjzEUt4EeqjV5oE9659NA _HVhCI0t9EeqjV5oE9659NA" name="addPoint">
+    <operations xmi:id="_VJwnnUt4EeqjV5oE9659NA" comments="_PRvioE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJjzEUt4EeqjV5oE9659NA _PRwJsE0OEeq5Xo9twdeW-g" name="addPoint">
       <modelElement href="flappyBird2.uml#_U2DoQEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VJwnnkt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VJwnn0t4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VJwnoEt4EeqjV5oE9659NA" comments="_HVhpMEt9EeqjV5oE9659NA" targetConnectionVisual="_VJkaIUt4EeqjV5oE9659NA _HVhpMUt9EeqjV5oE9659NA" name="randint">
+    <operations xmi:id="_VJwnoEt4EeqjV5oE9659NA" comments="_PR3ecE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJkaIUt4EeqjV5oE9659NA _PR4FgE0OEeq5Xo9twdeW-g" name="randint">
       <modelElement href="flappyBird2.uml#_U2EPUEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VJwnoUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VJwnokt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1189,7 +1096,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VJwnq0t4EeqjV5oE9659NA" name="getCourbe">
+    <operations xmi:id="_VJwnq0t4EeqjV5oE9659NA" comments="_PUmpYE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PUnQcE0OEeq5Xo9twdeW-g" name="getCourbe">
       <modelElement href="flappyBird2.uml#_U2E2YUt4EeqjV5oE9659NA"/>
       <stereotypes xmi:id="_VJwnrEt4EeqjV5oE9659NA" name="Generics">
         <modelElement href="flappyBird2.uml#_U2KV8Et4EeqjV5oE9659NA"/>
@@ -1203,12 +1110,12 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_VJxOcEt4EeqjV5oE9659NA" comments="_HVi3UEt9EeqjV5oE9659NA" targetConnectionVisual="_VJloQEt4EeqjV5oE9659NA _HVi3UUt9EeqjV5oE9659NA" name="updateParcours">
+    <operations xmi:id="_VJxOcEt4EeqjV5oE9659NA" comments="_PR5ToE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJloQEt4EeqjV5oE9659NA _PR5ToU0OEeq5Xo9twdeW-g" name="updateParcours">
       <modelElement href="flappyBird2.uml#_U2K9AEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VJxOcUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VJxOckt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VJxOc0t4EeqjV5oE9659NA" comments="_HVksgEt9EeqjV5oE9659NA" targetConnectionVisual="_VJmPUUt4EeqjV5oE9659NA _HVksgUt9EeqjV5oE9659NA" name="getParcours">
+    <operations xmi:id="_VJxOc0t4EeqjV5oE9659NA" comments="_PR8-AE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJmPUUt4EeqjV5oE9659NA _PR9lEE0OEeq5Xo9twdeW-g" name="getParcours">
       <modelElement href="flappyBird2.uml#_U2LkEEt4EeqjV5oE9659NA"/>
       <stereotypes xmi:id="_VJxOdEt4EeqjV5oE9659NA" name="Array">
         <modelElement href="flappyBird2.uml#_U2QckEt4EeqjV5oE9659NA"/>
@@ -1222,7 +1129,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_VJxOeUt4EeqjV5oE9659NA" comments="_HVlTkEt9EeqjV5oE9659NA" targetConnectionVisual="_VJndcEt4EeqjV5oE9659NA _HVlTkUt9EeqjV5oE9659NA" name="incrPos">
+    <operations xmi:id="_VJxOeUt4EeqjV5oE9659NA" comments="_PR-zME0OEeq5Xo9twdeW-g" targetConnectionVisual="_VJndcEt4EeqjV5oE9659NA _PR-zMU0OEeq5Xo9twdeW-g" name="incrPos">
       <modelElement href="flappyBird2.uml#_U2RDoEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VJxOekt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VJxOe0t4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1234,18 +1141,13 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VJxOf0t4EeqjV5oE9659NA" name="incrIdCourbe">
+    <operations xmi:id="_VJxOf0t4EeqjV5oE9659NA" comments="_PUoekE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PUoekU0OEeq5Xo9twdeW-g" name="incrIdCourbe">
       <modelElement href="flappyBird2.uml#_U2RqsEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VJxOgEt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VJxOgUt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VJxOgkt4EeqjV5oE9659NA" name="decrIdCourbe">
-      <modelElement href="flappyBird2.uml#_U2RqsUt4EeqjV5oE9659NA"/>
-      <visibility xmi:id="_VJxOg0t4EeqjV5oE9659NA" label="+"/>
-      <cardinality xmi:id="_VJxOhEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
-    </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VKdyAEt4EeqjV5oE9659NA" comments="_HUz3gEt9EeqjV5oE9659NA" targetConnectionVisual="_VKMFMEt4EeqjV5oE9659NA _HUz3gUt9EeqjV5oE9659NA" name="Etat" associationsIn="_VGyy8Et4EeqjV5oE9659NA _VJED0Et4EeqjV5oE9659NA _VIvTsUt4EeqjV5oE9659NA _VKbVwEt4EeqjV5oE9659NA" associationsOut="_VJh94Et4EeqjV5oE9659NA _VGvvoEt4EeqjV5oE9659NA _VIvTsEt4EeqjV5oE9659NA _VJPC8Et4EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VKdyAEt4EeqjV5oE9659NA" comments="_PNZOIE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKMFMEt4EeqjV5oE9659NA _PNacQE0OEeq5Xo9twdeW-g" name="Etat" associationsIn="_VGyy8Et4EeqjV5oE9659NA _VJED0Et4EeqjV5oE9659NA _VIvTsUt4EeqjV5oE9659NA _VKbVwEt4EeqjV5oE9659NA" associationsOut="_VJh94Et4EeqjV5oE9659NA _VGvvoEt4EeqjV5oE9659NA _VIvTsEt4EeqjV5oE9659NA _VJPC8Et4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U3GKEEt4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VKdyAUt4EeqjV5oE9659NA" position="-471.0,-412.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VKdyAkt4EeqjV5oE9659NA" label="+"/>
@@ -1273,6 +1175,9 @@
       <stereotypes xmi:id="_HWJUQEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWKiYEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWaaAEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDA4YE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LDG_AE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEYxYE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VKdyDUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VKdyDkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VKdyD0t4EeqjV5oE9659NA" name="Parcours">
@@ -1284,6 +1189,9 @@
       <stereotypes xmi:id="_HV5coEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HV6qwEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWcPMEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCf7AE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LChwME0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEkXkE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VKdyEUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VKdyEkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VKdyE0t4EeqjV5oE9659NA" name="Avancer">
@@ -1295,6 +1203,9 @@
       <stereotypes xmi:id="_HV_jQEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWAKUEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWc2QEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCod4E0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LCqTEE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEllsE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VKdyFUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VKdyFkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VKdyF0t4EeqjV5oE9659NA" name="Voler">
@@ -1306,6 +1217,9 @@
       <stereotypes xmi:id="_HWGQ8Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWIGIEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWeEYEt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LC3HYE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LC_DME0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEuvoE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VKdyGUt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VKdyGkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VKdyG0t4EeqjV5oE9659NA" name="RepaintScreen">
@@ -1314,18 +1228,21 @@
     </attributes>
     <attributes xmi:id="_VKdyIUt4EeqjV5oE9659NA" name="score0">
       <modelElement href="flappyBird2.uml#_U-PT4Ut4EeqjV5oE9659NA"/>
-      <visibility xmi:id="_VKdyIkt4EeqjV5oE9659NA" label="+"/>
+      <stereotypes xmi:id="_PT1NUE0OEeq5Xo9twdeW-g" name="LegacyStyledElement">
+        <modelElement href="flappyBird2.uml#_PMRz0E0OEeq5Xo9twdeW-g"/>
+      </stereotypes>
+      <visibility xmi:id="_VKdyIkt4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VKdyI0t4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VKdyJEt4EeqjV5oE9659NA" name="int">
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <operations xmi:id="_VKdyJUt4EeqjV5oE9659NA" comments="_HU2TwUt9EeqjV5oE9659NA" targetConnectionVisual="_VKNTUUt4EeqjV5oE9659NA _HU2Twkt9EeqjV5oE9659NA" name="jump">
+    <operations xmi:id="_VKdyJUt4EeqjV5oE9659NA" comments="_PNfUwE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKNTUUt4EeqjV5oE9659NA _PNfUwU0OEeq5Xo9twdeW-g" name="jump">
       <modelElement href="flappyBird2.uml#_U3ImUEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKdyJkt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKdyJ0t4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VKdyKEt4EeqjV5oE9659NA" comments="_HU4wAEt9EeqjV5oE9659NA" targetConnectionVisual="_VKN6YUt4EeqjV5oE9659NA _HU4wAUt9EeqjV5oE9659NA" name="moveDown">
+    <operations xmi:id="_VKdyKEt4EeqjV5oE9659NA" comments="_PNjmME0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKN6YUt4EeqjV5oE9659NA _PNjmMU0OEeq5Xo9twdeW-g" name="moveDown">
       <modelElement href="flappyBird2.uml#_U3JNYEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKdyKUt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKdyKkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1337,7 +1254,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VKdyLkt4EeqjV5oE9659NA" comments="_HU5XEEt9EeqjV5oE9659NA" targetConnectionVisual="_VKOhcUt4EeqjV5oE9659NA _HU5XEUt9EeqjV5oE9659NA" name="testPerdu">
+    <operations xmi:id="_VKdyLkt4EeqjV5oE9659NA" comments="_PNmCcE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKOhcUt4EeqjV5oE9659NA _PN-c8E0OEeq5Xo9twdeW-g" name="testPerdu">
       <modelElement href="flappyBird2.uml#_U3J0cEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKdyL0t4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKdyMEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1348,7 +1265,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_VKdyM0t4EeqjV5oE9659NA" comments="_HU5XEkt9EeqjV5oE9659NA" targetConnectionVisual="_VKPvkUt4EeqjV5oE9659NA _HU5XE0t9EeqjV5oE9659NA" name="getParcours">
+    <operations xmi:id="_VKdyM0t4EeqjV5oE9659NA" comments="_POFKoE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKPvkUt4EeqjV5oE9659NA _POFxsE0OEeq5Xo9twdeW-g" name="getParcours">
       <modelElement href="flappyBird2.uml#_U3Ne0Et4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKdyNEt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKdyNUt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1359,7 +1276,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_VKeZFEt4EeqjV5oE9659NA" comments="_HU5-IEt9EeqjV5oE9659NA" targetConnectionVisual="_VKQ9sUt4EeqjV5oE9659NA _HU5-IUt9EeqjV5oE9659NA" name="avance">
+    <operations xmi:id="_VKeZFEt4EeqjV5oE9659NA" comments="_POIN8E0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKQ9sUt4EeqjV5oE9659NA _POJcEE0OEeq5Xo9twdeW-g" name="avance">
       <modelElement href="flappyBird2.uml#_U3PUAEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKeZFUt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKeZFkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1371,12 +1288,12 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VKeZGkt4EeqjV5oE9659NA" comments="_HU5-Ikt9EeqjV5oE9659NA" targetConnectionVisual="_VKRkwEt4EeqjV5oE9659NA _HU6lMEt9EeqjV5oE9659NA" name="stopThreads">
+    <operations xmi:id="_VKeZGkt4EeqjV5oE9659NA" comments="_POKqME0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKRkwEt4EeqjV5oE9659NA _POLRQE0OEeq5Xo9twdeW-g" name="stopThreads">
       <modelElement href="flappyBird2.uml#_U3P7EEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKeZG0t4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKeZHEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VKeZHUt4EeqjV5oE9659NA" comments="_HU6lMUt9EeqjV5oE9659NA" targetConnectionVisual="_VKSy4Ut4EeqjV5oE9659NA _HU6lMkt9EeqjV5oE9659NA" name="Etat">
+    <operations xmi:id="_VKeZHUt4EeqjV5oE9659NA" comments="_POO7oE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKSy4Ut4EeqjV5oE9659NA _POO7oU0OEeq5Xo9twdeW-g" name="Etat">
       <modelElement href="flappyBird2.uml#_U8JCIEt4EeqjV5oE9659NA"/>
       <keywords xmi:id="_VKeZHkt4EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_VKeZH0t4EeqjV5oE9659NA" label="+"/>
@@ -1395,7 +1312,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VKeZLEt4EeqjV5oE9659NA" comments="_HU7MQEt9EeqjV5oE9659NA" targetConnectionVisual="_VKUBAEt4EeqjV5oE9659NA _HU7MQUt9EeqjV5oE9659NA" name="setVol">
+    <operations xmi:id="_VKeZLEt4EeqjV5oE9659NA" comments="_POTNEE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKUBAEt4EeqjV5oE9659NA _POT0IE0OEeq5Xo9twdeW-g" name="setVol">
       <modelElement href="flappyBird2.uml#_U8KQQUt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKeZLUt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKeZLkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1407,7 +1324,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VKeZMkt4EeqjV5oE9659NA" comments="_HU7MQkt9EeqjV5oE9659NA" targetConnectionVisual="_VKUoEEt4EeqjV5oE9659NA _HU7MQ0t9EeqjV5oE9659NA" name="setAvance">
+    <operations xmi:id="_VKeZMkt4EeqjV5oE9659NA" comments="_POW3cE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKUoEEt4EeqjV5oE9659NA _POrAgE0OEeq5Xo9twdeW-g" name="setAvance">
       <modelElement href="flappyBird2.uml#_U8K3UEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKeZM0t4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKeZNEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1419,7 +1336,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VKeZOEt4EeqjV5oE9659NA" comments="_HU7zUEt9EeqjV5oE9659NA" targetConnectionVisual="_VKUoEkt4EeqjV5oE9659NA _HU7zUUt9EeqjV5oE9659NA" name="setRepaintScreen">
+    <operations xmi:id="_VKeZOEt4EeqjV5oE9659NA" comments="_POzjYE0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKUoEkt4EeqjV5oE9659NA _POzjYU0OEeq5Xo9twdeW-g" name="setRepaintScreen">
       <modelElement href="flappyBird2.uml#_U8LeYEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKeZOUt4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VKeZOkt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1431,7 +1348,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VKeZPkt4EeqjV5oE9659NA" comments="_HU7zUkt9EeqjV5oE9659NA" targetConnectionVisual="_VKV2MEt4EeqjV5oE9659NA _HU7zU0t9EeqjV5oE9659NA" name="onCurve">
+    <operations xmi:id="_VKeZPkt4EeqjV5oE9659NA" comments="_PO300E0OEeq5Xo9twdeW-g" targetConnectionVisual="_VKV2MEt4EeqjV5oE9659NA _PO4b4E0OEeq5Xo9twdeW-g" name="onCurve">
       <modelElement href="flappyBird2.uml#_U9By8Et4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VKeZP0t4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VKeZQEt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1456,8 +1373,19 @@
         </type>
       </parameters>
     </operations>
+    <operations xmi:id="_PNWK0U0OEeq5Xo9twdeW-g" comments="_PNUVoE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PNWK0E0OEeq5Xo9twdeW-g" name="getScore">
+      <modelElement href="flappyBird2.uml#_PLo6oE0OEeq5Xo9twdeW-g"/>
+      <visibility xmi:id="_PNWK0k0OEeq5Xo9twdeW-g" label="+"/>
+      <cardinality xmi:id="_PNWK000OEeq5Xo9twdeW-g" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_PNWK1E0OEeq5Xo9twdeW-g">
+        <modelElement href="flappyBird2.uml#_PMkHsE0OEeq5Xo9twdeW-g"/>
+        <type xmi:id="_PNWK1U0OEeq5Xo9twdeW-g" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VMkq0Et4EeqjV5oE9659NA" name="VueOiseau" associationsIn="_VL8_wEt4EeqjV5oE9659NA" associationsOut="_VMXPcEt4EeqjV5oE9659NA">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VMkq0Et4EeqjV5oE9659NA" comments="_PT5ewE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PUAMcE0OEeq5Xo9twdeW-g" name="VueOiseau" associationsIn="_VL8_wEt4EeqjV5oE9659NA" associationsOut="_VMXPcEt4EeqjV5oE9659NA">
     <modelElement href="flappyBird2.uml#_U3i2AEt4EeqjV5oE9659NA"/>
     <visualProperties xmi:id="_VMkq0Ut4EeqjV5oE9659NA" position="113.0,-791.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_VMkq0kt4EeqjV5oE9659NA" label="+"/>
@@ -1483,7 +1411,7 @@
         <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
       </type>
     </attributes>
-    <attributes xmi:id="_VMkq3Ut4EeqjV5oE9659NA" defaultValue="100" name="probaOiseau" staticAttribute="true">
+    <attributes xmi:id="_VMkq3Ut4EeqjV5oE9659NA" defaultValue="10000" name="probaOiseau" staticAttribute="true">
       <modelElement href="flappyBird2.uml#_U-WBkUt4EeqjV5oE9659NA"/>
       <stereotypes xmi:id="_VMkq3kt4EeqjV5oE9659NA" name="LegacyStyledElement">
         <modelElement href="flappyBird2.uml#_U-Yd0Et4EeqjV5oE9659NA"/>
@@ -1502,13 +1430,19 @@
       <stereotypes xmi:id="_HWZL4Et9EeqjV5oE9659NA" name="LegacyStyledElement"/>
       <stereotypes xmi:id="_HWmnQEt9EeqjV5oE9659NA" name="Generics"/>
       <stereotypes xmi:id="_HWmnQUt9EeqjV5oE9659NA" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LD1XwE0OEeq5Xo9twdeW-g" name="Generics"/>
+      <stereotypes xmi:id="_LD1-0E0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LD30AE0OEeq5Xo9twdeW-g" name="Generics"/>
+      <stereotypes xmi:id="_LD4bEE0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_LEwk0E0OEeq5Xo9twdeW-g" name="Generics"/>
+      <stereotypes xmi:id="_LExL4E0OEeq5Xo9twdeW-g" name="LegacyStyledElement"/>
       <visibility xmi:id="_VMkq5Ut4EeqjV5oE9659NA" label="-"/>
       <cardinality xmi:id="_VMkq5kt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
       <type xmi:id="_VMkq50t4EeqjV5oE9659NA" name="ArrayList">
         <modelElement href="flappyBird2.uml#_U7L_4Ut4EeqjV5oE9659NA"/>
       </type>
     </attributes>
-    <operations xmi:id="_VMkq6Et4EeqjV5oE9659NA" comments="_VMX2gEt4EeqjV5oE9659NA" targetConnectionVisual="_VMYdkEt4EeqjV5oE9659NA" name="VueOiseau">
+    <operations xmi:id="_VMkq6Et4EeqjV5oE9659NA" comments="_PTLtEE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PTM7ME0OEeq5Xo9twdeW-g" name="VueOiseau">
       <modelElement href="flappyBird2.uml#_U3o8oEt4EeqjV5oE9659NA"/>
       <keywords xmi:id="_VMkq6Ut4EeqjV5oE9659NA" keyword="create"/>
       <visibility xmi:id="_VMkq6kt4EeqjV5oE9659NA" label="+"/>
@@ -1520,17 +1454,17 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_VMlR4Et4EeqjV5oE9659NA" comments="_VMaSwEt4EeqjV5oE9659NA" targetConnectionVisual="_VMaSwUt4EeqjV5oE9659NA" name="genererOiseaux">
+    <operations xmi:id="_VMlR4Et4EeqjV5oE9659NA" comments="_PTjggE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PTkHkE0OEeq5Xo9twdeW-g" name="genererOiseaux">
       <modelElement href="flappyBird2.uml#_U3qKwEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VMlR4Ut4EeqjV5oE9659NA" label="~"/>
       <cardinality xmi:id="_VMlR4kt4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VMlR40t4EeqjV5oE9659NA" comments="_VMa50Et4EeqjV5oE9659NA" targetConnectionVisual="_VMa50Ut4EeqjV5oE9659NA" name="finiOiseaux">
+    <operations xmi:id="_VMlR40t4EeqjV5oE9659NA" comments="_PTnK4E0OEeq5Xo9twdeW-g" targetConnectionVisual="_PToZAE0OEeq5Xo9twdeW-g" name="finiOiseaux">
       <modelElement href="flappyBird2.uml#_U3qx0Et4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VMlR5Et4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VMlR5Ut4EeqjV5oE9659NA" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_VMlR5kt4EeqjV5oE9659NA" comments="_VMbg4Et4EeqjV5oE9659NA" targetConnectionVisual="_VMbg4Ut4EeqjV5oE9659NA" name="randint">
+    <operations xmi:id="_VMlR5kt4EeqjV5oE9659NA" comments="_PTqOME0OEeq5Xo9twdeW-g" targetConnectionVisual="_PTq1QE0OEeq5Xo9twdeW-g" name="randint">
       <modelElement href="flappyBird2.uml#_U3r_8Et4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VMlR50t4EeqjV5oE9659NA" label="+"/>
       <cardinality xmi:id="_VMlR6Et4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1555,7 +1489,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_VMlR8Ut4EeqjV5oE9659NA" comments="_VMcH8Et4EeqjV5oE9659NA" targetConnectionVisual="_VMcvAEt4EeqjV5oE9659NA" name="dessiner">
+    <operations xmi:id="_VMlR8Ut4EeqjV5oE9659NA" comments="_PTtRgE0OEeq5Xo9twdeW-g" targetConnectionVisual="_PTtRgU0OEeq5Xo9twdeW-g" name="dessiner">
       <modelElement href="flappyBird2.uml#_U9E2QEt4EeqjV5oE9659NA"/>
       <visibility xmi:id="_VMlR8kt4EeqjV5oE9659NA" label="~"/>
       <cardinality xmi:id="_VMlR80t4EeqjV5oE9659NA" label="1" max="1" min="1"/>
@@ -1726,5 +1660,146 @@
         </type>
       </outParameters>
     </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PNUVoE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PNWK0E0OEeq5Xo9twdeW-g" text="@return le score actuel" item="_PNWK0U0OEeq5Xo9twdeW-g">
+    <modelElement href="flappyBird2.uml#_PM4QwU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PNZOIE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PNacQE0OEeq5Xo9twdeW-g" text="Stocke l'état de ce qu'on doit afficher&#xA; *" item="_VKdyAEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10gE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PNfUwE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PNfUwU0OEeq5Xo9twdeW-g" text="on augmente la hauteur de l'ovale de la valeur définie par {@link #saut}&#xA;&#x9;&#x9; * si on ne dépasse pas le cadre du JPanel. sinon on met l'ovale tout en haut&#xA;&#x9;&#x9; *" item="_VKdyJUt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10gk0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PNjmME0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PNjmMU0OEeq5Xo9twdeW-g" text="@param chute nombre de pixels de la chute  &#xA;&#x9;&#x9;  * fait baisser la {@link #hauteur} de l'Ovale de {@link Voler#chute} pixels" item="_VKdyKEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10hE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PNmCcE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PN-c8E0OEeq5Xo9twdeW-g" text="vrai si l'ovale est sortie de la ligne brisée&#xA;&#x9;&#x9;  * @return &lt;p>true si l'ovale est sortie de la ligne brisée &lt;/p>&#xA;&#x9;&#x9;  * &#x9;&#x9;&lt;p>false sinon&lt;/p>" item="_VKdyLkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10hU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_POFKoE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_POFxsE0OEeq5Xo9twdeW-g" text="@return une instance de la classe {@link Parcours}&#xA;&#x9;&#x9; *" item="_VKdyM0t4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10hk0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_POIN8E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_POJcEE0OEeq5Xo9twdeW-g" text="fait avancer la position de l'ovale de n pixels&#xA;&#x9;&#x9; * @param n" item="_VKeZFEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM2bkU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_POKqME0OEeq5Xo9twdeW-g" sourceConnectionVisual="_POLRQE0OEeq5Xo9twdeW-g" text="Arrète les Threads Voler, Avancer et RepaintScreen" item="_VKeZGkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM4QwE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_POO7oE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_POO7oU0OEeq5Xo9twdeW-g" text="Constructeur&#xA;&#x9;&#x9; * @param parcours : on prend une instance de {@link Parcours} pour avoir accès à la position de l'ovale" item="_VKeZHUt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10gU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_POTNEE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_POT0IE0OEeq5Xo9twdeW-g" text="pour ajouter l'instance de {@link Voler} au modèle après l'appel au constructeur d'Etat&#xA;&#x9;&#x9; * @param v" item="_VKeZLEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10h00OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_POW3cE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_POrAgE0OEeq5Xo9twdeW-g" text="pour ajouter l'instance de {@link Avancer} au modèle après l'appel au constructeur d'Etat&#xA;&#x9;&#x9; * @param a" item="_VKeZMkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10iE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_POzjYE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_POzjYU0OEeq5Xo9twdeW-g" text="pour ajouter l'instance de {@link RepaintScreen} au modèle après l'appel au constructeur d'Etat&#xA;&#x9;&#x9; * @param repaintScreen" item="_VKeZOEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM2bkE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PO300E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PO4b4E0OEeq5Xo9twdeW-g" text="&#xA;&#x9;&#x9;  * @param c courbe actuelle&#xA;&#x9;&#x9;  * @param p point à tester&#xA;&#x9;&#x9;  * @return vrai si p est sur la courbe c, false sinon" item="_VKeZPkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM10g00OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PO8GQE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PO_JkE0OEeq5Xo9twdeW-g" text="{@link Thread} qui fait avancer la {@link Parcours#position position}  &#xA;de {@link #avancement} pixels toutes les de {@link #time} millisecondes." item="_VGzaAEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMufwE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PPCz8E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PPCz8U0OEeq5Xo9twdeW-g" text="Constructeur&#xA;&#x9; * @param etat : instance de {@link Etat} pour appeller {@link Etat#avance} &#xA;&#x9; *" item="_VGzaH0t4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMufwU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PPYLIE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PPcckE0OEeq5Xo9twdeW-g" text="lance la fonction {@link Etat#jump()} &#xA;si l'utilisateur clique sur la fenêtre" item="_VJHuMEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMwU8E0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PPk_cE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PPlmgE0OEeq5Xo9twdeW-g" text="Constructeur &#xA;&#x9; * @param etat de type {@link Etat}" item="_VJHuOEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMyxME0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PPrGEE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PP-BAE0OEeq5Xo9twdeW-g" text="Génère les points de la ligne brisée au fur et à mesure de l'avancement de la {@link #position} &#xA;de l'Ovale" item="_VJwnYEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMzYQE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PQJnME0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PQKOQE0OEeq5Xo9twdeW-g" text="Constructeur" item="_VJwnlEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMzYQU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PRNXIE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PRaLcE0OEeq5Xo9twdeW-g" text="Initialise la liste {@link #points}" item="_VJwnmkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMz_UE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PRvioE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PRwJsE0OEeq5Xo9twdeW-g" text="Génère un nouveau point et l'ajoute à la liste {@link #points}" item="_VJwnnUt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMz_UU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PR3ecE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PR4FgE0OEeq5Xo9twdeW-g" text="Génère un chiffre aléatoire entre min et max&#xA;&#x9; * @param int min&#xA;&#x9; * @param int max&#xA;&#x9; * @return random int between min and max" item="_VJwnoEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMz_Uk0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PR5ToE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PR5ToU0OEeq5Xo9twdeW-g" text="Supprime les points qui ne sont plus dans la vue et ajoute des nouveaux points si nécessaire" item="_VJxOcEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMz_VE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PR8-AE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PR9lEE0OEeq5Xo9twdeW-g" text="renvoie les points à afficher&#xA;&#x9; * @return Point[]&#xA;&#x9; *" item="_VJxOc0t4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMz_VU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PR-zME0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PR-zMU0OEeq5Xo9twdeW-g" text="augmente la {@link #position} de l'Ovale de n&#xA;&#x9; * @param n : taille (en pixels) de l'augmentation de la position  &#xA;&#x9; *" item="_VJxOeUt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMz_Vk0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PSMOkE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PSM1oE0OEeq5Xo9twdeW-g" text="Rafraichit l'affichage toutes les {@link #time} millisecondes" item="_VJYM4Et4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM0mYU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PSQgAE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PSRHEE0OEeq5Xo9twdeW-g" text="stoppe le Thread" item="_VJYM8kt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM0mY00OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PSRuIE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PSSVME0OEeq5Xo9twdeW-g" text="Constructeur&#xA;&#x9; * @param aff" item="_HVIAkEt9EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM0mYk0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PSVYgE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PSWmoE0OEeq5Xo9twdeW-g" text="{@link Thread} qui fait chuter l'ovale toutes les {@link #time} millisecondes" item="_VI3PgEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM0mZE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PSYb0E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PSwPQE0OEeq5Xo9twdeW-g" text="Constructeur&#xA;&#x9; * @param etat : une instance d'{@link Etat} pour appeler {@link Etat#moveDown}&#xA;&#x9; *" item="_VI32rkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM0mZU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PS1u0E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PS3kAE0OEeq5Xo9twdeW-g" text="la classe Affichage est le JPanel dans lequel on va afficher les éléments du jeu (Ovale, courbe, oiseaux, ...)" item="_VL9m0Et4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM1NcU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PS6AQE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PS71cE0OEeq5Xo9twdeW-g" text="Constructeur:&#xA;         * @param etat de type {@link Etat}&#xA;         *" item="_VL9m-Et4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM1Nck0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PS9DkE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PS9DkU0OEeq5Xo9twdeW-g" text="affiche l'ovale au niveau de la hauteur définie par le Modèle {@link Etat}" item="_VL9nBEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM1Nc00OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PS_f0E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTB8EE0OEeq5Xo9twdeW-g" text="affiche les courbes actuelles&#xA;         * @param g2d" item="_VL9nCkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM1NdE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTEYUE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTEYUU0OEeq5Xo9twdeW-g" text="affiche le score actuel, c'est à dire la position définie par la classe {@link Parcours}" item="_VL9nEEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM1NdU0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTIpwE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTJQ0E0OEeq5Xo9twdeW-g" text="affiche une string au milieu de la fenetre" item="_VL9nGUt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM1Ndk0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTLtEE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTM7ME0OEeq5Xo9twdeW-g" text="initialise la {@link #list liste d'oiseaux}" item="_VMkq6Et4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM430U0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTjggE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTkHkE0OEeq5Xo9twdeW-g" text="à chaque rafraichissement de l'affichage on génère un oiseau avec 1 chance sur 10 000 si on a pas dépassé le {@link #MaxOiseaux maximum d'oiseaux}" item="_VMlR4Et4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM43000OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTnK4E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PToZAE0OEeq5Xo9twdeW-g" text="termine tous les Threads Oiseau, appelé lors du Game Over" item="_VMlR40t4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM431E0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTqOME0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTq1QE0OEeq5Xo9twdeW-g" text="Génère un chiffre aléatoire entre min et max&#xA;&#x9; * @param min&#xA;&#x9; * @param max&#xA;&#x9; * @return random int between min and max" item="_VMlR5kt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM431U0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTtRgE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTtRgU0OEeq5Xo9twdeW-g" text="dessine les oiseaux qui sont dans la fenetre, supprime ceux qui sont terminés&#xA;&#x9; * @param g" item="_VMlR8Ut4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM430k0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PTw74E0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PTxi8E0OEeq5Xo9twdeW-g" text="Créé des instances de Etat, Affichage et Control et les relie entre elles &#xA;Création d'une fenêtre(JFrame) à laquelle on ajoute l'Affichage(JPanel)" item="_VKHMsEt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM1NcE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PT5ewE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PUAMcE0OEeq5Xo9twdeW-g" text="Affiche les oiseaux à l'écran&#xA;et a une chance sur {@link #probaOiseau} de générer un oiseau" item="_VMkq0Et4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM430E0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PUUVgE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PUWxwE0OEeq5Xo9twdeW-g" text="Termine le {@link Thread}" item="_VGzaF0t4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMvt4E0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PUmpYE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PUnQcE0OEeq5Xo9twdeW-g" text="@return un tableau de {@link QuadCurve2D} à partir de {@link #points} &#xA;&#x9; * qui sera utilisé dans {@link Etat} et {@link Affichage} pour représenter la &#xA;&#x9; * grande courbe que devra suivre l'Ovale" item="_VJwnq0t4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PMz_U00OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PUoekE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PUoekU0OEeq5Xo9twdeW-g" text="augmente {@link #idCourbe}" item="_VJxOf0t4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM0mYE0OEeq5Xo9twdeW-g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_PUqTwE0OEeq5Xo9twdeW-g" sourceConnectionVisual="_PUsI8E0OEeq5Xo9twdeW-g" text="stoppe le {@link Thread}" item="_VI32pkt4EeqjV5oE9659NA">
+    <modelElement href="flappyBird2.uml#_PM0mZk0OEeq5Xo9twdeW-g"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

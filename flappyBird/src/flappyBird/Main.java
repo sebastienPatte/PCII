@@ -18,13 +18,13 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-		/* Création des instances de Etat, Affichage et Control*/
+		/* Création des instances de Etat, Affichage et Click*/
 		Etat mod = new Etat(new Parcours());
 		Affichage aff = new Affichage(mod, new VueOiseau());
-		Click ctrl = new Click(mod);
+		Click click = new Click(mod);
 
-		/* On ajoute l'instance de Control en tant que MouseListener de celle de Affichage*/
-		aff.addMouseListener(ctrl);
+		/* On ajoute l'instance de Click en tant que MouseListener de celle de Affichage*/
+		aff.addMouseListener(click);
 
 		// creation du thread Voler
 		Voler Vol = new Voler(mod);

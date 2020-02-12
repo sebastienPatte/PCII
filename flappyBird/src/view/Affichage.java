@@ -17,7 +17,6 @@ import model.Etat;
  * la classe Affichage est le JPanel dans lequel on va afficher les éléments du jeu (Ovale, courbe, oiseaux, ...) 
  */
 public class Affichage extends JPanel {
-		
 		private static final long serialVersionUID = 1L;
 		/**
 		 * largeur des traits
@@ -38,7 +37,7 @@ public class Affichage extends JPanel {
         
         /** attribut de type {@link Etat}*/
         public Etat etat;
-
+        /** attribut de type {@link VueOiseau}*/
 		private VueOiseau vueOiseau;
 
         
@@ -110,7 +109,7 @@ public class Affichage extends JPanel {
         	//test perdu
         	boolean perdu =etat.testPerdu();
         	//calcul du score
-    		int score = this.etat.getParcours().getPosition() - etat.getScore0();
+    		int score = etat.getScore();
     		if(perdu) {
         		//si on a perdu on stoppe tout les threads et on affiche game over avec le score
     			etat.stopThreads();

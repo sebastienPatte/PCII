@@ -7,9 +7,11 @@ import java.util.concurrent.ThreadLocalRandom;
 import javax.swing.ImageIcon;
 import control.Oiseau;
 
+/**
+ * Affiche les oiseaux à l'écran
+ * et a une chance sur {@link #probaOiseau} de générer un oiseau
+ */
 public class VueOiseau{
-	
-	
 	
 	/**
 	 * chemin vers les images de l'oiseau
@@ -24,7 +26,7 @@ public class VueOiseau{
 	/**
 	 * on a une chance sur probaOiseau qu'on oiseau apparaisse
 	 */
-	public static int probaOiseau= 10000;
+	public static int probaOiseau= 1000;
 	
 	/**
 	 * liste des oiseaux

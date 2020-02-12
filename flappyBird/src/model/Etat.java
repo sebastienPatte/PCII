@@ -20,17 +20,17 @@ public class Etat {
 		 * */
 		private static int saut = 34;
 		
-	
-		/** 
-		 * hauteur en pixels à laquelle se trouve l'ovale
-		 * */
-		private int hauteur;
-		
 		//instances des threads
 		private Parcours parcours;
 		private Avancer avance;
 		private Voler vol;
 		private RepaintScreen repaintScreen;
+		
+		/** 
+		 * hauteur en pixels à laquelle se trouve l'ovale
+		 * */
+		private int hauteur;
+		
 		/**
 		 * position où on arrive sur la 1ere courbe c'est à dire où le score doit etre 0 
 		 * */
@@ -175,10 +175,10 @@ public class Etat {
 		}
 		
 		/**
-		 * @return la position où le score doit commencer à augmenter (quand on arrive au début de la 1ère courbe) 
+		 * @return le score actuel 
 		 */
-		public int getScore0() {
-			return score0;
+		public int getScore() {
+			return this.parcours.getPosition() - score0;
 		}
 
 		

@@ -36,7 +36,9 @@ public class RepaintScreen extends Thread{
 		this.running = false;
 	}
 	
-	
+	/**
+	 * on appelle {@link Affichage#repaint()} toutes les {@link #time} millisecondes
+	 */
 	@Override
 	public void run() {
 		while(this.running) {

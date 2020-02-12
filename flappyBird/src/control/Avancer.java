@@ -32,6 +32,9 @@ public class Avancer extends Thread{
 		this.etat = etat;
 	}
 	
+	/**
+	 * Termine le {@link Thread}
+	 */
 	public void terminate() {
 		this.running = false;
 	}

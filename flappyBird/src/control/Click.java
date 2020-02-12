@@ -6,7 +6,7 @@ import java.awt.event.MouseEvent;
 import model.Etat;
 
 /**
- * lance la fonction jump de {@link Etat} 
+ * lance la fonction {@link Etat#jump()} 
  * si l'utilisateur clique sur la fenêtre
  */
 public class Click extends MouseAdapter{
@@ -25,7 +25,7 @@ public class Click extends MouseAdapter{
 	/**
 	 * fonction appellée si l'utilisateur clique sur la fenêtre :
 	 * on appelle la fonction {@link Etat#jump()}
-	 * puis on actualise l'affichage avec {@link Etat#repaint}
+	 * puis on actualise l'affichage avec {@link Etat}.repaint()
 	 */
 	@Override
 	public void mouseClicked(MouseEvent e) {
